@@ -2,13 +2,13 @@
 
 ## Links
 
-* Link to PDF on Google Drive - [https://drive.google.com/file/d/1Qz0JEpecjQHjBKCeT2yjdsg89lzMc_NQ/view?usp=sharing](https://drive.google.com/file/d/1Qz0JEpecjQHjBKCeT2yjdsg89lzMc_NQ/view?usp=sharing)
+* Link to PDF on Google Drive - [https://drive.google.com/file/d/1M3f8KqNCHA02Dvjusem7YzJ7S6D-0o8g/view?usp=drive_link](https://drive.google.com/file/d/1M3f8KqNCHA02Dvjusem7YzJ7S6D-0o8g/view?usp=drive_link)
 
 * LinkedIn - [https://www.linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
 
 
 ## Images
 
-![Oli Treadwell Software Engineer Resume - Updated 2023 06 17 Page 1 of 2](https://github.com/olitreadwell/resume/assets/3107864/6ad88a93-dd4c-4bcf-a56b-ee2b62500b22)
+![Oli Treadwell Software Engineering Resume - Updated 2023 06 17 Page 1 of 2](https://github.com/olitreadwell/resume/assets/3107864/6afa75aa-ebe7-4c3c-9d78-bc8b1e7e62de)
 
-![Oli Treadwell Software Engineer Resume - Updated 2023 06 17 Page 2 of 2](https://github.com/olitreadwell/resume/assets/3107864/031a23f4-0441-4194-b220-d4c1cb5b16aa)
+![Oli Treadwell Software Engineering Resume - Updated 2023 06 17 Page 2 of 2](https://github.com/olitreadwell/resume/assets/3107864/da39f851-3d84-48e4-8688-f8b83e1d21c0)
