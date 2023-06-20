@@ -1,6 +1,22 @@
 # Software Engineer Resume - Oli Treadwell
 
+## Table of Contents
+
+* [Links](#links)
+* [Markdown Resume](#markdown-resume)
+    * [Summary](#summary)
+    * [Experience](#experience)
+    * [Software Engineering Instructor Experience](#software-engineering-instructor-experience)
+    * [Education](#education)
+    * [Industry Thought Leadership & Speaking Engagements](#industry-thought-leadership--speaking-engagements)
+    * [Professional Development](#professional-development)
+    * [Conference & Workshop Attendance](#conference--workshop-attendance)
+* [Resume Images](#resume-images)
+* [Skills](#skills)
+
 ## Links
+
+[Back to Top](#table-of-contents)
 
 * Link to PDF on Google Drive - [https://drive.google.com/file/d/1M3f8KqNCHA02Dvjusem7YzJ7S6D-0o8g/view?usp=drive_link](https://drive.google.com/file/d/1M3f8KqNCHA02Dvjusem7YzJ7S6D-0o8g/view?usp=drive_link)
 
@@ -9,6 +25,8 @@
 ---
 
 ## Markdown Resume
+
+[Back to Top](#table-of-contents)
 
 ### Oli Treadwell
 #### Software Engineer
@@ -127,7 +145,9 @@ Aug. 2016 – Sep. 2017
 
 ---
 
-## Images
+## Resume Images
+
+[Back to Top](#table-of-contents)
 
 ![Oli Treadwell Software Engineering Resume - Updated 2023 06 17 Page 1 of 2](https://github.com/olitreadwell/resume/assets/3107864/6afa75aa-ebe7-4c3c-9d78-bc8b1e7e62de)
 
@@ -135,6 +155,8 @@ Aug. 2016 – Sep. 2017
 
 
 ## Skills
+
+[Back to Top](#table-of-contents)
 
 Front-end Development: Bootstrap, CSS3, Design Language Systems, HTML5, JavaScript, ReactJS, React Router, SASS/SCSS
 
