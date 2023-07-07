@@ -3,6 +3,7 @@
 ## Table of Contents
 
 * [Links](#links)
+* [Resume Images](#resume-images)
 * [Markdown Resume](#markdown-resume)
     * [Summary](#summary)
     * [Experience](#experience)
@@ -11,16 +12,22 @@
     * [Industry Thought Leadership & Speaking Engagements](#industry-thought-leadership--speaking-engagements)
     * [Professional Development](#professional-development)
     * [Conference & Workshop Attendance](#conference--workshop-attendance)
-* [Resume Images](#resume-images)
 * [Skills](#skills)
 
 ## Links
 
 [Back to Top](#table-of-contents)
 
-* Link to PDF on Google Drive - [https://drive.google.com/file/d/1M3f8KqNCHA02Dvjusem7YzJ7S6D-0o8g/view?usp=drive_link](https://drive.google.com/file/d/1M3f8KqNCHA02Dvjusem7YzJ7S6D-0o8g/view?usp=drive_link)
-
+* Link to PDF on Google Drive - [https://drive.google.com/file/d/1JCw-nbc2mpnkNkRhRsBQxjHyeHIhIkd_/view?usp=sharing](https://drive.google.com/file/d/1JCw-nbc2mpnkNkRhRsBQxjHyeHIhIkd_/view?usp=sharing)
 * LinkedIn - [https://www.linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
+
+---
+
+## Resume Images
+
+[Back to Top](#table-of-contents)
+
+![Software Engineer Resume - Oli Treadwell - 2023-07-07 - 1 page](https://github.com/olitreadwell/resume/assets/3107864/3b3c9d70-9978-4549-a7be-a073a77bbbda)
 
 ---
 
@@ -144,15 +151,6 @@ Aug. 2016 – Sep. 2017
 - Keep Ruby Weird, Attendee, 2014
 
 ---
-
-## Resume Images
-
-[Back to Top](#table-of-contents)
-
-![Oli Treadwell Software Engineering Resume - Updated 2023 06 17 Page 1 of 2](https://github.com/olitreadwell/resume/assets/3107864/6afa75aa-ebe7-4c3c-9d78-bc8b1e7e62de)
-
-![Oli Treadwell Software Engineering Resume - Updated 2023 06 17 Page 2 of 2](https://github.com/olitreadwell/resume/assets/3107864/da39f851-3d84-48e4-8688-f8b83e1d21c0)
-
 
 ## Skills
 
