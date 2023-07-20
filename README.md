@@ -24,6 +24,8 @@
 
 * Sample Teaching Videos - [https://www.youtube.com/playlist?list=PLqSaJmO19SING0DHaVGNzgOWZzRu5drWv](https://www.youtube.com/playlist?list=PLqSaJmO19SING0DHaVGNzgOWZzRu5drWv)
 
+* [Common Hiring Questions](./common-hiring-questions.md)
+
 ---
 
 ## Resume Images
