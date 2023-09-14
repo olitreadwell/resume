@@ -12,7 +12,7 @@
     * [Industry Thought Leadership & Speaking Engagements](#industry-thought-leadership--speaking-engagements)
     * [Professional Development](#professional-development)
     * [Conference & Workshop Attendance](#conference--workshop-attendance)
-* [Skills](#skills)
+* [Skills](./skills-and-experience.md)
 
 ## Links
 
