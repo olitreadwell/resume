@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+* <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20-%20Software%20Engineer%20Resume%20-%20%202023-07-07%20-%201%20page.pdf)</strong>
 * [Links](#links)
 * [Resume Images](#resume-images)
 * [Markdown Resume](#markdown-resume)
