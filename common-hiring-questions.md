@@ -1,27 +1,42 @@
 # Common Hiring Questions
 
-## What range of compensation do you have in mind?
+## Question Index
+
+- [What range of compensation do you have in mind?](#what-range-of-compensation-do-you-have-in-mind)
+- [What is your employment authorization status?](#what-is-your-employment-authorization-status)
+- [Where are you located?](#where-are-you-located)
+- [Are you interested in relocating?](#are-you-interested-in-relocating)
+- [Are you open to roles that are in-office, hybrid, remote?](#are-you-open-to-roles-that-are-in-office-hybrid-remote)
+- [How long have you been working remotely?](#how-long-have-you-been-working-remotely)
+- [Are you open to travel?](#are-you-open-to-travel)
+- [Do you have experience mentoring or coaching other software engineers? What has been your experience? Why do you like mentoring or coaching other software engineers?](#do-you-have-experience-mentoring-or-coaching-other-software-engineers-what-has-been-your-experience-why-do-you-like-mentoring-or-coaching-other-software-engineers)
+- [What does a good company culture look like to you?](#what-does-a-good-company-culture-look-like-to-you)
+- [Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.](#describe-a-front-end-based-project-that-youve-worked-on-in-a-professional-setting-and-some-of-the-challenges-you-experienced-working-on-it)
+
+
+
+### What range of compensation do you have in mind?
 
 I'm looking for an industry competitive salary in line with the role and responsibilities as well 
 as the unique experience and education I bring to the role. I use websites like 
 [levels.fyi](https://levels.fyi), [glassdoor.com](https://glassdoor.com/), and [PayScale](https://www.payscale.com/)
 to help me best understand current compensation trends in the industry. 
 
-## What is your employment authorization status?
+### What is your employment authorization status?
 
 I'm a USA citizen, with passport and social security number.
 
 I do not need sponsorship to remain in the country or to work for a USA employer.
 
-## Where are you located?
+### Where are you located?
 
 San Diego, CA
 
-## Are you interested in relocating? 
+### Are you interested in relocating? 
 
 Depends on the role, city, relocation compensation, and total compensation. 80/20 against relocating
 
-## Are you open to roles that are in-office, hybrid, remote?
+### Are you open to roles that are in-office, hybrid, remote?
 
 My preference is for 100% permanently remote roles at experienced remote-first companies. 
 
@@ -29,17 +44,17 @@ I am willing to consider hybrid roles that are in-office less or equal to two ti
 
 I do not work well at roles that are 100% in-office. 
 
-## How long have you been working remotely?
+### How long have you been working remotely?
 
 I have experience working remotely for 4+ years
 
-## Are you open to travel?
+### Are you open to travel?
 
 I prefer to be working at home in San Diego 240 out of 365 days of the year. 
 
 I am comfortable traveling as needed. I am comfortable recurring travel less than 1 week a month. 
 
-## Do you have experience mentoring or coaching other software engineers? What has been your experience? Why do you like mentoring or coaching other software engineers?
+### Do you have experience mentoring or coaching other software engineers? What has been your experience? Why do you like mentoring or coaching other software engineers?
 
 Yes, I have experience mentoring and coaching other software engineers, including time coaching in both formal and informal settings. Coaching is a deeply ingrained facet in my career. It gives me great satisfaction to support the growth of fellow engineers, particularly as it lets me contribute to both an individual's development and broader progress within the industry. My mentoring philosophy combines a unique blend of training technical skills, fostering a socially responsible mindset, and growing an engineer's soft skills like communication, emotional intelligence and teamwork.
 
@@ -51,7 +66,7 @@ Outside of my work, I am actively involved as a community organizer and open-sou
 
 To sum up, my passion for mentoring comes from various sources: to see measurable growth in individuals, to witness the impact of that growth in the community and industry at large, and to share a socially responsible approach to technology development. My proudest moments as a mentor are when I see a mentee solve a complex issue, secure a job, or contribute to social good in tech. It’s not just about the individual home runs; it’s about changing the game itself.
 
-## What does a good company culture look like to you?
+### What does a good company culture look like to you?
 
 My work in technology has focused on solving problems, collaborating with high performing teams, building on actionable feedback, and delivering impactful incremental solutions. There’s a lot happening in that statement, let me break it down into key factors I look for.
 
@@ -62,3 +77,23 @@ Empathetic communication - I recently read this great article by Cate Huston, En
 Methodical action - For a business to be sustainable it has to make money. Across my time in startups and as an engineer, I do my best not to forget that. For this reason, I appreciate companies that take action to integrate ongoing feedback relating to both quantitative and qualitative data. In the same vein, I want a transparent understanding of the metrics behind the goals of my work. This allows me to be innovative while comprehending how my work contributes to the performance of the organization. 
 
 These factors of company culture have come from a decade as an employee with 8 of those years embedded in high velocity technology companies. I am confident these factors build sustainably successful companies that attract, grow, and retain the types of teammates I want to collaborate with.
+
+### Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.
+
+At Condé Nast, I spearheaded the development of a brand-agnostic paywall architecture along with a suite of components for over 26 media brands. This project was particularly crucial for the company's monetization strategy, aiming to drive a substantial increase in monthly subscriptions.
+
+**Challenges**:
+
+1. **Multiple Brand Integration**: One of the primary challenges was ensuring that the paywall system seamlessly integrated with over 26 distinct media brands, each with its unique design and user experience paradigms.
+
+2. **Integration with Google Ad Platform for our Marketing team**: Integrating with Google Ad Platform posed complexities as we had to ensure ads displayed correctly behind and in front of the paywall. We also had to capture accurate metrics on ad engagements for users who were and weren't subscribers, leading to segmentation in analytics.
+
+3. **Unified experience on Google AMP**: Ensuring the paywall components and user flow were consistent on Google AMP pages was challenging due to AMP's constraints on JavaScript and custom components. We developed a streamlined version of our paywall for AMP, ensuring it was both compliant and provided a seamless user experience.
+
+4. **End-to-End Testing**: Ensuring the reliability of the paywall was paramount. I authored a technology blog post on End-to-End Testing the Condé Nast Paywalls to share our approach to testing, which included tools like Puppeteer.
+
+5. **Customizable rules to trigger Paywall components**: We developed a flexible rule engine allowing brands to customize when and how the paywall was triggered, based on user behavior, content type, or other criteria. Implementing this while ensuring optimal site performance and user experience was a technical hurdle.
+
+6. **Cross-Platform Compatibility**: Given the variety of devices and platforms on which readers accessed the content, ensuring the paywall worked flawlessly across all of them was a challenge.
+
+The result of our efforts was a significant growth in monetization, achieving a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired. The project underscored the importance of iterative development, user-centric design, and robust testing in creating a successful paywall system.
