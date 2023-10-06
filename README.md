@@ -3,6 +3,8 @@
 ## Table of Contents
 
 * <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20-%20Software%20Engineer%20Resume%20-%20%202023-07-07%20-%201%20page.pdf)</strong>
+* <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
+* <strong>[Skills & Experience](./skills-and-experience.md)</strong>
 * [Links](#links)
 * [Resume Images](#resume-images)
 * [Markdown Resume](#markdown-resume)
@@ -24,8 +26,6 @@
 * LinkedIn - [https://www.linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
 
 * Sample Teaching Videos - [https://www.youtube.com/playlist?list=PLqSaJmO19SING0DHaVGNzgOWZzRu5drWv](https://www.youtube.com/playlist?list=PLqSaJmO19SING0DHaVGNzgOWZzRu5drWv)
-
-* [Common Hiring Questions](./common-hiring-questions.md)
 
 ---
 
