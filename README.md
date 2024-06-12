@@ -108,7 +108,7 @@ Oct. 2014 – Jan. 2016
 ##### Software Engineer & Lead Instructor | The Flatiron School
 Remote
 
-Nov. 2022 – Present
+Nov. 2022 – Nov. 2023
 
 - Delivered remote & asynchronous technical training on software engineering to a diverse group of students. - Wrote and presented curriculum covering JavaScript, HTML/CSS, ReactJS, Python, Flask, PostgreSQL, Object-Oriented Programming, CI/CD, Agile, APIs, Web Accessibility, and more.
 - Mentored and coached junior engineers, preparing them for success in their roles and job duties.
@@ -126,6 +126,7 @@ Aug. 2016 – Sep. 2017
 - Technologies: ReactJS, JavaScript, jQuery, Mocha, Chai, HTML, CSS3, SASS/SCSS, PostgreSQL, MySQL, Git, GitHub, Heroku, bash, zsh.
 
 #### EDUCATION
+- Postgraduate Diploma in Information Technology | WelTec Petone (expected graduation July 2025)
 - Full-Stack Web Development, Ruby on Rails, and JavaScript Certification | Dev Bootcamp
 - BS in Business Administration, Entrepreneurship, & International Business | Chapman University
 
