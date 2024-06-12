@@ -24,6 +24,8 @@ to help me best understand current compensation trends in the industry.
 
 ### What is your employment authorization status?
 
+I recently moved to Wellington on a student visa, pursuing a Postgraduate Diploma in IT at WelTec Petone. This allows me to work up to 20 hours during the academic session and full-time during breaks. I am particularly excited about the prospect of securing a full-time position that could expedite my path to residency.
+
 I'm a USA citizen, with passport and social security number.
 
 I do not need sponsorship to remain in the country or to work for a USA employer.
