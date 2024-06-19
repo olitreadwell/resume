@@ -34,7 +34,9 @@
 
 [Back to Top](#table-of-contents)
 
-![Software Engineer Resume - Oli Treadwell - 2023-07-07 - 1 page](https://github.com/olitreadwell/resume/assets/3107864/3b3c9d70-9978-4549-a7be-a073a77bbbda)
+![Oli Treadwell Software Engineer Resume - 2024 06 19 page 1](https://github.com/olitreadwell/resume/assets/3107864/e9aa38d0-d516-4c6e-913b-c8eba48bdbf1)
+
+![Oli Treadwell Software Engineer Resume - 2024 06 19 page 2](https://github.com/olitreadwell/resume/assets/3107864/428c5828-91b2-48e4-8ec9-9953c8625940)
 
 ---
 
