@@ -26,13 +26,13 @@ to help me best understand current compensation trends in the industry.
 
 I recently moved to Wellington on a student visa, pursuing a Postgraduate Diploma in IT at WelTec Petone. This allows me to work up to 20 hours during the academic session and full-time during breaks. I am particularly excited about the prospect of securing a full-time position that could expedite my path to residency.
 
-I'm a USA citizen, with passport and social security number.
+I'm a USA citizen, with passport and social security number. I do not need sponsorship to remain in the country or to work for a USA employer.
 
-I do not need sponsorship to remain in the country or to work for a USA employer.
+I'm a United Kingdom citizen, with current passport.
 
 ### Where are you located?
 
-San Diego, CA
+Wellington, New Zealand
 
 ### Are you interested in relocating? 
 
@@ -48,11 +48,11 @@ I do not work well at roles that are 100% in-office.
 
 ### How long have you been working remotely?
 
-I have experience working remotely for 4+ years
+I have experience working remotely for 6+ years
 
 ### Are you open to travel?
 
-I prefer to be working at home in San Diego 240 out of 365 days of the year. 
+I prefer to be working at home in Wellington 240 out of 365 days of the year. 
 
 I am comfortable traveling as needed. I am comfortable recurring travel less than 1 week a month. 
 
