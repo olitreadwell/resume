@@ -2,7 +2,8 @@
 
 ## Table of Contents
 
-* <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20-%20Software%20Engineer%20Resume%20-%20%202023-07-07%20-%201%20page.pdf)</strong>
+
+* <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20Software%20Engineer%20Resume%20-%202024%2006%2019.pdf)</strong>
 * <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
 * <strong>[Recommendations & References](./linkedin-recommendations.md)</strong>
 * <strong>[Skills & Experience](./skills-and-experience.md)</strong>
