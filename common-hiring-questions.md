@@ -28,7 +28,7 @@ I recently moved to Wellington on a student visa, pursuing a Postgraduate Diplom
 
 I'm a USA citizen, with passport and social security number. I do not need sponsorship to remain in the country or to work for a USA employer.
 
-I'm a United Kingdom citizen, with current passport.
+I'm a United Kingdom citizen, with current passport. I do not need sponsorship to remain in the United Kingdom or to work for a UK employer.
 
 ### Where are you located?
 
