@@ -19,9 +19,10 @@
 
 I'm looking for an industry-competitive salary in line with the role and responsibilities as well as the unique experience and education I bring to the role. 
 
-I am seeking a role that satisfies the requirements of the New Zealand Green List for a Software Engineer. This requires a pay rate of $65.74 an hour or above, or the equivalent annual salary. If the employment or offer of employment is based on a contract for services, the pay must be $98.62 an hour or the equivalent annual salary, with a minimum of 10 years' work in a relevant role. _(Source: [New Zealand Green List Occupations](https://www.immigration.govt.nz/new-zealand-visas/preparing-a-visa-application/working-in-nz/qualifications-for-work/green-list-occupations))_
-
 I use websites like [levels.fyi](https://levels.fyi), [glassdoor.com](https://glassdoor.com/), and [PayScale](https://www.payscale.com/) to help me best understand current compensation trends in the industry. For New Zealand-specific salary information, I also refer to [Seek Salary Guide](https://www.seek.co.nz/career-advice/browse/information-communication-technology), [Trade Me Jobs Salary Guide](https://www.trademe.co.nz/a/jobs/salary-guide/it/programming-development), and [Hays Technology Contracter Rates Guide](https://www.hays.com.au/documents/276732/1102429/Hays+Technology+Contractor+Rates+Guide.pdf).
+
+I am actively seeking a role that satisfies the requirements of the New Zealand Green List for a Software Engineer. This requires a pay rate of $65.74 an hour or above, or the equivalent annual salary. If the employment or offer of employment is based on a contract for services, the pay must be $98.62 an hour or the equivalent annual salary, with a minimum of 10 years' work in a relevant role. _(Source: [New Zealand Green List Occupations](https://www.immigration.govt.nz/new-zealand-visas/preparing-a-visa-application/working-in-nz/qualifications-for-work/green-list-occupations))_
+
 
 
 
