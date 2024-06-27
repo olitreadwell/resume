@@ -28,9 +28,21 @@ I am actively seeking a role that satisfies the requirements of the New Zealand 
 
 ### What is your employment authorization status?
 
-Available for full-time employment with accredited employers. Currently pursuing a Postgraduate Diploma in IT on an approved New Zealand student visa, committed to obtaining a long-term work visa and residency.
+#### Aotearoa New Zealand
+
+I am studying for a Level 8 Postgraduate Diploma in Information Technology at Whitireia in Petone, Lower Hutt, Wellington, New Zealand. My student visa ends on July 20, 2025.
+
+With my student visa, I can work up to 20 hours per week as a part-time employee, fixed-term employee contractor, or casual employee contractor. I cannot work as an independent contractor or be self-employed.
+
+After I finish my course, I can apply for a one-year post-study work visa. If I get it, I can work full-time for one year after my course ends.
+
+I am looking for a job with an Accredited Employer that will help me stay in New Zealand long-term and work towards residency. I have 10 years of experience as a Software Engineer, a role listed on New Zealand's Green List of needed employees.
+
+#### United States of America
 
 I'm a USA citizen, with passport and social security number. I do not need sponsorship to remain in the country or to work for a USA employer.
+
+#### United Kingdom
 
 I'm a United Kingdom citizen, with current passport. I do not need sponsorship to remain in the United Kingdom or to work for a UK employer.
 
