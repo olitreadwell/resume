@@ -23,7 +23,7 @@
 
 [Back to Top](#table-of-contents)
 
-* Link to PDF on Google Drive - [https://drive.google.com/file/d/10WwafvwmO6PayCPAFwMyziSOIweQ0oo_/view?usp=sharing](https://drive.google.com/file/d/10WwafvwmO6PayCPAFwMyziSOIweQ0oo_/view?usp=sharing)
+* Link to PDF on Google Drive - [https://drive.google.com/file/d/1hKKt-3GvHqYuSnT4gtddXZFoU8xTtw4b/view?usp=sharing](https://drive.google.com/file/d/1hKKt-3GvHqYuSnT4gtddXZFoU8xTtw4b/view?usp=sharing)
 
 * LinkedIn - [https://www.linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
 
