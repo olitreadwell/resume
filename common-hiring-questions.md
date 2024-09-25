@@ -11,6 +11,7 @@
 - [Are you open to travel?](#are-you-open-to-travel)
 - [Do you have experience mentoring or coaching other software engineers? What has been your experience? Why do you like mentoring or coaching other software engineers?](#do-you-have-experience-mentoring-or-coaching-other-software-engineers-what-has-been-your-experience-why-do-you-like-mentoring-or-coaching-other-software-engineers)
 - [What does a good company culture look like to you?](#what-does-a-good-company-culture-look-like-to-you)
+- [Can you describe the projects you've worked on either in school or on your own? What was your role, and how did you handle challenges?](#can-you-describe-the-projects-youve-worked-on-either-in-school-or-on-your-own-what-was-your-role-and-how-did-you-handle-challenges)
 - [Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.](#describe-a-front-end-based-project-that-youve-worked-on-in-a-professional-setting-and-some-of-the-challenges-you-experienced-working-on-it)
 
 
@@ -93,6 +94,10 @@ Empathetic communication - I recently read this great article by Cate Huston, En
 Methodical action - For a business to be sustainable it has to make money. Across my time in startups and as an engineer, I do my best not to forget that. For this reason, I appreciate companies that take action to integrate ongoing feedback relating to both quantitative and qualitative data. In the same vein, I want a transparent understanding of the metrics behind the goals of my work. This allows me to be innovative while comprehending how my work contributes to the performance of the organization. 
 
 These factors of company culture have come from a decade as an employee with 8 of those years embedded in high velocity technology companies. I am confident these factors build sustainably successful companies that attract, grow, and retain the types of teammates I want to collaborate with.
+
+### Can you describe the projects you've worked on either in school or on your own? What was your role, and how did you handle challenges?
+
+One of my most impactful projects was at Condé Nast, where I built a reusable paywall architecture for Vanity Fair, Wired, and The New Yorker. I was responsible for end-to-end testing, leveraging Puppeteer to ensure consistent behavior across brands and improve SEO. My role expanded to developing React components for the paywall, working closely with cross-functional teams to ensure brand-specific needs were met while maintaining a core architecture. A key challenge was ensuring the paywall’s SEO performance; by optimizing the page load and minimizing script interference, I contributed to a 100% increase in subscription revenue for Vanity Fair and Wired.
 
 ### Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.
 
