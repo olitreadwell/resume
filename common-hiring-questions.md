@@ -1,12 +1,14 @@
 # Common Hiring Questions
 
 ## Question Index
+<!--
 
 - [What range of compensation do you have in mind?](#what-range-of-compensation-do-you-have-in-mind)
+- [Are you open to roles that are in-office, hybrid, remote?](#are-you-open-to-roles-that-are-in-office-hybrid-remote)
+-->
 - [What is your employment authorization status?](#what-is-your-employment-authorization-status)
 - [Where are you located?](#where-are-you-located)
 - [Are you interested in relocating?](#are-you-interested-in-relocating)
-- [Are you open to roles that are in-office, hybrid, remote?](#are-you-open-to-roles-that-are-in-office-hybrid-remote)
 - [How long have you been working remotely?](#how-long-have-you-been-working-remotely)
 - [Are you open to travel?](#are-you-open-to-travel)
 - [Do you have experience mentoring or coaching other software engineers? What has been your experience? Why do you like mentoring or coaching other software engineers?](#do-you-have-experience-mentoring-or-coaching-other-software-engineers-what-has-been-your-experience-why-do-you-like-mentoring-or-coaching-other-software-engineers)
