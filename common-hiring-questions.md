@@ -15,7 +15,7 @@
 - [Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.](#describe-a-front-end-based-project-that-youve-worked-on-in-a-professional-setting-and-some-of-the-challenges-you-experienced-working-on-it)
 
 
-
+<!--
 ### What range of compensation do you have in mind?
 
 I'm looking for an industry-competitive salary in line with the role and responsibilities as well as the unique experience and education I bring to the role. 
@@ -23,8 +23,7 @@ I'm looking for an industry-competitive salary in line with the role and respons
 I use websites like [levels.fyi](https://levels.fyi), [glassdoor.com](https://glassdoor.com/), and [PayScale](https://www.payscale.com/) to help me best understand current compensation trends in the industry. For New Zealand-specific salary information, I also refer to [Seek Salary Guide](https://www.seek.co.nz/career-advice/browse/information-communication-technology), [Trade Me Jobs Salary Guide](https://www.trademe.co.nz/a/jobs/salary-guide/it/programming-development), and [Hays Technology Contracter Rates Guide](https://www.hays.com.au/documents/276732/1102429/Hays+Technology+Contractor+Rates+Guide.pdf).
 
 I am actively seeking a role that satisfies the requirements of the New Zealand Green List for a Software Engineer. This requires a pay rate of $65.74 an hour or above, or the equivalent annual salary. If the employment or offer of employment is based on a contract for services, the pay must be $98.62 an hour or the equivalent annual salary, with a minimum of 10 years' work in a relevant role. _(Source: [New Zealand Green List Occupations](https://www.immigration.govt.nz/new-zealand-visas/preparing-a-visa-application/working-in-nz/qualifications-for-work/green-list-occupations))_
-
-
+-->
 
 
 ### What is your employment authorization status?
@@ -55,11 +54,13 @@ Wellington, New Zealand
 
 Depends on the role, city, relocation compensation, and total compensation. 80/20 against relocating
 
+<!--
 ### Are you open to roles that are in-office, hybrid, remote?
 
 I am comfortable with on-site or hybrid arrangements, though I prefer to work with companies that understand what research tells us about the benefits to companies and workers with flexible telework or 100% remote work arrangements. Here are some key findings from scholarly research:
 
 Remote work can lead to [increased productivity](https://duckduckgo.com/?q=Does+working+from+home+work+Evidence+from+a+Chinese+experiment "Bloom et al. (2015) - Does working from home work? Evidence from a Chinese experiment"), [reduced burnout](https://duckduckgo.com/?q=Understanding+the+burnout+experience+Recent+research+and+its+implications+for+psychiatry "Maslach & Leiter (2016) - Understanding the burnout experience: Recent research and its implications for psychiatry"), [lower stress](https://duckduckgo.com/?q=Telework+and+health+effects+review "Tavares (2017) - Telework and health effects: A review"), [lower absenteeism](https://duckduckgo.com/?q=Does+working+from+home+work+Evidence+from+a+Chinese+experiment "Bloom et al. (2015) - Does working from home work? Evidence from a Chinese experiment"), [health benefits](https://duckduckgo.com/?q=Telework+and+health+effects+review "Tavares (2017) - Telework and health effects: A review"), [reduced carbon footprint](https://duckduckgo.com/?q=A+systematic+review+of+the+energy+and+climate+impacts+of+teleworking "Hook et al. (2020) - A systematic review of the energy and climate impacts of teleworking"), [enhanced accessibility](https://duckduckgo.com/?q=Telework+after+COVID+A+%22silver+lining%22+for+workers+with+disabilities "Schur et al. (2020) - Telework after COVID: A 'silver lining' for workers with disabilities"), and [better caregiving balance](https://duckduckgo.com/?q=The+influence+of+caregiving+employees%27+job-related+and+personal+resources+on+work-family+conflict+and+burnout "Kossek et al. (2018) - The influence of caregiving employees' job-related and personal resources on work-family conflict and burnout").
+-->
 
 ### How long have you been working remotely?
 
