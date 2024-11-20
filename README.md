@@ -86,7 +86,7 @@ Sept. 2017 – June 2019
 
 - Delivered new design features & ReactJS components for over 26 media brands, improving readership and SEO.
 - Built and iterated upon a brand-agnostic paywall architecture and suite of components, driving significant growth and achieving a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired.
-- Authored a technology blog post on End-to-End Testing the Condé Nast Paywalls. https://technology.condenast.com/story/end-to-end-testing-conde-nast-paywalls
+- Authored a technology blog post on End-to-End Testing the Condé Nast Paywalls. [https://technology.condenast.com/story/end-to-end-testing-conde-nast-paywalls](https://web.archive.org/web/20211202210445/https://technology.condenast.com/story/end-to-end-testing-conde-nast-paywalls)
 - Technologies: ReactJS, Storybook, NodeJS, Jest, Puppeteer, TypeScript, SASS, GitHub, Jenkins, CI/CD, Design Language Systems, JIRA.
 
 ##### Software Engineer (Contract) | Bypass Mobile
