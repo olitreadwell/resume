@@ -168,18 +168,9 @@ Aug. 2016 – Sep. 2017
 
 [Back to Top](#table-of-contents)
 
-Front-end Development: Bootstrap, CSS3, Design Language Systems, HTML5, JavaScript, ReactJS, React Router, SASS/SCSS
-
-Back-end Development and Frameworks: ActiveRecord, Flask, MySQL, NodeJS, PostgreSQL, Python, Ruby on Rails
-
-Testing and Quality Assurance: Chai, End-to-End Testing, Jest, RSpec
-
-Methodologies and Practices: Agile methodologies, Object-Oriented Programming, Performance improvement, Web accessibility
-
-Version Control and Collaboration: Circle CI, CI/CD, Git, GitHub, Vagrant
-
-APIs and Services: GitHub Pages, Google Drive, GraphQL, Mailchimp, SquareSpace
-
-Project Management and Collaboration Tools: Figma, JIRA, Zeplin
-
-Software Engineering Roles and Skills: Full-stack software engineer, Leadership, Mentorship, Technical trainer
+- **Front-end Systems:** React, Next.js, Electron, Tailwind CSS, Sass/SCSS, design tokens, Storybook, accessibility testing (axe, Lighthouse), component governance.
+- **Back-end & Services:** Node.js/TypeScript, Ruby on Rails, Python/Flask, Prisma & ActiveRecord, PostgreSQL, MySQL, REST/JSON:API, GraphQL, domain-driven microservices.
+- **Quality & Reliability:** Jest, React Testing Library, Cypress, Puppeteer, RSpec, CI pipelines (GitHub Actions, CircleCI, Jenkins), lint/type enforcement, feature flagging.
+- **DevOps & Platforms:** AWS/GCP/Azure basics, Docker, Vagrant, Terraform-adjacent workflows, Netlify/Vercel/Render deployments, asset pipelines (WebP automation, localization tooling).
+- **Product & Collaboration:** Agile/Scrum/Kanban facilitation, RFC-driven decision making, observability-first instrumentation, Linear, Jira, Notion, Confluence, Figma, Loom.
+- **Leadership & Instruction:** Curriculum design, mock-interview tooling, inclusive design guilds, mentorship programs with 90% grad / 75% placement outcomes, community organizing (Refresh Austin, a11ySD, ReactJS meetups).
