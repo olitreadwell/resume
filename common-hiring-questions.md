@@ -1,11 +1,7 @@
 # Common Hiring Questions
 
 ## Question Index
-<!--
 
-- [What range of compensation do you have in mind?](#what-range-of-compensation-do-you-have-in-mind)
-- [Are you open to roles that are in-office, hybrid, remote?](#are-you-open-to-roles-that-are-in-office-hybrid-remote)
--->
 - [What is your employment authorization status?](#what-is-your-employment-authorization-status)
 - [Where are you located?](#where-are-you-located)
 - [Are you interested in relocating?](#are-you-interested-in-relocating)
@@ -16,29 +12,13 @@
 - [Can you describe the projects you've worked on either in school or on your own? What was your role, and how did you handle challenges?](#can-you-describe-the-projects-youve-worked-on-either-in-school-or-on-your-own-what-was-your-role-and-how-did-you-handle-challenges)
 - [Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.](#describe-a-front-end-based-project-that-youve-worked-on-in-a-professional-setting-and-some-of-the-challenges-you-experienced-working-on-it)
 
-
-<!--
-### What range of compensation do you have in mind?
-
-I'm looking for an industry-competitive salary in line with the role and responsibilities as well as the unique experience and education I bring to the role. 
-
-I use websites like [levels.fyi](https://levels.fyi), [glassdoor.com](https://glassdoor.com/), and [PayScale](https://www.payscale.com/) to help me best understand current compensation trends in the industry. For New Zealand-specific salary information, I also refer to [Seek Salary Guide](https://www.seek.co.nz/career-advice/browse/information-communication-technology), [Trade Me Jobs Salary Guide](https://www.trademe.co.nz/a/jobs/salary-guide/it/programming-development), and [Hays Technology Contracter Rates Guide](https://www.hays.com.au/documents/276732/1102429/Hays+Technology+Contractor+Rates+Guide.pdf).
-
-I am actively seeking a role that satisfies the requirements of the New Zealand Green List for a Software Engineer. This requires a pay rate of $65.74 an hour or above, or the equivalent annual salary. If the employment or offer of employment is based on a contract for services, the pay must be $98.62 an hour or the equivalent annual salary, with a minimum of 10 years' work in a relevant role. _(Source: [New Zealand Green List Occupations](https://www.immigration.govt.nz/new-zealand-visas/preparing-a-visa-application/working-in-nz/qualifications-for-work/green-list-occupations))_
--->
-
-
 ### What is your employment authorization status?
 
 #### Aotearoa New Zealand
 
-I am studying for a Level 8 Postgraduate Diploma in Information Technology at Whitireia in Petone, Lower Hutt, Wellington, New Zealand. My student visa ends on July 20, 2025.
+I recently completed a Level 8 Postgraduate Diploma in Information Technology at Whitireia in Petone, Lower Hutt, Wellington, New Zealand. I am currently on a post-study work visa, which allows me to work full-time for any employer in New Zealand.
 
-With my student visa, I can work up to 20 hours per week as a part-time employee, fixed-term employee contractor, or casual employee contractor. I cannot work as an independent contractor or be self-employed.
-
-After I finish my course, I can apply for a one-year post-study work visa. If I get it, I can work full-time for one year after my course ends.
-
-I am looking for a job with an Accredited Employer that will help me stay in New Zealand long-term and work towards residency. I have 10 years of experience as a Software Engineer, a role listed on New Zealand's Green List of needed employees.
+I am looking to build a long-term relationship with an Accredited Employer that will support my pathway to residency in New Zealand. With 10+ years of experience as a Software Engineer—a role listed on New Zealand's Green List of needed employees—I am well-positioned for roles that meet the requirements for skilled migrant residency.
 
 #### United States of America
 
@@ -52,17 +32,9 @@ I'm a United Kingdom citizen, with current passport. I do not need sponsorship t
 
 Wellington, New Zealand
 
-### Are you interested in relocating? 
+### Are you interested in relocating?
 
-Depends on the role, city, relocation compensation, and total compensation. 80/20 against relocating
-
-<!--
-### Are you open to roles that are in-office, hybrid, remote?
-
-I am comfortable with on-site or hybrid arrangements, though I prefer to work with companies that understand what research tells us about the benefits to companies and workers with flexible telework or 100% remote work arrangements. Here are some key findings from scholarly research:
-
-Remote work can lead to [increased productivity](https://duckduckgo.com/?q=Does+working+from+home+work+Evidence+from+a+Chinese+experiment "Bloom et al. (2015) - Does working from home work? Evidence from a Chinese experiment"), [reduced burnout](https://duckduckgo.com/?q=Understanding+the+burnout+experience+Recent+research+and+its+implications+for+psychiatry "Maslach & Leiter (2016) - Understanding the burnout experience: Recent research and its implications for psychiatry"), [lower stress](https://duckduckgo.com/?q=Telework+and+health+effects+review "Tavares (2017) - Telework and health effects: A review"), [lower absenteeism](https://duckduckgo.com/?q=Does+working+from+home+work+Evidence+from+a+Chinese+experiment "Bloom et al. (2015) - Does working from home work? Evidence from a Chinese experiment"), [health benefits](https://duckduckgo.com/?q=Telework+and+health+effects+review "Tavares (2017) - Telework and health effects: A review"), [reduced carbon footprint](https://duckduckgo.com/?q=A+systematic+review+of+the+energy+and+climate+impacts+of+teleworking "Hook et al. (2020) - A systematic review of the energy and climate impacts of teleworking"), [enhanced accessibility](https://duckduckgo.com/?q=Telework+after+COVID+A+%22silver+lining%22+for+workers+with+disabilities "Schur et al. (2020) - Telework after COVID: A 'silver lining' for workers with disabilities"), and [better caregiving balance](https://duckduckgo.com/?q=The+influence+of+caregiving+employees%27+job-related+and+personal+resources+on+work-family+conflict+and+burnout "Kossek et al. (2018) - The influence of caregiving employees' job-related and personal resources on work-family conflict and burnout").
--->
+Depends on the role, city, relocation compensation, and total compensation.
 
 ### How long have you been working remotely?
 
