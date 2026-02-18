@@ -50,7 +50,7 @@
 [Back to Top](#table-of-contents)
 
 ### Oli Treadwell
-#### Software Engineer
+#### Senior Software Engineer & Technical Instructor  
 
 - [oliver.treadwell@gmail.com](mailto:oliver.treadwell@gmail.com)
 - [linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
@@ -58,13 +58,24 @@
 
 #### SUMMARY
 
-Dynamic full-stack Software Engineer and technical trainer experienced in ReactJS, NodeJS, Python, Flask, Ruby on Rails, and Agile methodologies. Known for innovation, talent mentoring, and customer-centric solutions. Advocate for accessibility and tech for good. Skilled in leading cross-functional collaborations, achieving objectives, and optimizing software. Active community organizer, conference attendee, and open-source contributor.
+Product-minded full-stack engineer with a decade across media, HR tech, healthcare, and compliance platforms; translates ambiguous requirements into measurable outcomes while coaching teams on accessibility, testing rigor, and observability-first delivery.
 
 #### EXPERIENCE
 
+##### Numeral Studio — Senior Software Engineer 
+Wellington / Remote
+
+2025 – Present
+
+- Delivered multi-client throughput as measured by 580+ commits with consistently green lint/type/test gates by pairing tightly with design, PM, and back-end partners across compliance, healthcare, marketing, and conference products.
+- Reduced Cedric audit defects as measured by compliance analysts reporting zero silent errors by rebuilding the React/Electron form stack with shared validation utilities and Jest coverage.
+- Expanded Hello Canopy’s HIPAA rigor as measured by 290 code contributions and 13 Cypress journeys by extending schemas, preferred case-owner logic, and privacy filters.
+- Optimized TryGalaxy’s global performance as measured by faster localized search and aligned translations by orchestrating WebP asset pipelines, resizing scripts, and KR/EN fixes.
+- Technologies: React, TypeScript, Electron, Next.js 15, Tailwind CSS, Sass, Sanity v3, Prisma, Cypress, Jest/RTL, Storybook, GitHub Actions, AWS, Figma, Linear/Jira.
+
 ##### Software Engineer & Founder | Habitual Genesis
 
-Jan. 2016 – Present
+2016 – Present
 
 - Deployed a mobile-first, low-maintenance website for award-winning author Jon Cohn's book 'Slashtag' using Bootstrap, HTML5, CSS3, and JavaScript, serving as an effective marketing tool and enhancing book sales.
 - Consulted Mexic-Arte Museum’s volunteer team to create a seamless, volunteer-maintained web presence, prior to the museum and their collection becoming web-only during building renovations.
@@ -72,10 +83,19 @@ Jan. 2016 – Present
 - Various projects with General Assembly, Thinkful, Codecademy, and others
 - Technologies: JavaScript, HTML5, CSS3, Bootstrap, GitHub, GitHub Pages, SquareSpace, Mailchimp, Google Drive.
 
+#### PartsTrader Markets Ltd — Software Engineer (Contract)
+Wellington
+
+2024 – 2025
+
+- Modernized onboarding as measured by retiring spreadsheet-driven setup steps by implementing a .NET service facade, React/TypeScript console, and Windows-native toolchain aligned to Figma prototypes.
+- Stabilized BAU releases as measured by dependable automation runs by defining Repository→Domain→Mapper→Service layers plus Cypress smoke tests and GitHub Actions pipelines.
+- Technologies: C#/.NET, React, TypeScript, styled-components, Cypress, GitHub Actions, Azure DevOps, Jira, Confluence.
+
 ##### Senior Software Engineer | WorkTango (formerly KazooHR) 
 Remote
 
-June 2019 – May 2020
+2019 – 2020
 
 - Re-architected the Rewards platform from Rails to ReactJS, resulting in a 15% increase in customer engagement. - Implemented a modular design system to improve UI consistency and boost developer velocity.
 - Integrated features across Performance Management and Rewards platforms to overhaul the product suite.
@@ -85,7 +105,7 @@ June 2019 – May 2020
 ##### Software Engineer | Condé Nast
 Hybrid - Austin, TX
 
-Sept. 2017 – June 2019
+2017 – 2019
 
 - Delivered new design features & ReactJS components for over 26 media brands, improving readership and SEO.
 - Built and iterated upon a brand-agnostic paywall architecture and suite of components, driving significant growth and achieving a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired.
@@ -95,7 +115,7 @@ Sept. 2017 – June 2019
 ##### Software Engineer (Contract) | Bypass Mobile
 Onsite - Austin, TX
 
-Apr. 2016 – Aug. 2016
+2016 – 2016
 
 - Designed and developed a JSON-API spec product licensing platform using Ruby-on-Rails as part of a small team. - Resolved development environment issues and performed code reviews using Github.com.
 - Technologies: JSON-API, Ruby on Rails, ActiveRecord, RSpec, MySQL, Git, GitHub, Vagrant, bash, JIRA.
@@ -103,7 +123,7 @@ Apr. 2016 – Aug. 2016
 ##### Software Engineer | Union Metrics
 Onsite - Austin, TX
 
-Oct. 2014 – Jan. 2016
+2014 – 2016
 
 - Migrated and refactored two legacy codebases to use Rails 4, improving maintainability, security of core business features, and performance by 20%.
 - Created knowledge base of 100 most common customer technical challenges, reducing resolution time by 50%.
@@ -115,7 +135,7 @@ Oct. 2014 – Jan. 2016
 ##### Software Engineer & Lead Instructor | The Flatiron School
 Remote
 
-Nov. 2022 – Nov. 2023
+2022 – 2023
 
 - Delivered remote & asynchronous technical training on software engineering to a diverse group of students. - Wrote and presented curriculum covering JavaScript, HTML/CSS, ReactJS, Python, Flask, PostgreSQL, Object-Oriented Programming, CI/CD, Agile, APIs, Web Accessibility, and more.
 - Mentored and coached junior engineers, preparing them for success in their roles and job duties.
@@ -158,7 +178,7 @@ Aug. 2016 – Sep. 2017
 
 #### CONFERENCE & WORKSHOP ATTENDANCE
 
-- axe-con Accessibility Conference, Attendee, 2023
+- axe-con Accessibility Conference, Attendee, 2023, 2024, 2025
 - Assert(JS) Conference, Attendee, 2018
 - Rocky Mountain Ruby, Attendee, 2017
 - Keep Ruby Weird, Attendee, 2015
