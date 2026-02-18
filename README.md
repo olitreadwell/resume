@@ -3,13 +3,13 @@
 ## Table of Contents
 
 
-* <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20Software%20Engineer%20Resume%20-%202024%2006%2022.pdf)</strong>
+<!-- * <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20Software%20Engineer%20Resume%20-%202024%2006%2022.pdf)</strong> -->
 * <strong>[Portfolio Projects](./portfolio-projects-2024-09.md)</strong>
 * <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
 * <strong>[Recommendations & References](./linkedin-recommendations.md)</strong>
 * <strong>[Skills & Experience](./skills-and-experience.md)</strong>
 * [Links](#links)
-* [Resume Images](#resume-images)
+<!-- * [Resume Images](#resume-images) -->
 * [Markdown Resume](#markdown-resume)
     * [Summary](#summary)
     * [Experience](#experience)
@@ -24,14 +24,16 @@
 
 [Back to Top](#table-of-contents)
 
+<!--
 * Link to PDF on Google Drive - [https://drive.google.com/file/d/1hKKt-3GvHqYuSnT4gtddXZFoU8xTtw4b/view?usp=sharing](https://drive.google.com/file/d/1hKKt-3GvHqYuSnT4gtddXZFoU8xTtw4b/view?usp=sharing)
-
+-->
 * LinkedIn - [https://www.linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
 
 * Sample Teaching Videos - [https://www.youtube.com/playlist?list=PLqSaJmO19SING0DHaVGNzgOWZzRu5drWv](https://www.youtube.com/playlist?list=PLqSaJmO19SING0DHaVGNzgOWZzRu5drWv)
 
 ---
 
+<!--
 ## Resume Images
 
 [Back to Top](#table-of-contents)
@@ -41,6 +43,7 @@
 ![Oli Treadwell Software Engineer Resume - 2024 06 22 page 2](https://github.com/user-attachments/assets/f68001f0-3fe9-4800-89db-3015f3dcbac0)
 
 ---
+-->
 
 ## Markdown Resume
 
