@@ -67,11 +67,14 @@ Wellington / Remote
 
 2025 – Present
 
-- Delivered multi-client throughput as measured by 580+ commits with consistently green lint/type/test gates by pairing tightly with design, PM, and back-end partners across compliance, healthcare, marketing, and conference products.
-- Reduced Cedric audit defects as measured by compliance analysts reporting zero silent errors by rebuilding the React/Electron form stack with shared validation utilities and Jest coverage.
-- Expanded Hello Canopy’s HIPAA rigor as measured by 290 code contributions and 13 Cypress journeys by extending schemas, preferred case-owner logic, and privacy filters.
-- Optimized TryGalaxy’s global performance as measured by faster localized search and aligned translations by orchestrating WebP asset pipelines, resizing scripts, and KR/EN fixes.
-- Technologies: React, TypeScript, Electron, Next.js 15, Tailwind CSS, Sass, Sanity v3, Prisma, Cypress, Jest/RTL, Storybook, GitHub Actions, AWS, Figma, Linear/Jira.
+
+- Delivered multi-client throughput via **580+ commits** with consistently green lint/type/test gates by pairing tightly with design, PM, and back-end partners across compliance, healthcare, marketing, and conference products.
+
+- **Cedric compliance desktop app:** Rebuilt shared React Typescript components, predictable validation flows, and accessibility wrappers inside a React/Electron shell, then backed the refactor with targeted Jest suites so compliance analysts stopped encountering silent audit errors.
+- **Hello Canopy HR platform:** Extended staff/case schemas (preferred case owners, privacy filters), shipped numerous components to the design system for improved workflows.
+- **Samsung TryGalaxy markets:** Orchestrated a WebP asset pipeline, automated resizing scripts, and KR/EN localisation fixes that removed iOS search glitches and aligned translations for Galaxy S25 wearables/tutorial flows.
+- **The Design Conference (TDC) site:** Cut duplicate UI by ~70% through component design systems, and maintained Storybook/JSDoc docs so new contributors could ship within a day.
+- Technologies: React, TypeScript, Electron, Next.js 15, Tailwind CSS, Sass, Sanity v3, Prisma, Cypress, Jest/React Testing Library, Storybook, GitHub Actions, AWS, Figma, Jira.
 
 ##### Software Engineer & Founder | Habitual Genesis
 
@@ -83,7 +86,7 @@ Wellington / Remote
 - Various projects with General Assembly, Thinkful, Codecademy, and others
 - Technologies: JavaScript, HTML5, CSS3, Bootstrap, GitHub, GitHub Pages, SquareSpace, Mailchimp, Google Drive.
 
-#### PartsTrader Markets Ltd — Software Engineer (Contract)
+##### PartsTrader Markets Ltd — Software Engineer (Contract)
 Wellington
 
 2024 – 2025
