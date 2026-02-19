@@ -12,6 +12,7 @@
 <!-- * [Resume Images](#resume-images) -->
 * [Markdown Resume](#markdown-resume)
     * [Summary](#summary)
+    * [Skills](#skills)
     * [Experience](#experience)
     * [Software Engineering Instructor Experience](#software-engineering-instructor-experience)
     * [Education](#education)
