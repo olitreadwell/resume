@@ -60,13 +60,21 @@
 
 Product-minded full-stack engineer with a decade across media, HR tech, healthcare, and compliance platforms; translates ambiguous requirements into measurable outcomes while coaching teams on accessibility, testing rigor, and observability-first delivery.
 
+#### Skills
+
+- **Front-end Systems:** React, Next.js, Electron, Tailwind CSS, Sass/SCSS, design tokens, Storybook, accessibility testing (axe, Lighthouse), component governance.
+- **Back-end & Services:** Node.js/TypeScript, Ruby on Rails, Python/Flask, Prisma & ActiveRecord, PostgreSQL, MySQL, REST/JSON:API, GraphQL, domain-driven microservices.
+- **Quality & Reliability:** Jest, React Testing Library, Cypress, Puppeteer, RSpec, CI pipelines (GitHub Actions, CircleCI, Jenkins), lint/type enforcement, feature flagging.
+- **DevOps & Platforms:** AWS/GCP/Azure basics, Docker, Vagrant, Terraform-adjacent workflows, Netlify/Vercel/Render deployments, asset pipelines (WebP automation, localization tooling).
+- **Product & Collaboration:** Agile/Scrum/Kanban facilitation, RFC-driven decision making, observability-first instrumentation, Linear, Jira, Notion, Confluence, Figma, Loom.
+- **Leadership & Instruction:** Curriculum design, mock-interview tooling, inclusive design guilds, mentorship programs with 90% grad / 75% placement outcomes, community organizing (Refresh Austin, a11ySD, ReactJS meetups).
+
 #### EXPERIENCE
 
 ##### Numeral Studio — Senior Software Engineer 
 Wellington / Remote
 
 2025 – Present
-
 
 - Delivered multi-client throughput via **580+ commits** with consistently green lint/type/test gates by pairing tightly with design, PM, and back-end partners across compliance, healthcare, marketing, and conference products.
 
@@ -160,7 +168,6 @@ Aug. 2016 – Sep. 2017
 - Full-Stack Web Development, Ruby on Rails, and JavaScript Certification | Dev Bootcamp
 - BS in Business Administration, Entrepreneurship, & International Business | Chapman University
 
-
 #### INDUSTRY THOUGHT LEADERSHIP & SPEAKING ENGAGEMENTS
 
 - Panel Discussion on Ethics, Austin on Rails Event, Moderator, 2019
@@ -187,16 +194,3 @@ Aug. 2016 – Sep. 2017
 - Keep Ruby Weird, Attendee, 2015
 - LoneStarRuby Conference, Attendee, 2015 - RubyConf, Attendee, 2015
 - Keep Ruby Weird, Attendee, 2014
-
----
-
-## Skills
-
-[Back to Top](#table-of-contents)
-
-- **Front-end Systems:** React, Next.js, Electron, Tailwind CSS, Sass/SCSS, design tokens, Storybook, accessibility testing (axe, Lighthouse), component governance.
-- **Back-end & Services:** Node.js/TypeScript, Ruby on Rails, Python/Flask, Prisma & ActiveRecord, PostgreSQL, MySQL, REST/JSON:API, GraphQL, domain-driven microservices.
-- **Quality & Reliability:** Jest, React Testing Library, Cypress, Puppeteer, RSpec, CI pipelines (GitHub Actions, CircleCI, Jenkins), lint/type enforcement, feature flagging.
-- **DevOps & Platforms:** AWS/GCP/Azure basics, Docker, Vagrant, Terraform-adjacent workflows, Netlify/Vercel/Render deployments, asset pipelines (WebP automation, localization tooling).
-- **Product & Collaboration:** Agile/Scrum/Kanban facilitation, RFC-driven decision making, observability-first instrumentation, Linear, Jira, Notion, Confluence, Figma, Loom.
-- **Leadership & Instruction:** Curriculum design, mock-interview tooling, inclusive design guilds, mentorship programs with 90% grad / 75% placement outcomes, community organizing (Refresh Austin, a11ySD, ReactJS meetups).
