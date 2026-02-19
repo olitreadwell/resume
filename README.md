@@ -156,7 +156,7 @@ Aug. 2016 – Sep. 2017
 - Technologies: ReactJS, JavaScript, jQuery, Mocha, Chai, HTML, CSS3, SASS/SCSS, PostgreSQL, MySQL, Git, GitHub, Heroku, bash, zsh.
 
 #### EDUCATION
-- Postgraduate Diploma in Information Technology | WelTec Petone (expected graduation July 2025)
+- Postgraduate Diploma in Information Technology | WelTec Petone
 - Full-Stack Web Development, Ruby on Rails, and JavaScript Certification | Dev Bootcamp
 - BS in Business Administration, Entrepreneurship, & International Business | Chapman University
 
