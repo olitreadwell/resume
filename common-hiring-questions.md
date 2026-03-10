@@ -2,6 +2,9 @@
 
 ## Question Index
 
+- [What type of role(s) are you interested in?](#what-type-of-roles-are-you-interested-in)
+- [Are you seeking a contract, permanent, or either type of position?](#are-you-seeking-a-contract-permanent-or-either-type-of-position)
+- [What is your minimum salary expectation for both contract and permanent roles?](#what-is-your-minimum-salary-expectation-for-both-contract-and-permanent-roles)
 - [What is your employment authorization status?](#what-is-your-employment-authorization-status)
 - [Where are you located?](#where-are-you-located)
 - [Are you interested in relocating?](#are-you-interested-in-relocating)
@@ -12,13 +15,35 @@
 - [Can you describe the projects you've worked on either in school or on your own? What was your role, and how did you handle challenges?](#can-you-describe-the-projects-youve-worked-on-either-in-school-or-on-your-own-what-was-your-role-and-how-did-you-handle-challenges)
 - [Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.](#describe-a-front-end-based-project-that-youve-worked-on-in-a-professional-setting-and-some-of-the-challenges-you-experienced-working-on-it)
 
+### What type of role(s) are you interested in?
+ 
+Senior software engineering roles where I can deliver product features end to end, own architecture decisions, and stay hands-on with front-end experience while pairing with backend services.
+
+### Are you seeking a contract, permanent, or either type of position?
+ 
+I’m focused on permanent, full-time roles. I’m only open to contract work if it clearly leads to visa sponsorship and longer-term collaboration.
+
+### What is your minimum salary expectation for both contract and permanent roles?
+ 
+I'm looking for an industry-competitive salary in line with the role and responsibilities as well as the unique experience and education I bring to the role.
+
+I use websites specific to the region and country to help me best understand current compensation trends in the industry.
+
+For USA salary information, I refer to [levels.fyi](https://levels.fyi), [glassdoor.com](https://glassdoor.com/), and [PayScale](https://www.payscale.com/).
+
+For Australia and Aotearoa New Zealand salary information, I refer to [Seek Salary Guide](https://www.seek.co.nz/career-advice/browse/information-communication-technology), [Trade Me Jobs Salary Guide](https://www.trademe.co.nz/a/jobs/salary-guide/it/programming-development), and the latest [Hays Technology Contracter Rates Guide](https://www.hays.com.au/documents/276732/1102429/IT+Contractor+Rates+Guide_FY25-26.pdf?em=NQsUdhU3O4yC0QepbtxhBLZlMaeEY3RJ&jobSource=SFMC).
+ 
 ### What is your employment authorization status?
 
 #### Aotearoa New Zealand
 
 I recently completed a Level 8 Postgraduate Diploma in Information Technology at Whitireia in Petone, Lower Hutt, Wellington, New Zealand. I am currently on a post-study work visa, which allows me to work full-time for any employer in New Zealand.
 
-I am looking to build a long-term relationship with an Accredited Employer that will support my pathway to residency in New Zealand. With 10+ years of experience as a Software Engineer—a role listed on New Zealand's Green List of needed employees—I am well-positioned for roles that meet the requirements for skilled migrant residency.
+I am looking to build a long-term relationship with an Accredited Employer that will support my pathway to permanent residency in New Zealand. With 10+ years of experience as a Software Engineer—a role listed on New Zealand's Green List of needed employees—I am well-positioned for roles that meet the requirements for skilled migrant residency.
+
+#### Australia
+
+I am looking to build a long-term relationship with an Australian accredited sponsor that can support my pathway to permanent residency. With 10+ years as a software engineer (on Australia’s Priority Migration/Skilled Occupation lists), I am well aligned with skilled-migrant requirements.
 
 #### United States of America
 
@@ -45,6 +70,10 @@ I have been successfully delivering projects and achieving companies goals while
 I prefer to be working at home in Wellington 240 out of 365 days of the year. 
 
 I am comfortable traveling as needed. I am comfortable recurring travel less than 1 week a month. 
+
+### When would you be available to start a new job?
+ 
+I’m available full-time with a four-week notice period from offer acceptance.
 
 ### Do you have experience mentoring or coaching other software engineers? What has been your experience? Why do you like mentoring or coaching other software engineers?
 
