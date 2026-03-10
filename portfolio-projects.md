@@ -11,13 +11,11 @@
 - **Delivery cadence:** Frequent, small UI refinements to de-risk changes, backed by tests and visual checks.
 - **Environment:** Desktop-style front end with occasional offline/online needs, emphasizing predictable state management.
 - **Guardrails:** Treated compliance/adaptability as constraints; prioritized accessibility, clarity, and minimal surprise for users.
-- **Communication:** Framed changes in user outcomes (speed, clarity, fewer errors) to align stakeholders without sharing sensitive data.
 
 ### Core Contributions (High-Level)
 
 - Built and refined reusable inputs (date picker, selects, form inputs) to standardize UX and reduce defects.
 - Overhauled complex form flows: clearer validation, better spacing/states, more accessible icons and controls.
-- Improved date/time formatting and parsing utilities to avoid user-facing errors in manual entry workflows.
 - Strengthened quality gates: added targeted unit/integration tests around forms and formatting; enforced lint/type health.
 - Polished accessibility: consistent icon wrapping with accessibility helpers, keyboard navigation, clearer hover/disabled states.
 - Hardened edge cases: normalized empty/default values, reduced prop surface where redundant, and improved fallback states.
@@ -28,27 +26,22 @@
 
 ### Challenge → Action → Result
 
-1. **Date/time correctness & usability**
-   - **Challenge:** Fragmented date/time inputs and inconsistent formatting led to user errors.
-   - **Action:** Introduced a reusable date picker with consistent formatting utilities; replaced fragmented inputs; added tests.
-   - **Result:** Reduced user input errors and support friction for manual date/time entry; enabled code reuse for future forms.
-   - **Extra:** Aligned hour-cycle configuration and locale-aware formatting to avoid surprises for regional users.
-2. **Validation clarity & form UX**
+1. **Validation clarity & form UX**
    - **Challenge:** Inconsistent form layouts and unclear guidance slowed data entry.
    - **Action:** Refined form layouts, spacing, and validation messaging; added tab status indicators and custom option labels for selectors.
    - **Result:** Faster data entry and fewer user mistakes due to clearer guidance and consistent dropdown behavior.
    - **Extra:** Filtered out already-selected options and improved empty-state messaging for selects to guide users.
-3. **Accessibility & component polish**
+2. **Accessibility & component polish**
    - **Challenge:** Inconsistent and inaccessible interactive components.
    - **Action:** Standardized icon components with accessibility wrappers; improved disabled/hover states; aligned sizes across navigation elements.
    - **Result:** More accessible UI with predictable interaction states; simpler theming and maintenance across shared components.
    - **Extra:** Normalized focus rings and keyboard navigation paths for primary actions and dropdowns.
-4. **Testing & reliability**
+3. **Testing & reliability**
    - **Challenge:** UI regressions after changes and lack of confidence in edge cases.
    - **Action:** Expanded form and input tests (including date/time formatting and select behaviors) to lock in expected UX; mocked edge cases to prevent regressions.
    - **Result:** Higher confidence shipping UI changes; quicker detection of breakage after refactors or dependency updates.
    - **Extra:** Added coverage for validation edge cases (empty, partial, and read-only states) to prevent silent breakage.
-5. **Tooling & stability**
+4. **Tooling & stability**
    - **Challenge:** Difficult dependency upgrades and unclear debugging.
    - **Action:** Updated dependency sets and project configs while keeping lint/type/test suites green; standardized logging format for easier debugging.
    - **Result:** Smoother upgrades with fewer surprises; clearer diagnostics when issues arise.
