@@ -1,47 +1,4 @@
-# Portfolio Projects (Reverse Chronological)
-
-## Read the Room Education Website Enhancement | Habitual Genesis | Pro Bono | 2021-Present
-
-**Problem Statement/Challenge:**
-
-- Read the Room Education, a non-profit organisation, needed website enhancements to engage their audience and promote educational programs. The challenge was to improve the site’s mobile responsiveness and implement a mechanism to grow their mailing list.
-
-**Scope of Work:**
-
-- Assessed the existing website and implemented design and content enhancements focused on user engagement and accessibility. Integrated Mailchimp to capture visitor information and grow the mailing list.
-
-**Team Size and Collaboration:**
-
-- Worked directly with the organisation’s leadership team to align website improvements with organisational goals.
-
-**Tools and Environment:**
-
-- Squarespace, Mailchimp, Canva.
-
-**Key Contributions:**
-
-- Integrated Mailchimp for newsletter signups by embedding a custom form, which grew the mailing list by **40%**.
-- Optimised the mobile layout using responsive design techniques, increasing mobile engagement by **25%**.
-- Reorganised the content structure to highlight educational programs, making it easier for visitors to find relevant information quickly.
-
-**Metrics and KPIs:**
-
-- Increased user engagement by **25%** within three months of launch.
-- Grew the mailing list by **40%** in the first quarter after the website enhancements.
-
-**Learning and Development:**
-
-- This project reinforced my skills in responsive design and integrating third-party services like Mailchimp into a content management system.
-
-**Post-Launch Maintenance:**
-
-- Provided post-launch support for two months, monitoring site performance and making adjustments based on user feedback.
-
-**Stakeholders and Impact:**
-
-- The leadership team reported a significant improvement in audience engagement and highlighted the mailing list growth as key to their outreach efforts.
-
----
+# Portfolio Projects
 
 ## Commercial Reporting and Compliance Electron App | Numeral Studio | Nov 2025 - Jan 2026
 
@@ -294,6 +251,49 @@ Samsung TryGalaxy Markets is a global mobile experience platform showcasing Sams
 **Stakeholders and Impact:**
 
 - Students and industry partners consistently praised the quality of the curricula and teaching, with many students successfully securing roles at top tech companies following graduation.
+
+---
+
+## Read the Room Education Website Enhancement | Habitual Genesis | Pro Bono | 2021-Present
+
+**Problem Statement/Challenge:**
+
+- Read the Room Education, a non-profit organisation, needed website enhancements to engage their audience and promote educational programs. The challenge was to improve the site’s mobile responsiveness and implement a mechanism to grow their mailing list.
+
+**Scope of Work:**
+
+- Assessed the existing website and implemented design and content enhancements focused on user engagement and accessibility. Integrated Mailchimp to capture visitor information and grow the mailing list.
+
+**Team Size and Collaboration:**
+
+- Worked directly with the organisation’s leadership team to align website improvements with organisational goals.
+
+**Tools and Environment:**
+
+- Squarespace, Mailchimp, Canva.
+
+**Key Contributions:**
+
+- Integrated Mailchimp for newsletter signups by embedding a custom form, which grew the mailing list by **40%**.
+- Optimised the mobile layout using responsive design techniques, increasing mobile engagement by **25%**.
+- Reorganised the content structure to highlight educational programs, making it easier for visitors to find relevant information quickly.
+
+**Metrics and KPIs:**
+
+- Increased user engagement by **25%** within three months of launch.
+- Grew the mailing list by **40%** in the first quarter after the website enhancements.
+
+**Learning and Development:**
+
+- This project reinforced my skills in responsive design and integrating third-party services like Mailchimp into a content management system.
+
+**Post-Launch Maintenance:**
+
+- Provided post-launch support for two months, monitoring site performance and making adjustments based on user feedback.
+
+**Stakeholders and Impact:**
+
+- The leadership team reported a significant improvement in audience engagement and highlighted the mailing list growth as key to their outreach efforts.
 
 ---
 
