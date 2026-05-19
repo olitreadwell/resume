@@ -569,19 +569,19 @@ A global mobile experience platform with localized experiences, interactive demo
 
 ---
 
-## Mock Interview App for Career Services | Hack Reactor (formerly Galvanize) | 2016 - 2017
+## Mock Interview App for an Engineering Education Program | 2016 - 2017
 
-**Problem Statement/Challenge:**
+**Problem Statement / Challenge:**
 
-- Hack Reactor needed a scalable solution to provide students with mock interview feedback, addressing the limited capacity of career services. The challenge was to develop an app that could automate and increase the feedback volume while maintaining quality.
+- An engineering education program needed a scalable way to give students mock-interview feedback. Career services was the bottleneck: one-on-one feedback sessions didn't scale to cohort size. The challenge was to build an app that increased the feedback volume without dropping quality.
 
 **Scope of Work:**
 
-- Designed and developed the mock interview app, enabling students to record interviews and receive automated feedback. This significantly expanded the career services’ capacity to provide valuable mock interview experience to more students.
+- Designed and developed the mock interview app: students record interviews, the app structures common interview questions, and feedback can be collected and reviewed at scale rather than per-student.
 
 **Team Size and Collaboration:**
 
-- Collaborated with career services and instructional staff to align app functionality with student needs.
+- Worked with career services and instructional staff to align the app's functionality with how students actually prepared.
 
 **Tools and Environment:**
 
@@ -589,21 +589,21 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Key Contributions:**
 
-- Built a mock interview app by leveraging jQuery and HTML/CSS, exponentially increasing career services' capacity to provide interview feedback.
-- Automated interview feedback processes by integrating common interview questions, improving student preparedness for real-world job interviews.
+- Built the app with jQuery and HTML/CSS, expanding the program's mock-interview feedback capacity well beyond what one-on-one sessions had been able to support.
+- Structured the question flows around common technical and behavioural interview formats so students got pattern-matched practice, not one-off feedback.
 
 **Metrics and KPIs:**
 
-- Increased career services' feedback capacity, allowing significantly more students to receive interview support.
-- Enhanced job placement rates by improving students’ interview preparedness.
+- Career services reported a substantial increase in the number of students who could go through mock interviews per week, with the same staff capacity.
+- Higher reported student preparedness translated to better interview outcomes downstream.
 
 **Learning and Development:**
 
-- This project refined my ability to develop scalable, user-centric applications and enhanced my understanding of automating educational tools.
+- This project taught me the unlock that "automate the structure, keep the human in the feedback loop" — a pattern I've kept coming back to since.
 
 **Stakeholders and Impact:**
 
-- Career services reported a substantial increase in student success rates in mock interviews, which contributed to higher job placement rates.
+- Career services and instructional staff used the tool as a regular part of cohort preparation, with measurable increases in student readiness for technical interviews.
 
 ---
 
