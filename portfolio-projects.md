@@ -1,16 +1,52 @@
 # Portfolio Projects
 
-## Side Projects (2026)
-
-### Price → Impact | Personal | May 2026
+## Numeral Studio Monorepo Template | Numeral Studio | May 2026
 
 **Problem Statement / Challenge:**
 
--   I wanted a faster way to translate the small purchases I see day to day ("£4 latte", "$60 jeans") into something I could compare against high-impact charity outcomes. The mental conversion takes effort, so I rarely did it. The challenge was to remove the conversion friction completely.
+- The studio had already shipped many successful client projects, but every new one started from a slightly different baseline. Each kickoff repeated the same setup decisions (tooling choices, CI gates, test framework, accessibility scaffolding) before any client value got built. The goal was to codify the patterns that already worked into a shared starting point: an SOP for new client work, not a speculative proposal.
 
 **Scope of Work:**
 
--   Designed and shipped a small monorepo that delivers the same charity-comparison feature in three formats: a web converter, a drag-to-bookmarks bookmarklet, and a Chrome MV3 extension. Built on Bun workspaces with a single shared `charities` package so all three shells stay in sync.
+- Captured what the studio was already doing well across its client portfolio and turned it into a reusable monorepo template. Every new project now starts from the same default stack and CI baseline.
+
+**Team Size and Collaboration:**
+
+- Solo proposal. Designed for adoption across the engineering team.
+
+**Tools and Environment:**
+
+- Next.js 15, React 19, TypeScript 5, Tailwind 4 + shadcn/ui, Vitest + Playwright + axe-core, Storybook, Turborepo, npm workspaces.
+
+**Key Contributions:**
+
+- Picked the studio default stack (Next.js 15, React 19, TypeScript 5, Tailwind, shadcn/ui) so every new project starts on the same foundation. New engineers ramp once, not per project.
+- Designed the monorepo structure with Turborepo and npm workspaces, giving each app and package a clear boundary while sharing a single lockfile.
+- Set the quality bar with the scaffolding: Vitest unit tests, Playwright end-to-end tests, axe-core accessibility checks all running in CI from day one. No retrofit work later.
+- Chose the quality gate logic: pre-commit autofix only; CI lint, test, and e2e checks advisory; only type-check and build can actually block a PR. That balance came from watching teams lose velocity to over-strict linting.
+- Structured an integration-branch pattern for opt-in features (Prisma, Kinde auth, etc.) so teams can pull in what they need without polluting the base.
+
+**Metrics and KPIs:**
+
+- Cut project initiation time by around **30%**, saving days per client kickoff for both the team and the client.
+- Reduced repetitive setup decisions on every new project: stack choice, lint config, test runner, CI gates, accessibility baseline all decided once at the template level.
+- Raised the floor on quality across all new client work by giving every project the same default CI gates and accessibility tests from day one.
+
+**Learning and Development:**
+
+- The most interesting design decision was the quality gate split. Most templates default to blocking on everything. The argument for advisory CI checks on linting is that it keeps the feedback loop fast while still surfacing issues. Teams fix them when they're ready, not when they're blocked mid-PR.
+
+---
+
+## Price → Impact | Habitual Genesis | May 2026
+
+**Problem Statement / Challenge:**
+
+-   Online shopping is a moment when people are about to spend money intentionally. It's also the moment when "I could donate that instead" rarely happens, because the friction is high: open a new tab, look up charity options, calculate equivalents, switch context, lose the intent. I wanted to put a donation option inside the shopping flow itself, so the alternative is visible at the moment a purchase is about to happen.
+
+**Scope of Work:**
+
+-   Built a Chrome MV3 extension that detects prices on shopping pages and offers two donation interventions in place: **divert** (point a planned purchase at a charity equivalent instead), and **round-up** (push the cart total up to the next round number and donate the difference to a high-impact charity). Companion web app and bookmarklet ship from the same monorepo for installs that don't need the extension.
 
 **Team Size and Collaboration:**
 
@@ -18,30 +54,70 @@
 
 **Tools and Environment:**
 
--   TypeScript, Next.js (web), Bun workspaces, Vitest, GitHub Actions CI, Chrome MV3 manifest, MutationObserver-based content script, JSON-encoded charity reference data sourced from GiveWell cost-per-outcome estimates.
+-   TypeScript, Chrome MV3 manifest, MutationObserver-based content script, Bun workspaces, Vitest, GitHub Actions CI. JSON-encoded charity reference data sourced from GiveWell cost-per-outcome estimates. Next.js for the companion web app.
 
 **Key Contributions:**
 
+-   Shipped the Chrome MV3 extension: a manifest plus content script that detects prices as a page renders (including DOM mutations from infinite scroll and dynamic results) and presents both donation interventions inline.
 -   Built `packages/charities`: a typed reference dataset of charity cost-per-outcome figures with an `asOf` field, a static FX-rate layer, and pure functions for parsing prices in any currency and converting to outcome units. 62 tests across two workspaces.
--   Shipped `apps/web`: a Next.js converter that takes a free-text price input and renders the equivalent impact across every charity in the dataset.
--   Shipped `apps/bookmarklet`: an MV3-safe IIFE bundle that detects prices on a host page (Amazon as the first target site) and renders inline pills with charity-equivalent figures. Built into the web app for one-click install.
--   Shipped `apps/extension`: a Chrome MV3 manifest plus content script using a MutationObserver to annotate prices as a page renders, including DOM mutations from infinite scroll and dynamic results.
+-   Designed the two intervention paths (divert and round-up) so the friction-cost is one click rather than a workflow context-switch. The donation moment happens inside the shopping moment.
+-   Shipped the companion web converter and bookmarklet from the same codebase, so the same charity data and conversion logic backs every shell.
 -   CI runs lint, typecheck, test, and build on every push to `main` and every PR.
--   Documented architecture and the two data contracts that hold the three shells together in `docs/`.
 
 **Metrics and KPIs:**
 
--   Shipped end-to-end in a single weekend pass. Web app, bookmarklet, and extension scaffold all live and installable.
+-   Shipped end-to-end in a single weekend pass. Extension, web app, and bookmarklet all live and installable.
 -   62 tests, full type coverage, green CI.
 
 **Learning and Development:**
 
--   The interesting design problem was the three-shells-from-one-codebase split. The MV3 content-security-policy constraints meant the bookmarklet had to be a single self-contained IIFE with no remote loads, which forced a clean separation between the data package and the detection layer.
--   Reinforced my preference for Bun workspaces for small repos: faster install, cleaner script resolution, single-source-of-truth lockfile.
+-   The interesting design problem wasn't the price detection. It was understanding that "donate to charity instead" already loses to "buy the thing" almost every time, because the donate option lives in a completely different context. Bringing the donate option into the shopping context — same page, same moment, one click — is what changes the choice architecture. The technical work is in service of that.
+-   The MV3 content-security-policy constraints reinforced this: no remote loads, single self-contained bundle, MutationObserver for DOM updates. That separation paid off when the same data layer was reused in the web app and the bookmarklet.
 
 **Repository:**
 
 -   <https://github.com/olitreadwell/price-to-impact>
+
+---
+
+## NZ Tech Events Community Contributions | Habitual Genesis | 2026 (ongoing)
+
+**Problem Statement / Challenge:**
+
+- `nz-tech-events` is a public Ruby on Rails app that powers a community-run calendar of NZ tech events. It's a resource a lot of the local tech community relies on. The maintainer was the bottleneck, and parts of the app could be hardened without changing how end users experienced it.
+
+**Scope of Work:**
+
+- Spotted an opportunity to improve a community resource popular with the local tech community and contributed back across a number of areas: developer experience, search reach, distribution, reliability, and project hygiene.
+
+**Team Size and Collaboration:**
+
+- Open-source contributor. Worked with the maintainer through PR review.
+
+**Tools and Environment:**
+
+- Ruby on Rails, RSpec, GitHub Actions, JSON-LD structured data, Atom / RSS feeds.
+
+**Key Contributions:**
+
+- Added GitHub Actions CI with quality gates so incoming PRs get linted, type-checked, and tested before merge.
+- Added JSON-LD structured data to event pages so they show up better in search results and shareable previews.
+- Added Atom and RSS feeds for upcoming events so the community can subscribe instead of polling the site.
+- Extracted a shared `HasRegion` model concern across three models, removing duplicated region-handling logic.
+- Added test coverage for the password-reset flow and weekly-digest job, both of which had previously gone untested.
+- Added CONTRIBUTING.md and an MIT LICENSE so future contributors land on a clear contributing flow.
+
+**Metrics and KPIs:**
+
+- Eight PRs merged so far, with more in flight. Coverage and developer-experience improvements compound: every future PR runs through the gates added in this work.
+
+**Learning and Development:**
+
+- The pattern that works for outside-contributor OSS work: start with the quality gates and the docs (so future contributors have an easier path), then the tests, then the features. Maintainers say yes faster to PRs that come with tests.
+
+**Repository:**
+
+- <https://github.com/ro-savage/nz-tech-events>
 
 ---
 
@@ -249,46 +325,44 @@ A global mobile experience platform with localized experiences, interactive demo
 
 ---
 
-## Curriculum Development and Training | Various (General Assembly, Hack Reactor, The Flatiron School, Etc.) | 2015 - 2023
+## Engineering Team Capacity Building | Enterprise engineering teams across the USA | 2015 - 2023
 
-**Problem Statement/Challenge:**
+**Problem Statement / Challenge:**
 
-- Across multiple educational platforms, there was a need for comprehensive, industry-relevant curriculum and engaging lesson delivery to prepare students for the rapidly evolving tech industry. From 2015 through 2023, the challenge was to create and adapt curricula that would effectively teach software engineering concepts, web accessibility, and Agile methodologies to diverse cohorts of students.
+- Engineering organisations across the USA needed to grow capacity faster than they could hire. The work was to build that capacity through structured training, ongoing mentoring, and pull-request-level coaching of working engineers, covering both hard skills (React, Python, Rails, accessibility, CI/CD) and the soft skills that determine whether new capacity actually translates to team throughput.
 
 **Scope of Work:**
 
-- Collaborated with several organisations to develop and deliver curricula on various software engineering topics. Responsible for designing course materials, teaching full-time and part-time programs, and mentoring students to ensure their success in technical roles until the program wind-down in 2023.
+- Designed engagements, ran them, and embedded with engineering teams. Wrote and graded real assessments rather than relying on attendance. Reviewed and gave feedback on hundreds of pull requests as part of structured mentoring engagements. Worked with engineering teams at Fortune 100 companies, including roughly 400 engineers at Amazon.
 
 **Team Size and Collaboration:**
 
-- Worked with other instructors and curriculum developers across organisations to ensure materials were current and aligned with industry needs.
+- Partnered directly with engineering managers at the client companies to scope training to what their teams needed. Worked alongside other instructors and curriculum developers to keep materials aligned with how engineering teams actually ship.
 
 **Tools and Environment:**
 
-- JavaScript, ReactJS, Python, Flask, PostgreSQL, CI/CD, Web Accessibility, Agile.
+- JavaScript / TypeScript, React, Node.js, Python, Flask, Ruby on Rails, PostgreSQL, CI/CD, web accessibility (WCAG, ARIA), Agile delivery patterns, code-review-driven mentorship.
 
 **Key Contributions:**
 
-- Developed and delivered full-stack software engineering curricula covering topics such as ReactJS, Python, and web accessibility, preparing students for the workforce in fast-paced tech environments.
-- Led workshops and live coding sessions to teach core technical skills, resulting in high student engagement and improved job placement outcomes across all programs.
-- Mentored and coached junior engineers by providing tailored feedback and career advice, equipping students with the tools to succeed in software development roles.
+- Built engineering capacity for teams at enterprise companies across the USA through structured technical training (hard skills, soft skills, accessibility, ship-cadence patterns) backed by real assessments and outcome metrics.
+- Ran ongoing 1:1 and small-group mentoring for working engineers, focused on the soft skills that turn individual capacity into team throughput: code review etiquette, scoping work, navigating ambiguity, communicating trade-offs.
+- Gave feedback on hundreds of pull requests as part of structured mentoring engagements, directly shaping how engineers ramped on new stacks and patterns.
+- Established inclusive-design and accessibility practice within an engineering organisation, weaving those practices through the work so every team shipped accessible UIs by default.
 
 **Metrics and KPIs:**
 
-- Achieved a **90%** graduation rate and a **75%** job placement rate within 6 months of program completion across multiple cohorts.
-- Improved student satisfaction scores through personalised mentorship and industry-aligned curricula.
+- Roughly **400 engineers at Amazon** went through training that I designed and delivered, with throughput increases reported by their engineering managers.
+- Hundreds of pull-request reviews directly shaped how engineers ramped on new stacks and shipped production work.
+- Programs were backed by real assessments and engineering-manager-level outcome metrics, not attendance.
 
 **Learning and Development:**
 
-- This work enhanced my skills in training design, remote instruction, and mentoring diverse groups of junior engineers, gaining a deep understanding of evolving industry requirements over eight years of delivery.
-
-**Post-Launch Maintenance:**
-
-- Updated curricula through 2023 to reflect the latest trends in technology and maintain strong job placement outcomes while offering ongoing support and mentorship to graduates.
+- This work made it clear that the highest-leverage capacity-building intervention is not a lecture. It's specific code-review feedback on real work, repeated across enough touch-points that patterns get internalised. That belief shapes how I mentor engineers I work with day-to-day now.
 
 **Stakeholders and Impact:**
 
-- Students and industry partners consistently praised the quality of the curricula and teaching, with many students successfully securing roles at top tech companies following graduation.
+- Engineering managers at client companies (Amazon notable among them) reported measurable increases in throughput and code quality from teams that went through the programs. The pattern across all engagements: train, then mentor through the first three or four real PRs, then watch the team get faster.
 
 ---
 
@@ -495,19 +569,19 @@ A global mobile experience platform with localized experiences, interactive demo
 
 ---
 
-## Mock Interview App for Career Services | Hack Reactor (formerly Galvanize) | 2016 - 2017
+## Mock Interview App for an Engineering Education Program | 2016 - 2017
 
-**Problem Statement/Challenge:**
+**Problem Statement / Challenge:**
 
-- Hack Reactor needed a scalable solution to provide students with mock interview feedback, addressing the limited capacity of career services. The challenge was to develop an app that could automate and increase the feedback volume while maintaining quality.
+- An engineering education program needed a scalable way to give students mock-interview feedback. Career services was the bottleneck: one-on-one feedback sessions didn't scale to cohort size. The challenge was to build an app that increased the feedback volume without dropping quality.
 
 **Scope of Work:**
 
-- Designed and developed the mock interview app, enabling students to record interviews and receive automated feedback. This significantly expanded the career services’ capacity to provide valuable mock interview experience to more students.
+- Designed and developed the mock interview app: students record interviews, the app structures common interview questions, and feedback can be collected and reviewed at scale rather than per-student.
 
 **Team Size and Collaboration:**
 
-- Collaborated with career services and instructional staff to align app functionality with student needs.
+- Worked with career services and instructional staff to align the app's functionality with how students actually prepared.
 
 **Tools and Environment:**
 
@@ -515,21 +589,21 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Key Contributions:**
 
-- Built a mock interview app by leveraging jQuery and HTML/CSS, exponentially increasing career services' capacity to provide interview feedback.
-- Automated interview feedback processes by integrating common interview questions, improving student preparedness for real-world job interviews.
+- Built the app with jQuery and HTML/CSS, expanding the program's mock-interview feedback capacity well beyond what one-on-one sessions had been able to support.
+- Structured the question flows around common technical and behavioural interview formats so students got pattern-matched practice, not one-off feedback.
 
 **Metrics and KPIs:**
 
-- Increased career services' feedback capacity, allowing significantly more students to receive interview support.
-- Enhanced job placement rates by improving students’ interview preparedness.
+- Career services reported a substantial increase in the number of students who could go through mock interviews per week, with the same staff capacity.
+- Higher reported student preparedness translated to better interview outcomes downstream.
 
 **Learning and Development:**
 
-- This project refined my ability to develop scalable, user-centric applications and enhanced my understanding of automating educational tools.
+- This project taught me the unlock that "automate the structure, keep the human in the feedback loop" — a pattern I've kept coming back to since.
 
 **Stakeholders and Impact:**
 
-- Career services reported a substantial increase in student success rates in mock interviews, which contributed to higher job placement rates.
+- Career services and instructional staff used the tool as a regular part of cohort preparation, with measurable increases in student readiness for technical interviews.
 
 ---
 
@@ -574,7 +648,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Problem Statement/Challenge:**
 
-- Union Metrics needed to modernise two critical legacy codebases that were difficult to maintain and hindering performance. The challenge was to migrate these codebases to Rails 4, enhance security, and improve system performance.
+- Union Metrics needed to modernise two critical legacy codebases that were difficult to maintain and hindering performance. The challenge was to migrate these codebases to Rails 4, harden security, and improve system performance.
 
 **Scope of Work:**
 
