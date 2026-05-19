@@ -1,8 +1,6 @@
 # Portfolio Projects
 
-## Side Projects (2026)
-
-### Numeral Studio Monorepo Template | Numeral Studio | May 2026
+## Numeral Studio Monorepo Template | Numeral Studio | May 2026
 
 **Problem Statement / Challenge:**
 
@@ -40,7 +38,7 @@
 
 ---
 
-### Price → Impact | Personal | May 2026
+## Price → Impact | Habitual Genesis | May 2026
 
 **Problem Statement / Challenge:**
 
@@ -79,6 +77,47 @@
 **Repository:**
 
 -   <https://github.com/olitreadwell/price-to-impact>
+
+---
+
+## NZ Tech Events Community Contributions | Habitual Genesis | 2026 (ongoing)
+
+**Problem Statement / Challenge:**
+
+- `nz-tech-events` is a public Ruby on Rails app that powers a community-run calendar of NZ tech events. It's a resource a lot of the local tech community relies on. The maintainer was the bottleneck, and parts of the app could be hardened without changing how end users experienced it.
+
+**Scope of Work:**
+
+- Spotted an opportunity to improve a community resource popular with the local tech community and contributed back across a number of areas: developer experience, search reach, distribution, reliability, and project hygiene.
+
+**Team Size and Collaboration:**
+
+- Open-source contributor. Worked with the maintainer through PR review.
+
+**Tools and Environment:**
+
+- Ruby on Rails, RSpec, GitHub Actions, JSON-LD structured data, Atom / RSS feeds.
+
+**Key Contributions:**
+
+- Added GitHub Actions CI with quality gates so incoming PRs get linted, type-checked, and tested before merge.
+- Added JSON-LD structured data to event pages so they show up better in search results and shareable previews.
+- Added Atom and RSS feeds for upcoming events so the community can subscribe instead of polling the site.
+- Extracted a shared `HasRegion` model concern across three models, removing duplicated region-handling logic.
+- Added test coverage for the password-reset flow and weekly-digest job, both of which had previously gone untested.
+- Added CONTRIBUTING.md and an MIT LICENSE so future contributors land on a clear contributing flow.
+
+**Metrics and KPIs:**
+
+- Eight PRs merged so far, with more in flight. Coverage and developer-experience improvements compound: every future PR runs through the gates added in this work.
+
+**Learning and Development:**
+
+- The pattern that works for outside-contributor OSS work: start with the quality gates and the docs (so future contributors have an easier path), then the tests, then the features. Maintainers say yes faster to PRs that come with tests.
+
+**Repository:**
+
+- <https://github.com/ro-savage/nz-tech-events>
 
 ---
 
@@ -286,19 +325,19 @@ A global mobile experience platform with localized experiences, interactive demo
 
 ---
 
-## Technical Training and Mentoring for Engineering Teams | Hack Reactor, The Flatiron School, General Assembly, Codecademy | 2015 - 2023
+## Engineering Team Capacity Building | Enterprise engineering teams across the USA | 2015 - 2023
 
 **Problem Statement / Challenge:**
 
-- Engineering organisations across the USA needed to grow capacity faster than they could hire. The work was to build that capacity through structured training, ongoing mentoring, and pull-request-level coaching of working engineers — covering both hard skills (React, Python, Rails, accessibility, CI/CD) and the soft skills that determine whether new capacity actually translates to team throughput.
+- Engineering organisations across the USA needed to grow capacity faster than they could hire. The work was to build that capacity through structured training, ongoing mentoring, and pull-request-level coaching of working engineers, covering both hard skills (React, Python, Rails, accessibility, CI/CD) and the soft skills that determine whether new capacity actually translates to team throughput.
 
 **Scope of Work:**
 
-- Designed curricula, ran cohorts, and embedded with engineering teams. Wrote and graded real assessments rather than relying on attendance. Reviewed and gave feedback on hundreds of pull requests as part of structured mentoring engagements. Trained working engineers at companies across the USA, including roughly 400 Amazon engineers at Flatiron and full-time and part-time cohorts at Hack Reactor.
+- Designed engagements, ran them, and embedded with engineering teams. Wrote and graded real assessments rather than relying on attendance. Reviewed and gave feedback on hundreds of pull requests as part of structured mentoring engagements. Worked with engineering teams at Fortune 100 companies, including roughly 400 engineers at Amazon.
 
 **Team Size and Collaboration:**
 
-- Worked with other instructors and curriculum developers to keep materials aligned with how engineering teams actually ship. Partnered directly with engineering managers at client companies to scope training to what their teams needed.
+- Partnered directly with engineering managers at the client companies to scope training to what their teams needed. Worked alongside other instructors and curriculum developers to keep materials aligned with how engineering teams actually ship.
 
 **Tools and Environment:**
 
@@ -306,21 +345,20 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Key Contributions:**
 
-- Built engineering capacity for teams across the USA through structured technical training programs (hard skills, soft skills, accessibility, ship-cadence patterns) backed by real assessments and outcome metrics.
+- Built engineering capacity for teams at enterprise companies across the USA through structured technical training (hard skills, soft skills, accessibility, ship-cadence patterns) backed by real assessments and outcome metrics.
 - Ran ongoing 1:1 and small-group mentoring for working engineers, focused on the soft skills that turn individual capacity into team throughput: code review etiquette, scoping work, navigating ambiguity, communicating trade-offs.
 - Gave feedback on hundreds of pull requests as part of structured mentoring engagements, directly shaping how engineers ramped on new stacks and patterns.
-- Established an inclusive-design and web-accessibility working group at The Flatiron School and wove those practices through the curriculum so every cohort built accessible UIs by default.
-- Designed and deployed a mock-interview app at Hack Reactor that scaled career-services feedback well beyond what one-on-one sessions could deliver.
+- Established inclusive-design and accessibility practice within an engineering organisation, weaving those practices through the work so every team shipped accessible UIs by default.
 
 **Metrics and KPIs:**
 
-- Roughly **400 Amazon engineers** trained at Flatiron alone, with measurable throughput increases reported by their engineering managers.
-- Hack Reactor program: **90%** graduation rate and **75%** job placement within 6 months across multiple cohorts.
-- Hundreds of pull-request reviews directly shaped how new engineers shipped production work.
+- Roughly **400 engineers at Amazon** went through training that I designed and delivered, with throughput increases reported by their engineering managers.
+- Hundreds of pull-request reviews directly shaped how engineers ramped on new stacks and shipped production work.
+- Programs were backed by real assessments and engineering-manager-level outcome metrics, not attendance.
 
 **Learning and Development:**
 
-- This work made it clear that the highest-leverage training intervention is not a lecture — it's specific code-review feedback on real work, repeated across enough touch-points that patterns get internalised. That belief shapes how I mentor engineers I work with day-to-day now.
+- This work made it clear that the highest-leverage capacity-building intervention is not a lecture. It's specific code-review feedback on real work, repeated across enough touch-points that patterns get internalised. That belief shapes how I mentor engineers I work with day-to-day now.
 
 **Stakeholders and Impact:**
 
