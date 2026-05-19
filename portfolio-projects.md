@@ -2,6 +2,41 @@
 
 ## Side Projects (2026)
 
+### Numeral Studio Monorepo Template Proposal | Numeral Studio | May 2026
+
+**Problem Statement / Challenge:**
+
+- Numeral Studio's existing project setup lacked a consistent starting point for new Next.js work. Each project accumulated different tooling choices, inconsistent CI gates, and varying test setups. The challenge was to propose a shared template that improved consistency without slowing teams down.
+
+**Scope of Work:**
+
+- Designed and proposed an opinionated monorepo template for Numeral Studio's future Next.js projects. This was a proposal and reference implementation, not a shipped product.
+
+**Team Size and Collaboration:**
+
+- Solo proposal. Presented to senior engineers at the studio for review and adoption.
+
+**Tools and Environment:**
+
+- Next.js 15, React 19, TypeScript 5, Tailwind 4 + shadcn/ui, Vitest + Playwright + axe-core, Storybook, Turborepo, npm workspaces.
+
+**Key Contributions:**
+
+- Designed the monorepo structure with Turborepo and npm workspaces, giving each app and package a clear boundary while sharing a single lockfile.
+- Chose the quality gate logic: pre-commit autofix only; CI lint, test, and e2e checks advisory; only type-check and build can actually block a PR. That balance came from watching teams lose velocity to over-strict linting.
+- Integrated axe-core into the Playwright test suite so accessibility checks run in CI from the start, not as a retrofit.
+- Structured an integration-branch pattern for opt-in features (Prisma, Kinde auth, etc.) so teams can pull in what they need without polluting the base.
+
+**Metrics and KPIs:**
+
+- Proposal accepted for internal review. Establishes a repeatable starting point for future client projects at the studio.
+
+**Learning and Development:**
+
+- The most interesting design decision was the quality gate split. Most templates default to blocking on everything. The argument for advisory CI checks on linting is that it keeps the feedback loop fast while still surfacing issues. Teams fix them when they're ready, not when they're blocked mid-PR.
+
+---
+
 ### Price → Impact | Personal | May 2026
 
 **Problem Statement / Challenge:**
@@ -574,7 +609,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Problem Statement/Challenge:**
 
-- Union Metrics needed to modernise two critical legacy codebases that were difficult to maintain and hindering performance. The challenge was to migrate these codebases to Rails 4, enhance security, and improve system performance.
+- Union Metrics needed to modernise two critical legacy codebases that were difficult to maintain and hindering performance. The challenge was to migrate these codebases to Rails 4, harden security, and improve system performance.
 
 **Scope of Work:**
 
