@@ -6,15 +6,15 @@
 
 **Problem Statement / Challenge:**
 
-- Numeral Studio's existing project setup lacked a consistent starting point for new Next.js work. Each project accumulated different tooling choices, inconsistent CI gates, and varying test setups. The challenge was to propose a shared template that improved consistency without slowing teams down.
+- New client projects at Numeral Studio kicked off slowly. Each one started from a different baseline, with different tooling choices, different CI gates, and different test setups. That meant a lot of repeated decisions on every kickoff and inconsistent quality between projects. The goal was to give the team a default stack and a default quality bar so any of us could start a new project and have quality at a high level from day one.
 
 **Scope of Work:**
 
-- Designed and proposed an opinionated monorepo template for Numeral Studio's future Next.js projects. This was a proposal and reference implementation, not a shipped product.
+- Designed and proposed an opinionated monorepo template for new client work. The pitch was simple: agree on the studio's default stack once, build the scaffolding once, and let every new project start there. Faster client kickoffs, fewer decisions per project, consistent quality across the studio.
 
 **Team Size and Collaboration:**
 
-- Solo proposal. Presented to senior engineers at the studio for review and adoption.
+- Solo proposal. Designed for adoption across the engineering team.
 
 **Tools and Environment:**
 
@@ -22,14 +22,15 @@
 
 **Key Contributions:**
 
+- Picked the studio default stack (Next.js 15, React 19, TypeScript 5, Tailwind, shadcn/ui) so every new project starts on the same foundation. New engineers ramp once, not per project.
 - Designed the monorepo structure with Turborepo and npm workspaces, giving each app and package a clear boundary while sharing a single lockfile.
+- Set the quality bar with the scaffolding: Vitest unit tests, Playwright end-to-end tests, axe-core accessibility checks all running in CI from day one. No retrofit work later.
 - Chose the quality gate logic: pre-commit autofix only; CI lint, test, and e2e checks advisory; only type-check and build can actually block a PR. That balance came from watching teams lose velocity to over-strict linting.
-- Integrated axe-core into the Playwright test suite so accessibility checks run in CI from the start, not as a retrofit.
 - Structured an integration-branch pattern for opt-in features (Prisma, Kinde auth, etc.) so teams can pull in what they need without polluting the base.
 
 **Metrics and KPIs:**
 
-- Proposal accepted for internal review. Establishes a repeatable starting point for future client projects at the studio.
+- Cuts the kickoff phase on new client projects from "start from a previous repo and adapt" to "clone the template and ship". Establishes a repeatable baseline so future projects inherit the studio's quality standard automatically.
 
 **Learning and Development:**
 
