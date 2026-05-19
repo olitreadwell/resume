@@ -49,16 +49,16 @@
 
 ---
 
-## The Design Conference Website Platform Modernisation | Numeral Studio | Mar 2025 - Jan 2026
+## Conference Website Platform Modernisation | Numeral Studio | Mar 2025 - Jan 2026
 
 **Company:** Numeral Studio  
-**Project:** TDC (The Design Conference) Website  
+**Project:** Conference website platform  
 **Role:** Senior Front-end Software Engineer
 **Duration:** March 2025 - Present (Multiple Engagements)
 
 ### Project Overview
 
-TDC Website is a comprehensive conference management platform for Tech Developers Conference, providing speaker profiles, session schedules, sponsorship information, and attendee engagement features. The platform serves as the primary digital hub for conference participants and organizers.
+A comprehensive conference management platform providing speaker profiles, session schedules, sponsorship information, and attendee engagement features. The platform serves as the primary digital hub for conference participants and organizers.
 
 ### Key Contributions
 
@@ -105,17 +105,17 @@ TDC Website is a comprehensive conference management platform for Tech Developer
 
 ---
 
-## Hello Canopy Human Resources Case Management Platform | Numeral Studio | Jul 2025 - Oct 2025
+## HR Case-Management Platform | Numeral Studio | Jul 2025 - Oct 2025
 
 **Company:** Numeral Studio  
-**Project:** Hello Canopy Human Resources Case Management Platform  
+**Project:** HR case-management platform  
 **Role:** Senior Front-end Software Engineer
 **Duration:** July 2025 - October 2025  
 
 
 ### Project Overview
 
-Hello Canopy is a Human Resources case management platform providing HIPAA-compliant case tracking, staff assignments, and reporting workflows for Human Resources organizations.
+An HR case management platform providing privacy-compliant case tracking, staff assignments, and reporting workflows for Human Resources organizations.
 
 ### Key Contributions
 
@@ -156,16 +156,16 @@ Hello Canopy is a Human Resources case management platform providing HIPAA-compl
 
 ---
 
-## Samsung TryGalaxy Markets Platform | Samsung (via Numeral Studio) | 2025 (Multiple Engagements)
+## Mobile Experience Platform | Numeral Studio | 2025 (Multiple Engagements)
 
-**Company:** Samsung (via Numeral Studio)  
-**Project:** TryGalaxy Markets Platform  
+**Company:** Numeral Studio  
+**Project:** Mobile experience platform  
 **Role:** Senior Front-end Software Engineer
 **Duration:** Multiple engagement periods, 2025  
 
 ### Project Overview
 
-Samsung TryGalaxy Markets is a global mobile experience platform showcasing Samsung's device ecosystem with localized experiences, interactive demos, and performance-sensitive mobile UI.
+A global mobile experience platform with localized experiences, interactive demos, and performance-sensitive mobile UI across multiple international markets.
 
 ### Key Contributions
 
@@ -199,7 +199,7 @@ Samsung TryGalaxy Markets is a global mobile experience platform showcasing Sams
 ### Impact & Results
 
 - Significant load-time reductions via WebP conversion and optimized asset handling.
-- Consistent localized experiences for Samsung's key markets.
+- Consistent localized experiences across key international markets.
 - Enhanced cross-platform mobile interactions with reliable keyboard and search experiences.
 
 ---
