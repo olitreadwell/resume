@@ -42,11 +42,11 @@
 
 **Problem Statement / Challenge:**
 
--   I wanted to be able to look at the prices on a page (Amazon, news sites, anywhere) and see what the same money could buy at a high-impact charity. The mental conversion takes effort, so I rarely did it. The goal was to annotate prices in place as they appear, with no extra steps.
+-   Online shopping is a moment when people are about to spend money intentionally. It's also the moment when "I could donate that instead" rarely happens, because the friction is high: open a new tab, look up charity options, calculate equivalents, switch context, lose the intent. I wanted to put a donation option inside the shopping flow itself, so the alternative is visible at the moment a purchase is about to happen.
 
 **Scope of Work:**
 
--   Built a Chrome MV3 extension that detects prices on the page you're browsing and annotates each one with high-impact charity equivalents inline. Companion web app and bookmarklet ship from the same monorepo for installs that don't need the extension.
+-   Built a Chrome MV3 extension that detects prices on shopping pages and offers two donation interventions in place: **divert** (point a planned purchase at a charity equivalent instead), and **round-up** (push the cart total up to the next round number and donate the difference to a high-impact charity). Companion web app and bookmarklet ship from the same monorepo for installs that don't need the extension.
 
 **Team Size and Collaboration:**
 
@@ -58,11 +58,11 @@
 
 **Key Contributions:**
 
--   Shipped the Chrome MV3 extension: a manifest plus content script that annotates prices as a page renders, including DOM mutations from infinite scroll and dynamic results.
+-   Shipped the Chrome MV3 extension: a manifest plus content script that detects prices as a page renders (including DOM mutations from infinite scroll and dynamic results) and presents both donation interventions inline.
 -   Built `packages/charities`: a typed reference dataset of charity cost-per-outcome figures with an `asOf` field, a static FX-rate layer, and pure functions for parsing prices in any currency and converting to outcome units. 62 tests across two workspaces.
+-   Designed the two intervention paths (divert and round-up) so the friction-cost is one click rather than a workflow context-switch. The donation moment happens inside the shopping moment.
 -   Shipped the companion web converter and bookmarklet from the same codebase, so the same charity data and conversion logic backs every shell.
 -   CI runs lint, typecheck, test, and build on every push to `main` and every PR.
--   Documented architecture and the data contracts that hold the shells together in `docs/`.
 
 **Metrics and KPIs:**
 
@@ -71,8 +71,8 @@
 
 **Learning and Development:**
 
--   The interesting design problem was the MV3 content-security-policy constraints. They forced a clean separation between the data package and the detection layer: no remote loads, single self-contained bundle, MutationObserver for DOM updates. That separation paid off when the same data layer was reused in the web app and the bookmarklet.
--   Reinforced my preference for Bun workspaces for small repos: faster install, cleaner script resolution, single-source-of-truth lockfile.
+-   The interesting design problem wasn't the price detection. It was understanding that "donate to charity instead" already loses to "buy the thing" almost every time, because the donate option lives in a completely different context. Bringing the donate option into the shopping context — same page, same moment, one click — is what changes the choice architecture. The technical work is in service of that.
+-   The MV3 content-security-policy constraints reinforced this: no remote loads, single self-contained bundle, MutationObserver for DOM updates. That separation paid off when the same data layer was reused in the web app and the bookmarklet.
 
 **Repository:**
 
