@@ -1,5 +1,50 @@
 # Portfolio Projects
 
+## Side Projects (2026)
+
+### Price → Impact | Personal | May 2026
+
+**Problem Statement / Challenge:**
+
+-   I wanted a faster way to translate the small purchases I see day to day ("£4 latte", "$60 jeans") into something I could compare against high-impact charity outcomes. The mental conversion takes effort, so I rarely did it. The challenge was to remove the conversion friction completely.
+
+**Scope of Work:**
+
+-   Designed and shipped a small monorepo that delivers the same charity-comparison feature in three formats: a web converter, a drag-to-bookmarks bookmarklet, and a Chrome MV3 extension. Built on Bun workspaces with a single shared `charities` package so all three shells stay in sync.
+
+**Team Size and Collaboration:**
+
+-   Solo project. MIT licensed and open to contributions.
+
+**Tools and Environment:**
+
+-   TypeScript, Next.js (web), Bun workspaces, Vitest, GitHub Actions CI, Chrome MV3 manifest, MutationObserver-based content script, JSON-encoded charity reference data sourced from GiveWell cost-per-outcome estimates.
+
+**Key Contributions:**
+
+-   Built `packages/charities`: a typed reference dataset of charity cost-per-outcome figures with an `asOf` field, a static FX-rate layer, and pure functions for parsing prices in any currency and converting to outcome units. 62 tests across two workspaces.
+-   Shipped `apps/web`: a Next.js converter that takes a free-text price input and renders the equivalent impact across every charity in the dataset.
+-   Shipped `apps/bookmarklet`: an MV3-safe IIFE bundle that detects prices on a host page (Amazon as the first target site) and renders inline pills with charity-equivalent figures. Built into the web app for one-click install.
+-   Shipped `apps/extension`: a Chrome MV3 manifest plus content script using a MutationObserver to annotate prices as a page renders, including DOM mutations from infinite scroll and dynamic results.
+-   CI runs lint, typecheck, test, and build on every push to `main` and every PR.
+-   Documented architecture and the two data contracts that hold the three shells together in `docs/`.
+
+**Metrics and KPIs:**
+
+-   Shipped end-to-end in a single weekend pass. Web app, bookmarklet, and extension scaffold all live and installable.
+-   62 tests, full type coverage, green CI.
+
+**Learning and Development:**
+
+-   The interesting design problem was the three-shells-from-one-codebase split. The MV3 content-security-policy constraints meant the bookmarklet had to be a single self-contained IIFE with no remote loads, which forced a clean separation between the data package and the detection layer.
+-   Reinforced my preference for Bun workspaces for small repos: faster install, cleaner script resolution, single-source-of-truth lockfile.
+
+**Repository:**
+
+-   <https://github.com/olitreadwell/price-to-impact>
+
+---
+
 ## Commercial Reporting and Compliance Electron App | Numeral Studio | Nov 2025 - Jan 2026
 
 ### Role & Scope
