@@ -2,15 +2,15 @@
 
 ## Side Projects (2026)
 
-### Numeral Studio Monorepo Template Proposal | Numeral Studio | May 2026
+### Numeral Studio Monorepo Template | Numeral Studio | May 2026
 
 **Problem Statement / Challenge:**
 
-- New client projects at Numeral Studio kicked off slowly. Each one started from a different baseline, with different tooling choices, different CI gates, and different test setups. That meant a lot of repeated decisions on every kickoff and inconsistent quality between projects. The goal was to give the team a default stack and a default quality bar so any of us could start a new project and have quality at a high level from day one.
+- The studio had already shipped many successful client projects, but every new one started from a slightly different baseline. Each kickoff repeated the same setup decisions (tooling choices, CI gates, test framework, accessibility scaffolding) before any client value got built. The goal was to codify the patterns that already worked into a shared starting point: an SOP for new client work, not a speculative proposal.
 
 **Scope of Work:**
 
-- Designed and proposed an opinionated monorepo template for new client work. The pitch was simple: agree on the studio's default stack once, build the scaffolding once, and let every new project start there. Faster client kickoffs, fewer decisions per project, consistent quality across the studio.
+- Captured what the studio was already doing well across its client portfolio and turned it into a reusable monorepo template. Every new project now starts from the same default stack and CI baseline.
 
 **Team Size and Collaboration:**
 
@@ -30,7 +30,9 @@
 
 **Metrics and KPIs:**
 
-- Cuts the kickoff phase on new client projects from "start from a previous repo and adapt" to "clone the template and ship". Establishes a repeatable baseline so future projects inherit the studio's quality standard automatically.
+- Cut project initiation time by around **30%**, saving days per client kickoff for both the team and the client.
+- Reduced repetitive setup decisions on every new project: stack choice, lint config, test runner, CI gates, accessibility baseline all decided once at the template level.
+- Raised the floor on quality across all new client work by giving every project the same default CI gates and accessibility tests from day one.
 
 **Learning and Development:**
 
@@ -42,11 +44,11 @@
 
 **Problem Statement / Challenge:**
 
--   I wanted a faster way to translate the small purchases I see day to day ("£4 latte", "$60 jeans") into something I could compare against high-impact charity outcomes. The mental conversion takes effort, so I rarely did it. The challenge was to remove the conversion friction completely.
+-   I wanted to be able to look at the prices on a page (Amazon, news sites, anywhere) and see what the same money could buy at a high-impact charity. The mental conversion takes effort, so I rarely did it. The goal was to annotate prices in place as they appear, with no extra steps.
 
 **Scope of Work:**
 
--   Designed and shipped a small monorepo that delivers the same charity-comparison feature in three formats: a web converter, a drag-to-bookmarks bookmarklet, and a Chrome MV3 extension. Built on Bun workspaces with a single shared `charities` package so all three shells stay in sync.
+-   Built a Chrome MV3 extension that detects prices on the page you're browsing and annotates each one with high-impact charity equivalents inline. Companion web app and bookmarklet ship from the same monorepo for installs that don't need the extension.
 
 **Team Size and Collaboration:**
 
@@ -54,25 +56,24 @@
 
 **Tools and Environment:**
 
--   TypeScript, Next.js (web), Bun workspaces, Vitest, GitHub Actions CI, Chrome MV3 manifest, MutationObserver-based content script, JSON-encoded charity reference data sourced from GiveWell cost-per-outcome estimates.
+-   TypeScript, Chrome MV3 manifest, MutationObserver-based content script, Bun workspaces, Vitest, GitHub Actions CI. JSON-encoded charity reference data sourced from GiveWell cost-per-outcome estimates. Next.js for the companion web app.
 
 **Key Contributions:**
 
+-   Shipped the Chrome MV3 extension: a manifest plus content script that annotates prices as a page renders, including DOM mutations from infinite scroll and dynamic results.
 -   Built `packages/charities`: a typed reference dataset of charity cost-per-outcome figures with an `asOf` field, a static FX-rate layer, and pure functions for parsing prices in any currency and converting to outcome units. 62 tests across two workspaces.
--   Shipped `apps/web`: a Next.js converter that takes a free-text price input and renders the equivalent impact across every charity in the dataset.
--   Shipped `apps/bookmarklet`: an MV3-safe IIFE bundle that detects prices on a host page (Amazon as the first target site) and renders inline pills with charity-equivalent figures. Built into the web app for one-click install.
--   Shipped `apps/extension`: a Chrome MV3 manifest plus content script using a MutationObserver to annotate prices as a page renders, including DOM mutations from infinite scroll and dynamic results.
+-   Shipped the companion web converter and bookmarklet from the same codebase, so the same charity data and conversion logic backs every shell.
 -   CI runs lint, typecheck, test, and build on every push to `main` and every PR.
--   Documented architecture and the two data contracts that hold the three shells together in `docs/`.
+-   Documented architecture and the data contracts that hold the shells together in `docs/`.
 
 **Metrics and KPIs:**
 
--   Shipped end-to-end in a single weekend pass. Web app, bookmarklet, and extension scaffold all live and installable.
+-   Shipped end-to-end in a single weekend pass. Extension, web app, and bookmarklet all live and installable.
 -   62 tests, full type coverage, green CI.
 
 **Learning and Development:**
 
--   The interesting design problem was the three-shells-from-one-codebase split. The MV3 content-security-policy constraints meant the bookmarklet had to be a single self-contained IIFE with no remote loads, which forced a clean separation between the data package and the detection layer.
+-   The interesting design problem was the MV3 content-security-policy constraints. They forced a clean separation between the data package and the detection layer: no remote loads, single self-contained bundle, MutationObserver for DOM updates. That separation paid off when the same data layer was reused in the web app and the bookmarklet.
 -   Reinforced my preference for Bun workspaces for small repos: faster install, cleaner script resolution, single-source-of-truth lockfile.
 
 **Repository:**
@@ -285,46 +286,45 @@ A global mobile experience platform with localized experiences, interactive demo
 
 ---
 
-## Curriculum Development and Training | Various (General Assembly, Hack Reactor, The Flatiron School, Etc.) | 2015 - 2023
+## Technical Training and Mentoring for Engineering Teams | Hack Reactor, The Flatiron School, General Assembly, Codecademy | 2015 - 2023
 
-**Problem Statement/Challenge:**
+**Problem Statement / Challenge:**
 
-- Across multiple educational platforms, there was a need for comprehensive, industry-relevant curriculum and engaging lesson delivery to prepare students for the rapidly evolving tech industry. From 2015 through 2023, the challenge was to create and adapt curricula that would effectively teach software engineering concepts, web accessibility, and Agile methodologies to diverse cohorts of students.
+- Engineering organisations across the USA needed to grow capacity faster than they could hire. The work was to build that capacity through structured training, ongoing mentoring, and pull-request-level coaching of working engineers — covering both hard skills (React, Python, Rails, accessibility, CI/CD) and the soft skills that determine whether new capacity actually translates to team throughput.
 
 **Scope of Work:**
 
-- Collaborated with several organisations to develop and deliver curricula on various software engineering topics. Responsible for designing course materials, teaching full-time and part-time programs, and mentoring students to ensure their success in technical roles until the program wind-down in 2023.
+- Designed curricula, ran cohorts, and embedded with engineering teams. Wrote and graded real assessments rather than relying on attendance. Reviewed and gave feedback on hundreds of pull requests as part of structured mentoring engagements. Trained working engineers at companies across the USA, including roughly 400 Amazon engineers at Flatiron and full-time and part-time cohorts at Hack Reactor.
 
 **Team Size and Collaboration:**
 
-- Worked with other instructors and curriculum developers across organisations to ensure materials were current and aligned with industry needs.
+- Worked with other instructors and curriculum developers to keep materials aligned with how engineering teams actually ship. Partnered directly with engineering managers at client companies to scope training to what their teams needed.
 
 **Tools and Environment:**
 
-- JavaScript, ReactJS, Python, Flask, PostgreSQL, CI/CD, Web Accessibility, Agile.
+- JavaScript / TypeScript, React, Node.js, Python, Flask, Ruby on Rails, PostgreSQL, CI/CD, web accessibility (WCAG, ARIA), Agile delivery patterns, code-review-driven mentorship.
 
 **Key Contributions:**
 
-- Developed and delivered full-stack software engineering curricula covering topics such as ReactJS, Python, and web accessibility, preparing students for the workforce in fast-paced tech environments.
-- Led workshops and live coding sessions to teach core technical skills, resulting in high student engagement and improved job placement outcomes across all programs.
-- Mentored and coached junior engineers by providing tailored feedback and career advice, equipping students with the tools to succeed in software development roles.
+- Built engineering capacity for teams across the USA through structured technical training programs (hard skills, soft skills, accessibility, ship-cadence patterns) backed by real assessments and outcome metrics.
+- Ran ongoing 1:1 and small-group mentoring for working engineers, focused on the soft skills that turn individual capacity into team throughput: code review etiquette, scoping work, navigating ambiguity, communicating trade-offs.
+- Gave feedback on hundreds of pull requests as part of structured mentoring engagements, directly shaping how engineers ramped on new stacks and patterns.
+- Established an inclusive-design and web-accessibility working group at The Flatiron School and wove those practices through the curriculum so every cohort built accessible UIs by default.
+- Designed and deployed a mock-interview app at Hack Reactor that scaled career-services feedback well beyond what one-on-one sessions could deliver.
 
 **Metrics and KPIs:**
 
-- Achieved a **90%** graduation rate and a **75%** job placement rate within 6 months of program completion across multiple cohorts.
-- Improved student satisfaction scores through personalised mentorship and industry-aligned curricula.
+- Roughly **400 Amazon engineers** trained at Flatiron alone, with measurable throughput increases reported by their engineering managers.
+- Hack Reactor program: **90%** graduation rate and **75%** job placement within 6 months across multiple cohorts.
+- Hundreds of pull-request reviews directly shaped how new engineers shipped production work.
 
 **Learning and Development:**
 
-- This work enhanced my skills in training design, remote instruction, and mentoring diverse groups of junior engineers, gaining a deep understanding of evolving industry requirements over eight years of delivery.
-
-**Post-Launch Maintenance:**
-
-- Updated curricula through 2023 to reflect the latest trends in technology and maintain strong job placement outcomes while offering ongoing support and mentorship to graduates.
+- This work made it clear that the highest-leverage training intervention is not a lecture — it's specific code-review feedback on real work, repeated across enough touch-points that patterns get internalised. That belief shapes how I mentor engineers I work with day-to-day now.
 
 **Stakeholders and Impact:**
 
-- Students and industry partners consistently praised the quality of the curricula and teaching, with many students successfully securing roles at top tech companies following graduation.
+- Engineering managers at client companies (Amazon notable among them) reported measurable increases in throughput and code quality from teams that went through the programs. The pattern across all engagements: train, then mentor through the first three or four real PRs, then watch the team get faster.
 
 ---
 
