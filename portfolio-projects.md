@@ -1,40 +1,53 @@
 # Portfolio Projects
 
-## Numeral Studio Monorepo Template | Numeral Studio | May 2026
+## Numeral Studio Monorepo Template | Numeral Studio | Mar 2026 - May 2026 (proposal, pending adoption)
 
-**Problem Statement / Challenge:**
+**Role:** Senior Software Engineer (proposal author).
+**Status:** Proposal-in-progress. Build complete; team adoption, outcome metrics, and refinements pending. Status note carried because the template's value is conditional on the team actually using it.
 
-- The studio had already shipped many successful client projects, but every new one started from a slightly different baseline. Each kickoff repeated the same setup decisions (tooling choices, CI gates, test framework, accessibility scaffolding) before any client value got built. The goal was to codify the patterns that already worked into a shared starting point: an SOP for new client work, not a speculative proposal.
+### Origin
 
-**Scope of Work:**
+The template pulls from patterns we've already used across client projects, especially setup conventions that have worked. It is not trying to be prescriptive. The goal is to start a conversation about how to make our default project setup stronger, faster to spin up, and more reliable. Part of the thinking: this could help us move faster on pitches and prototypes, and give us a cleaner path from prototype to production-quality code. If we standardise the repetitive setup, add sensible defaults, and introduce quality gates early, we save time at the start of projects and have more confidence in what we ship.
 
-- Captured what the studio was already doing well across its client portfolio and turned it into a reusable monorepo template. Every new project now starts from the same default stack and CI baseline.
+Some pieces I feel fairly strongly about (better automation, stronger testing and default quality checks, codebase legibility). Other pieces are open questions, especially UI primitives, package managers, logging conventions, optional libraries, and how much to bake in vs keep minimal per project.
 
-**Team Size and Collaboration:**
+### Project Overview
 
-- Solo proposal. Designed for adoption across the engineering team.
+A monorepo template for new client engagements. Default stack, opt-in integrations, CI gates and accessibility tests in place from day one. Engineers ramp once on the conventions, not per project.
 
-**Tools and Environment:**
+### Key Contributions
 
-- Next.js 15, React 19, TypeScript 5, Tailwind 4 + shadcn/ui, Vitest + Playwright + axe-core, Storybook, Turborepo, npm workspaces.
+- Set the default stack (Next.js 15, React 19, TypeScript 5, Tailwind 4, Chakra UI) so every new project starts from the same foundation.
+- Designed the monorepo structure with Turborepo and npm workspaces. One lockfile, clear app and package boundaries.
+- Built the quality-gate split: pre-commit autofix only; CI lint / test / e2e are advisory; only type-check and build can block a PR. The balance came from watching teams lose velocity to over-strict gates.
+- Migrated the component library from shadcn primitives to Chakra UI (driven by team preference): 30+ components rebuilt with Storybook stories and axe-core tests per component.
+- Structured the integration-branch pattern: five opt-in feature branches (Prisma, Kinde auth, Sanity, Resend, GSAP) so teams pull in what they need without polluting the base.
+- Wrote AGENTS.md and CLAUDE.md so the template ships with pattern-driven onboarding for humans and agents, not tribal knowledge.
 
-**Key Contributions:**
+### Technical Implementation Details
 
-- Picked the studio default stack (Next.js 15, React 19, TypeScript 5, Tailwind, shadcn/ui) so every new project starts on the same foundation. New engineers ramp once, not per project.
-- Designed the monorepo structure with Turborepo and npm workspaces, giving each app and package a clear boundary while sharing a single lockfile.
-- Set the quality bar with the scaffolding: Vitest unit tests, Playwright end-to-end tests, axe-core accessibility checks all running in CI from day one. No retrofit work later.
-- Chose the quality gate logic: pre-commit autofix only; CI lint, test, and e2e checks advisory; only type-check and build can actually block a PR. That balance came from watching teams lose velocity to over-strict linting.
-- Structured an integration-branch pattern for opt-in features (Prisma, Kinde auth, etc.) so teams can pull in what they need without polluting the base.
+- **Stack:** Next.js 15, React 19, TypeScript 5, Tailwind 4 + Chakra UI, Vitest, Playwright, Storybook, Turborepo, npm workspaces.
+- **CI breadth:** 18 GitHub Actions workflows covering lint, type-check, test, e2e (4 parallel shards + visual snapshots), accessibility (axe-core), CodeQL, lighthouse budgets, bundle analysis, image optimisation, release, stale cleanup, dependabot auto-merge, rebase integrations.
+- **Coverage threshold:** raised mid-build from 60% to 95% as an intentional team call.
+- **Deployment:** dual-branch model with `deploy/production` and `deploy/pre-production` as staged release targets.
+- **Build scope:** 107 commits over 54 days.
 
-**Metrics and KPIs:**
+### Pending Validation
 
-- Cut project initiation time by around **30%**, saving days per client kickoff for both the team and the client.
-- Reduced repetitive setup decisions on every new project: stack choice, lint config, test runner, CI gates, accessibility baseline all decided once at the template level.
-- Raised the floor on quality across all new client work by giving every project the same default CI gates and accessibility tests from day one.
+- Estimated ~30% reduction in project initiation time vs the prior kickoff cadence. **Aspirational, not yet measured against a real client engagement.** True outcome metrics arrive once new projects launch on the template.
+- Pending team adoption + feedback. Outcomes (kickoff time, defect rate, contractor onboarding cost) become measurable after N projects ship on it.
 
-**Learning and Development:**
+### Open Questions in the Proposal
 
-- The most interesting design decision was the quality gate split. Most templates default to blocking on everything. The argument for advisory CI checks on linting is that it keeps the feedback loop fast while still surfacing issues. Teams fix them when they're ready, not when they're blocked mid-PR.
+- UI primitives (Chakra is the current pick; team preference confirmed, broader fit-for-purpose review still pending)
+- Package manager choice (npm currently; alternatives under consideration)
+- Logging conventions
+- How much to bake in vs keep minimal per project
+
+### Learning and Development
+
+- The quality-gate split was the most interesting design call. Most templates default to blocking on everything. Advisory CI on lint / unit / e2e keeps the feedback loop fast while still surfacing issues. Teams fix them when they are ready, not when they are blocked mid-PR.
+- Framing the work as a conversation-starter rather than a prescription mattered. The template lands as something the team can shape, not something handed down.
 
 ---
 
@@ -66,8 +79,10 @@
 
 **Metrics and KPIs:**
 
--   Shipped end-to-end in a single weekend pass. Extension, web app, and bookmarklet all live and installable.
--   62 tests, full type coverage, green CI.
+-   Shipped end-to-end in a single weekend pass (51 commits in one day). Extension, web app, and bookmarklet all live and installable.
+-   169 tests across the extension, web app, and charity-data workspaces; full type coverage; green CI on every push and PR.
+-   Four user-facing surfaces in the extension: in-page donation pill, popup jar with threshold picker, options page, and history table.
+-   Amazon ships as the first detector; Etsy and Shopify are next on the roadmap.
 
 **Learning and Development:**
 
@@ -77,6 +92,87 @@
 **Repository:**
 
 -   <https://github.com/olitreadwell/price-to-impact>
+
+---
+
+## NZ Hardware/Software Systems Company: Marketing & Case-Study Site | Numeral Studio | Mar 2026 - May 2026
+
+**Role:** Senior Front-end Software Engineer, end-to-end build lead.
+**Status:** Delivered for launch (weeks from going live as of May 2026).
+
+### Project Overview
+
+Marketing and case-study website for an NZ hardware and software systems company. The site is the company's main pitch surface for new business, covering a portfolio of client work anonymised by industry and size (transport, retail, hospitality). Built to communicate competence across sectors without feeling templated.
+
+### Role on the Engagement
+
+Led the build end-to-end after initial setup: scoping, client comms, technical direction, delivery cadence, and QA. Worked with a contracted PM and designer (who brought us in), the studio lead (strategy, initial calls, animation contributions, ongoing guidance), and a senior dev who handled the initial setup and infrastructure.
+
+### Key Contributions
+
+- 231 commits across 57 days, around 37% of total project commits.
+- **Fluid responsive system:** nav drawer that scales continuously from 820 to 1800px instead of step-changing at fixed breakpoints. Smoother visual continuity across viewport sizes.
+- **Hero refactor:** moved from a fixed-position plus spacer pattern to a scroll-driven sticky hero with time-driven word animation. Simpler scroll behaviour, cleaner scroll restoration.
+- **Case-study image grid systems:** designed varied grid layouts (6-6+8-3, 3-8) so each anonymised case study carries distinct visual weight.
+- **Geometry as testable:** added pure utility functions (`computeAnchorY`, `pickClosestIndex`) with unit tests so layout math can be reasoned about independently of render.
+- **Nav-drawer e2e suite:** roughly 280 lines covering scroll-lock, hash-scroll, and scroll-restore behaviour.
+
+### Technical Implementation Details
+
+- **Frontend:** Next.js 15, React 19, TypeScript 5, Tailwind 4 + Sass, GSAP for animation, Zustand for state.
+- **Testing:** Vitest for layout-math utilities; Playwright e2e for nav-drawer and case-study hero behaviour.
+- **Tooling:** husky + lint-staged on TS / TSX + JSON / MD; pre-commit hook discipline.
+
+### Decisions and Tradeoffs
+
+- Scroll-driven sticky hero over fixed-position plus spacer: cleaner scroll behaviour at the cost of a bit more component state.
+- ~60 commits of layout polish over feature breadth: quality bar over scope; the site needed to feel hand-tuned.
+- Fluid responsive over breakpoint-driven: smoother visual continuity, more math in the layout helpers (which is why the pure-function utilities earned unit tests).
+- GSAP over CSS-only animation: bundle size and runtime dependency cost in exchange for a richer animation toolchain.
+
+### Impact
+
+The site is the company's main pitch surface. Quality of presentation maps directly to whether prospects believe the company can deliver what the case studies claim. Delivered for an imminent launch; post-launch metrics (traffic, inquiry rate, sales-pipeline impact) follow go-live.
+
+---
+
+## Live-Event Stage Display System for a Fortune 2000 Enterprise Conference | Numeral Studio | Apr 2026 - May 2026
+
+**Role:** Senior Front-end Software Engineer (team contributor).
+**Status:** Shipped (ran live at the event).
+
+### Project Overview
+
+Multi-screen LED stage display system for a single live moment at a Fortune 2000 enterprise conference. Three synchronised screens consume real-time game and MC events via webhooks and render a leaderboard, branded ticker / stinger, and live progress tracker. The venue operator runs three browser windows (one per screen) against a shared in-memory runtime. Delivered end-to-end in 18 calendar days. Ran live at the event.
+
+### Role on the Engagement
+
+Team contribution rather than lead. Jumped in on a small team and pulled off large frontend chunks end-to-end. Worked with a contracted PM and a senior fullstack dev (setup, infra, backend, initial frontend, review-merge-deploy on my PRs), and the studio lead for strategy and client comms.
+
+### Key Contributions
+
+- 53 commits in 18 calendar days.
+- **Reveal-orchestration engine:** the primary component driving choreographed reveals across all three screens.
+- **Stage-geometry math:** elliptical arcs for variable row counts, S-curve stage flow, bus alignment for connectors between screen elements. Geometry primitives in TypeScript that adapt to variable inputs without manual rework per layout.
+- **Cross-screen animation sequencing:** shared 0.9s odometer baseline so reveals stay visually coherent across LEDs. OdometerNumber, meter fill, signal bar reveals.
+- **Polish pass:** backdrop blurs, stroke unification, connector colour coherence, robot-ASCII video background luminance.
+- **CI on day one:** pre-push build hook and GitHub Actions workflow added at the start of the build.
+
+### Technical Implementation Details
+
+- **Frontend:** Next.js 16, React 19, TypeScript 5, Three.js + React Three Fiber (ASCII video backgrounds), GSAP for timeline choreography, Base UI React for accessible primitives, Tailwind 4.
+- **Multi-screen sync:** shared in-memory runtime against three browser windows (one per screen), real-time webhook ingest.
+- **Testing:** unit tests across draft-card cache, leaderboard data, transition keys, and post-clear audio despite the short build cycle.
+
+### Decisions and Tradeoffs
+
+- Speed vs UI quality vs scope balanced against a hard event date. No possibility of a second chance to ship.
+- In-memory shared runtime over a heavier database-backed model: lower complexity for a single-event run.
+- TypeScript geometry primitives over hand-tuned SVGs per layout: more code up front in exchange for layouts that adapt to variable inputs without manual rework.
+
+### Impact
+
+A Fortune 2000 enterprise client needed a single live moment to land in front of a large conference audience. The team delivered it on a fixed date with no extension possible. Quality of presentation in front of the audience was the bar.
 
 ---
 
