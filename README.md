@@ -3,7 +3,7 @@
 ## Table of Contents
 
 
-* <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20-%20Senior%20Software%20Engineer%20Resume%20-%202026-03-06.pdf)</strong>
+* <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20-%20Senior%20Software%20Engineer%20Resume%20-%202026-05-25.pdf)</strong>
 * <strong>[Portfolio Projects](./portfolio-projects.md)</strong>
 * <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
 * <strong>[Recommendations & References](./linkedin-recommendations.md)</strong>
@@ -79,10 +79,10 @@ Wellington / Remote
 
 - Delivered multi-client throughput via **580+ commits** with consistently green lint/type/test gates by pairing tightly with design, PM, and back-end partners across compliance, healthcare, marketing, and conference products.
 
-- **Cedric compliance desktop app:** Rebuilt shared React Typescript components, predictable validation flows, and accessibility wrappers inside a React/Electron shell, then backed the refactor with targeted Jest suites so compliance analysts stopped encountering silent audit errors.
-- **Hello Canopy HR platform:** Extended staff/case schemas (preferred case owners, privacy filters), shipped numerous components to the design system for improved workflows.
-- **Samsung TryGalaxy markets:** Orchestrated a WebP asset pipeline, automated resizing scripts, and KR/EN localisation fixes that removed iOS search glitches and aligned translations for Galaxy S25 wearables/tutorial flows.
-- **The Design Conference (TDC) site:** Cut duplicate UI by ~70% through component design systems, and maintained Storybook/JSDoc docs so new contributors could ship within a day.
+- **Regulatory compliance desktop app:** Rebuilt shared React TypeScript components, predictable validation flows, and accessibility wrappers inside a React/Electron shell, then backed the refactor with targeted Jest suites so compliance analysts stopped encountering silent audit errors.
+- **HR & case management platform:** Extended staff/case schemas (preferred case owners, privacy filters), shipped numerous components to the design system for improved workflows.
+- **Consumer device multi-market web experience:** Orchestrated a WebP asset pipeline, automated resizing scripts, and EN/KR localisation fixes that removed iOS search glitches and aligned translations across wearables and tutorial flows.
+- **Design conference event site:** Cut duplicate UI by ~70% through component design systems, and maintained Storybook/JSDoc docs so new contributors could ship within a day.
 - Technologies: React, TypeScript, Electron, Next.js 15, Tailwind CSS, Sass, Sanity v3, Prisma, Cypress, Jest/React Testing Library, Storybook, GitHub Actions, AWS, Figma, Jira.
 
 ##### Software Engineer & Founder | Habitual Genesis
