@@ -107,7 +107,7 @@ The company's main pitch surface for new business. It walks prospects through pa
 
 ### What I owned
 
-Led the build end-to-end after initial setup: scoping, client communication, technical direction, delivery cadence, and QA. Worked with the Numeral Studio director and lead dev (strategy, animation contributions, ongoing guidance), a senior dev who set up the project and infrastructure, and a PM and designer.
+Led the build end-to-end after initial setup: scoping, client communication, technical direction, delivery cadence, and QA. Worked with the Numeral Studio director (strategy, animation contributions, ongoing guidance), a senior dev who set up the project and infrastructure, and a PM and designer.
 
 ### What I am proud of
 
