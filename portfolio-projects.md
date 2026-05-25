@@ -85,7 +85,7 @@ A prescriptive template gets ignored. A starter that names its own open question
 
 **Learning and Development:**
 
--   The interesting design problem wasn't the price detection. It was understanding that "donate to charity instead" already loses to "buy the thing" almost every time, because the donate option lives in a completely different context. Bringing the donate option into the shopping context — same page, same moment, one click — is what changes the choice architecture. The technical work is in service of that.
+-   The interesting design problem wasn't the price detection. It was understanding that "donate to charity instead" already loses to "buy the thing" almost every time, because the donate option lives in a completely different context. Bringing the donate option into the shopping context (same page, same moment, one click) is what changes the choice architecture. The technical work is in service of that.
 -   The MV3 content-security-policy constraints reinforced this: no remote loads, single self-contained bundle, MutationObserver for DOM updates. That separation paid off when the same data layer was reused in the web app and the bookmarklet.
 
 **Repository:**
@@ -302,7 +302,7 @@ A comprehensive conference management platform providing speaker profiles, sessi
 #### Large List Component Architecture
 
 - Built scalable components for displaying conference data with reusable LargeListHeader and sponsor-specific layouts.
-- Enhanced mobile display of large datasets with responsive layouts and type-safe props.
+- Improved mobile display of large datasets with responsive layouts and type-safe props.
 
 #### Rule Bar Navigation System
 
@@ -316,7 +316,7 @@ A comprehensive conference management platform providing speaker profiles, sessi
 
 #### Component Documentation & Standards
 
-- Enhanced component documentation with JSDoc, Storybook, and clear TypeScript standards.
+- Strengthened component documentation with JSDoc, Storybook, and clear TypeScript standards.
 - Implemented ESLint rules and formatting standards to maintain quality.
 
 ### Technical Implementation Details
@@ -353,12 +353,12 @@ An HR case management platform providing privacy-compliant case tracking, staff 
 #### Case Management System Architecture
 
 - Added preferred case owner fields and improved schemas to enable precise staff assignments.
-- Enhanced report routing to exclude self-reports and protect privacy.
+- Refined report routing to exclude self-reports and protect privacy.
 - Built comprehensive form hooks (`useReportForm`) with validation and error handling.
 
 #### UI Component Development
 
-- Implemented InfoBox components, improved modals, and enhanced form components with better loading states.
+- Implemented InfoBox components, improved modals, and reworked form components with better loading states.
 - Delivered dynamic HR user options for staff reporting workflows.
 
 #### Testing Infrastructure
@@ -382,7 +382,7 @@ An HR case management platform providing privacy-compliant case tracking, staff 
 ### Impact & Results
 
 - Comprehensive schema validation preventing data corruption.
-- Enhanced user experience via improved loading states and error handling.
+- Better user experience via improved loading states and error handling.
 - Stronger security through refined permission systems and audit trails.
 
 ---
@@ -402,13 +402,13 @@ A global mobile experience platform with localized experiences, interactive demo
 
 #### Image Asset Optimization & Performance
 
-- Replaced PNG assets with WebP, created optimization scripts, and enhanced build configurations for faster load times.
+- Replaced PNG assets with WebP, created optimization scripts, and tuned build configurations for faster load times.
 - Added tooling to resize images, process only changed assets, and streamline the asset pipeline.
 
 #### International Localization & Translation Management
 
 - Updated Korean translations, added new phrase keys, and ensured cross-market consistency for English/Korean regions.
-- Enhanced tutorial content and wearable-device localization to support market expansion.
+- Updated tutorial content and wearable-device localization to support market expansion.
 
 #### Mobile Search & Keyboard Interaction
 
@@ -431,7 +431,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 - Significant load-time reductions via WebP conversion and optimized asset handling.
 - Consistent localized experiences across key international markets.
-- Enhanced cross-platform mobile interactions with reliable keyboard and search experiences.
+- Improved cross-platform mobile interactions with reliable keyboard and search experiences.
 
 ---
 
@@ -443,7 +443,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Scope of Work:**
 
-- Designed engagements, ran them, and embedded with engineering teams. Wrote and graded real assessments rather than relying on attendance. Reviewed and gave feedback on hundreds of pull requests as part of structured mentoring engagements. Worked with engineering teams at Fortune 100 companies, including roughly 400 engineers at Amazon.
+- Designed engagements, ran them, and embedded with engineering teams. Wrote and graded real assessments rather than relying on attendance. Reviewed and gave feedback on hundreds of pull requests as part of structured mentoring engagements. Worked with engineering teams at Fortune 100 tech orgs, including one engagement of roughly 400 engineers.
 
 **Team Size and Collaboration:**
 
@@ -462,7 +462,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Metrics and KPIs:**
 
-- Roughly **400 engineers at Amazon** went through training that I designed and delivered, with throughput increases reported by their engineering managers.
+- Roughly **400 engineers at a Fortune 100 tech org** went through training that I designed and delivered, with throughput increases reported by their engineering managers.
 - Hundreds of pull-request reviews directly shaped how engineers ramped on new stacks and shipped production work.
 - Programs were backed by real assessments and engineering-manager-level outcome metrics, not attendance.
 
@@ -472,19 +472,19 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Stakeholders and Impact:**
 
-- Engineering managers at client companies (Amazon notable among them) reported measurable increases in throughput and code quality from teams that went through the programs. The pattern across all engagements: train, then mentor through the first three or four real PRs, then watch the team get faster.
+- Engineering managers at client companies (including one Fortune 100 tech org engagement at scale) reported measurable increases in throughput and code quality from teams that went through the programs. The pattern across all engagements: train, then mentor through the first three or four real PRs, then watch the team get faster.
 
 ---
 
-## Read the Room Education Website Enhancement | Habitual Genesis | Pro Bono | 2021-Present
+## Read the Room Education Website Updates | Habitual Genesis | Pro Bono | 2021-Present
 
 **Problem Statement/Challenge:**
 
-- Read the Room Education, a non-profit organisation, needed website enhancements to engage their audience and promote educational programs. The challenge was to improve the site’s mobile responsiveness and implement a mechanism to grow their mailing list.
+- Read the Room Education, a non-profit organisation, needed website updates to engage their audience and promote educational programs. The challenge was to improve the site’s mobile responsiveness and add a mechanism for growing their mailing list.
 
 **Scope of Work:**
 
-- Assessed the existing website and implemented design and content enhancements focused on user engagement and accessibility. Integrated Mailchimp to capture visitor information and grow the mailing list.
+- Assessed the existing website and shipped design and content updates focused on user engagement and accessibility. Integrated Mailchimp to capture visitor information and grow the mailing list.
 
 **Team Size and Collaboration:**
 
@@ -503,7 +503,7 @@ A global mobile experience platform with localized experiences, interactive demo
 **Metrics and KPIs:**
 
 - Increased user engagement by **25%** within three months of launch.
-- Grew the mailing list by **40%** in the first quarter after the website enhancements.
+- Grew the mailing list by **40%** in the first quarter after the website updates.
 
 **Learning and Development:**
 
@@ -556,11 +556,11 @@ A global mobile experience platform with localized experiences, interactive demo
 
 ---
 
-## Rewards Platform Re-architecture | WorkTango (formerly KazooHR) | 2019
+## Rewards Platform Re-architecture | HR / Rewards SaaS Platform | 2019
 
 **Problem Statement/Challenge:**
 
-- WorkTango's existing Rewards platform, originally built on Ruby on Rails, needed modernisation to improve performance, user engagement, and scalability. The challenge was re-architecting the front-end using ReactJS while ensuring seamless integration with backend systems.
+- An HR and employee-rewards SaaS platform's Rewards product, originally built on Ruby on Rails, needed modernisation to improve performance, user engagement, and scalability. The challenge was re-architecting the front-end using ReactJS while keeping integration with the existing backend stable.
 
 **Scope of Work:**
 
@@ -577,7 +577,7 @@ A global mobile experience platform with localized experiences, interactive demo
 **Key Contributions:**
 
 - Re-architected the Rewards platform from Ruby on Rails to ReactJS by implementing a modular design system, which improved customer engagement by **15%**.
-- Optimised front-end performance, reducing page load times by **30%**, which enhanced user experience across the platform.
+- Optimised front-end performance, reducing page load times by **30%**, which lifted user experience across the platform.
 - Collaborated with backend teams to integrate new features for performance tracking and reward redemption, streamlining the product suite.
 
 **Metrics and KPIs:**
@@ -607,7 +607,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Scope of Work:**
 
-- Developed the paywall architecture and components, which could be used across multiple brands. Worked with cross-functional teams to ensure the system integrated smoothly with each brand's unique needs while enhancing SEO and reader experience.
+- Developed the paywall architecture and components, which could be used across multiple brands. Worked with cross-functional teams to ensure the system integrated smoothly with each brand's needs while improving SEO and reader experience.
 
 **Team Size and Collaboration:**
 
@@ -620,7 +620,7 @@ A global mobile experience platform with localized experiences, interactive demo
 **Key Contributions:**
 
 - Built and iterated on a brand-agnostic paywall architecture using ReactJS components, which increased subscriptions by **100%** year-over-year for _Vanity Fair_ and _Wired_.
-- Improved SEO and user engagement by optimising paywall performance, which enhanced reader interaction across 26 media brands.
+- Improved SEO and user engagement by optimising paywall performance, which lifted reader interaction across 26 media brands.
 
 **Metrics and KPIs:**
 
@@ -671,7 +671,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Learning and Development:**
 
-- This project enhanced my ability to approach problems strategically, working with cross-functional teams to assess resources, explore solutions, and communicate effectively with stakeholders.
+- This project sharpened my ability to approach problems strategically, working with cross-functional teams to assess resources, explore solutions, and communicate effectively with stakeholders.
 
 **Stakeholders and Impact:**
 
@@ -709,7 +709,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Learning and Development:**
 
-- This project taught me the unlock that "automate the structure, keep the human in the feedback loop" — a pattern I've kept coming back to since.
+- This project taught me the unlock that "automate the structure, keep the human in the feedback loop", a pattern I've kept coming back to since.
 
 **Stakeholders and Impact:**
 
@@ -746,7 +746,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Learning and Development:**
 
-- This project strengthened my expertise in API development and enhanced my ability to work in small, fast-paced teams.
+- This project strengthened my expertise in API development and sharpened my ability to work in small, fast-paced teams.
 
 **Stakeholders and Impact:**
 
@@ -774,7 +774,7 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Key Contributions:**
 
-- Migrated and refactored two legacy codebases to Rails 4 by improving maintainability and security, which enhanced system performance by **20%**.
+- Migrated and refactored two legacy codebases to Rails 4 by improving maintainability and security, which lifted system performance by **20%**.
 
 **Metrics and KPIs:**
 
