@@ -2,52 +2,51 @@
 
 ## Numeral Studio Monorepo Template | Numeral Studio | Mar 2026 - May 2026 (proposal, pending adoption)
 
+> Monorepo starter for new client work. Default stack, opt-in conventions, sensible gates from day one. Build done; team adoption next.
+
 **Role:** Senior Software Engineer (proposal author).
-**Status:** Proposal-in-progress. Build complete; team adoption, outcome metrics, and refinements pending. Status note carried because the template's value is conditional on the team actually using it.
+**Status:** Build complete. Team adoption, outcome metrics, and refinements pending. The template's value is conditional on the team using it.
 
-### Origin
+### Why I built it
 
-The template pulls from patterns we've already used across client projects, especially setup conventions that have worked. It is not trying to be prescriptive. The goal is to start a conversation about how to make our default project setup stronger, faster to spin up, and more reliable. Part of the thinking: this could help us move faster on pitches and prototypes, and give us a cleaner path from prototype to production-quality code. If we standardise the repetitive setup, add sensible defaults, and introduce quality gates early, we save time at the start of projects and have more confidence in what we ship.
+Every new client kickoff repeated the same setup decisions: stack picks, lint config, CI gates, accessibility tests. The template codifies the patterns we already use across projects so engineers ramp once on the conventions, not per project. It is framed as a conversation-starter, not a prescription. Some pieces have strong opinions baked in (testing defaults, codebase legibility, automation). Others are explicit open questions the team can push back on.
 
-Some pieces I feel fairly strongly about (better automation, stronger testing and default quality checks, codebase legibility). Other pieces are open questions, especially UI primitives, package managers, logging conventions, optional libraries, and how much to bake in vs keep minimal per project.
+### What is in it
 
-### Project Overview
+- **Default stack:** Next.js 15, React 19, TypeScript 5, Tailwind 4 + Sass.
+- **In-house component library** (`@numeral/ui`): Tailwind primitives with `lucide-react`, Storybook 8, accessibility tests per component via `jest-axe`.
+- **Monorepo structure:** Turborepo with npm workspaces. One lockfile, clear app and package boundaries.
+- **Quality-gate logic:** type-check and build are the only blocking CI checks. Lint, unit, and e2e jobs report findings but stay advisory.
+- **Pattern docs:** `AGENTS.md` and `CLAUDE.md` ship in the repo so onboarding for humans and agents starts from written conventions, not tribal knowledge.
 
-A monorepo template for new client engagements. Default stack, opt-in integrations, CI gates and accessibility tests in place from day one. Engineers ramp once on the conventions, not per project.
+### Open questions in the proposal
 
-### Key Contributions
+- UI primitives: keep building on the in-house Tailwind library, or adopt something off-the-shelf.
+- Package manager: npm currently. Whether to switch is open.
+- Logging conventions.
+- How much to bake into the template vs keep minimal per project.
 
-- Set the default stack (Next.js 15, React 19, TypeScript 5, Tailwind 4, Chakra UI) so every new project starts from the same foundation.
-- Designed the monorepo structure with Turborepo and npm workspaces. One lockfile, clear app and package boundaries.
-- Built the quality-gate split: pre-commit autofix only; CI lint / test / e2e are advisory; only type-check and build can block a PR. The balance came from watching teams lose velocity to over-strict gates.
-- Migrated the component library from shadcn primitives to Chakra UI (driven by team preference): 30+ components rebuilt with Storybook stories and axe-core tests per component.
-- Structured the integration-branch pattern: five opt-in feature branches (Prisma, Kinde auth, Sanity, Resend, GSAP) so teams pull in what they need without polluting the base.
-- Wrote AGENTS.md and CLAUDE.md so the template ships with pattern-driven onboarding for humans and agents, not tribal knowledge.
+### Pending validation
 
-### Technical Implementation Details
+Outcome metrics (kickoff time, defect rate, onboarding cost) only become measurable after new client projects ship on it. Honest framing first, numbers later.
 
-- **Stack:** Next.js 15, React 19, TypeScript 5, Tailwind 4 + Chakra UI, Vitest, Playwright, Storybook, Turborepo, npm workspaces.
-- **CI breadth:** 18 GitHub Actions workflows covering lint, type-check, test, e2e (4 parallel shards + visual snapshots), accessibility (axe-core), CodeQL, lighthouse budgets, bundle analysis, image optimisation, release, stale cleanup, dependabot auto-merge, rebase integrations.
-- **Coverage threshold:** raised mid-build from 60% to 95% as an intentional team call.
-- **Deployment:** dual-branch model with `deploy/production` and `deploy/pre-production` as staged release targets.
-- **Build scope:** 107 commits over 54 days.
+<details>
+<summary><strong>Engineering detail: the quality-gate split</strong></summary>
 
-### Pending Validation
+The interesting design call was the gate logic. Most templates default to blocking on everything. Here, only type-check and build can fail a PR. Lint, unit, and e2e jobs report findings (reviewdog comments inline) but do not block. The pre-commit hook is autofix-only via `lint-staged`: it runs `prettier --write` and `eslint --fix` on staged files, and the commit succeeds even on warnings.
 
-- Estimated ~30% reduction in project initiation time vs the prior kickoff cadence. **Aspirational, not yet measured against a real client engagement.** True outcome metrics arrive once new projects launch on the template.
-- Pending team adoption + feedback. Outcomes (kickoff time, defect rate, contractor onboarding cost) become measurable after N projects ship on it.
+The reasoning: blocking lint and e2e mid-PR pushes teams to bypass checks and erodes trust in the signal. Advisory checks keep feedback fast and fixes voluntary. Type-check and build stay as hard gates because a broken build is a broken deploy.
 
-### Open Questions in the Proposal
+CI surface: one `ci.yml` covering lint, type-check, test, and e2e, plus three deploy workflows for preview, pre-production, and production.
 
-- UI primitives (Chakra is the current pick; team preference confirmed, broader fit-for-purpose review still pending)
-- Package manager choice (npm currently; alternatives under consideration)
-- Logging conventions
-- How much to bake in vs keep minimal per project
+</details>
 
-### Learning and Development
+<details>
+<summary><strong>Engineering detail: framing as a conversation</strong></summary>
 
-- The quality-gate split was the most interesting design call. Most templates default to blocking on everything. Advisory CI on lint / unit / e2e keeps the feedback loop fast while still surfacing issues. Teams fix them when they are ready, not when they are blocked mid-PR.
-- Framing the work as a conversation-starter rather than a prescription mattered. The template lands as something the team can shape, not something handed down.
+A prescriptive template gets ignored. A starter that names its own open questions invites the team to push back and iterate. That framing matters as much as the code: UI primitives, package manager, logging conventions, and "what to bake in vs keep minimal" are surfaced as open in the proposal itself rather than decided behind the scenes.
+
+</details>
 
 ---
 
@@ -97,82 +96,97 @@ A monorepo template for new client engagements. Default stack, opt-in integratio
 
 ## NZ Hardware/Software Systems Company: Marketing & Case-Study Site | Numeral Studio | Mar 2026 - May 2026
 
-**Role:** Senior Front-end Software Engineer, end-to-end build lead.
-**Status:** Delivered for launch (weeks from going live as of May 2026).
+> Marketing and case-study site for an NZ hardware and software systems company. End-to-end build lead. Weeks from launch as of May 2026.
 
-### Project Overview
+**Role:** Senior Front-end Software Engineer. End-to-end build lead.
+**Status:** Delivered for launch.
 
-Marketing and case-study website for an NZ hardware and software systems company. The site is the company's main pitch surface for new business, covering a portfolio of client work anonymised by industry and size (transport, retail, hospitality). Built to communicate competence across sectors without feeling templated.
+### What the site does
 
-### Role on the Engagement
+The company's main pitch surface for new business. It walks prospects through past client work across transport, retail, and hospitality, anonymised by industry and size. The bar was that each case study had to feel distinct, not cut from a template.
 
-Led the build end-to-end after initial setup: scoping, client comms, technical direction, delivery cadence, and QA. Worked with a contracted PM and designer (who brought us in), the studio lead (strategy, initial calls, animation contributions, ongoing guidance), and a senior dev who handled the initial setup and infrastructure.
+### What I owned
 
-### Key Contributions
+Led the build end-to-end after initial setup: scoping, client communication, technical direction, delivery cadence, and QA. Worked with the Numeral Studio director and lead dev (strategy, animation contributions, ongoing guidance), a senior dev who set up the project and infrastructure, and a PM and designer.
 
-- 231 commits across 57 days, around 37% of total project commits.
-- **Fluid responsive system:** nav drawer that scales continuously from 820 to 1800px instead of step-changing at fixed breakpoints. Smoother visual continuity across viewport sizes.
-- **Hero refactor:** moved from a fixed-position plus spacer pattern to a scroll-driven sticky hero with time-driven word animation. Simpler scroll behaviour, cleaner scroll restoration.
-- **Case-study image grid systems:** designed varied grid layouts (6-6+8-3, 3-8) so each anonymised case study carries distinct visual weight.
-- **Geometry as testable:** added pure utility functions (`computeAnchorY`, `pickClosestIndex`) with unit tests so layout math can be reasoned about independently of render.
-- **Nav-drawer e2e suite:** roughly 280 lines covering scroll-lock, hash-scroll, and scroll-restore behaviour.
+### What I am proud of
 
-### Technical Implementation Details
-
-- **Frontend:** Next.js 15, React 19, TypeScript 5, Tailwind 4 + Sass, GSAP for animation, Zustand for state.
-- **Testing:** Vitest for layout-math utilities; Playwright e2e for nav-drawer and case-study hero behaviour.
-- **Tooling:** husky + lint-staged on TS / TSX + JSON / MD; pre-commit hook discipline.
-
-### Decisions and Tradeoffs
-
-- Scroll-driven sticky hero over fixed-position plus spacer: cleaner scroll behaviour at the cost of a bit more component state.
-- ~60 commits of layout polish over feature breadth: quality bar over scope; the site needed to feel hand-tuned.
-- Fluid responsive over breakpoint-driven: smoother visual continuity, more math in the layout helpers (which is why the pure-function utilities earned unit tests).
-- GSAP over CSS-only animation: bundle size and runtime dependency cost in exchange for a richer animation toolchain.
+- **A layout that scales without snapping.** The site flows continuously between desktop sizes rather than jumping at fixed breakpoints. Feels hand-tuned at any width.
+- **A hero that behaves cleanly on scroll.** Sticky, time-driven, no fixed-position hacks. Simple to reason about. Simple to restore on back-navigation.
+- **Case-study layouts with their own visual weight.** Varied image grids so each anonymised story carries a distinct rhythm.
+- **Layout math that can be tested.** Pulled the geometry into pure utility functions so it can be reasoned about in isolation, not buried in render code.
 
 ### Impact
 
-The site is the company's main pitch surface. Quality of presentation maps directly to whether prospects believe the company can deliver what the case studies claim. Delivered for an imminent launch; post-launch metrics (traffic, inquiry rate, sales-pipeline impact) follow go-live.
+The site is what prospects see before they decide whether to call. Quality of presentation maps directly to whether they believe the company can deliver. Delivered on schedule for an imminent launch.
+
+<details>
+<summary><strong>Engineering detail: stack and testing shape</strong></summary>
+
+- **Frontend:** Next.js 15, React 19, TypeScript 5, Tailwind 4 + Sass, GSAP for animation, Zustand for state.
+- **Testing:** Vitest for layout-math utilities; Playwright for nav-drawer and case-study hero behaviour.
+- **Tooling:** husky + lint-staged on staged TS, TSX, JSON, and Markdown.
+- **Layout utilities under test:** pure functions (`computeAnchorY`, `pickClosestIndex`) so the math is provable independent of render.
+- **Nav-drawer e2e suite:** scroll-lock, hash-scroll, and scroll-restore behaviour covered end-to-end.
+
+</details>
+
+<details>
+<summary><strong>Engineering detail: decisions and tradeoffs</strong></summary>
+
+- **Scroll-driven sticky hero over fixed-position with spacer.** Cleaner scroll behaviour, slightly more component state. Easier to debug back-navigation.
+- **Fluid responsive over breakpoint-driven.** Smoother visual continuity, more math in layout helpers (which is why the pure-function utilities earned unit tests).
+- **GSAP over CSS-only animation.** Bundle-size cost in exchange for a richer animation toolchain. Worth it for a site whose job is to look hand-tuned.
+- **Layout polish weighted over feature breadth.** The site needed to feel hand-tuned. That meant a lot of small visual passes, not a lot of new pages.
+
+</details>
 
 ---
 
 ## Live-Event Stage Display System for a Fortune 2000 Enterprise Conference | Numeral Studio | Apr 2026 - May 2026
 
-**Role:** Senior Front-end Software Engineer (team contributor).
-**Status:** Shipped (ran live at the event).
+> Multi-screen LED stage display for a single live moment at a Fortune 2000 conference. Built end-to-end in 18 calendar days. Ran live at the event.
 
-### Project Overview
+**Role:** Senior Front-end Software Engineer. Team contributor.
+**Status:** Shipped. Ran live at the event.
 
-Multi-screen LED stage display system for a single live moment at a Fortune 2000 enterprise conference. Three synchronised screens consume real-time game and MC events via webhooks and render a leaderboard, branded ticker / stinger, and live progress tracker. The venue operator runs three browser windows (one per screen) against a shared in-memory runtime. Delivered end-to-end in 18 calendar days. Ran live at the event.
+### What the system does
 
-### Role on the Engagement
+Three synchronised LED screens behind a conference stage, driven by real-time game and MC events over webhooks. The screens rendered a leaderboard, a branded ticker, and a live progress tracker. The venue operator ran one browser window per screen against a shared in-memory runtime.
 
-Team contribution rather than lead. Jumped in on a small team and pulled off large frontend chunks end-to-end. Worked with a contracted PM and a senior fullstack dev (setup, infra, backend, initial frontend, review-merge-deploy on my PRs), and the studio lead for strategy and client comms.
+### What I owned
 
-### Key Contributions
+Team contributor on a small team under a hard event date. Pulled off large frontend chunks end-to-end. Worked with the Numeral Studio director (strategy, client communication), a senior fullstack dev (setup, infrastructure, backend, initial frontend, review-and-deploy on my PRs), and a PM.
 
-- 53 commits in 18 calendar days.
-- **Reveal-orchestration engine:** the primary component driving choreographed reveals across all three screens.
-- **Stage-geometry math:** elliptical arcs for variable row counts, S-curve stage flow, bus alignment for connectors between screen elements. Geometry primitives in TypeScript that adapt to variable inputs without manual rework per layout.
-- **Cross-screen animation sequencing:** shared 0.9s odometer baseline so reveals stay visually coherent across LEDs. OdometerNumber, meter fill, signal bar reveals.
-- **Polish pass:** backdrop blurs, stroke unification, connector colour coherence, robot-ASCII video background luminance.
-- **CI on day one:** pre-push build hook and GitHub Actions workflow added at the start of the build.
+### What I am proud of
 
-### Technical Implementation Details
-
-- **Frontend:** Next.js 16, React 19, TypeScript 5, Three.js + React Three Fiber (ASCII video backgrounds), GSAP for timeline choreography, Base UI React for accessible primitives, Tailwind 4.
-- **Multi-screen sync:** shared in-memory runtime against three browser windows (one per screen), real-time webhook ingest.
-- **Testing:** unit tests across draft-card cache, leaderboard data, transition keys, and post-clear audio despite the short build cycle.
-
-### Decisions and Tradeoffs
-
-- Speed vs UI quality vs scope balanced against a hard event date. No possibility of a second chance to ship.
-- In-memory shared runtime over a heavier database-backed model: lower complexity for a single-event run.
-- TypeScript geometry primitives over hand-tuned SVGs per layout: more code up front in exchange for layouts that adapt to variable inputs without manual rework.
+- **A reveal engine that drove the show.** The primary component coordinating choreographed reveals across all three screens.
+- **Stage geometry as code.** Elliptical arcs, S-curve stage flow, alignment for connectors. TypeScript primitives that adapt to variable row counts and layouts instead of being hand-tuned per scene.
+- **Cross-screen animation that stayed in sync.** A shared 0.9-second baseline so number reveals, meter fills, and signal bars hit together across all three LEDs.
+- **Tests under time pressure.** Unit coverage across cache logic, leaderboard data, transition keys, and audio cleanup despite the short build cycle.
+- **CI from day one.** Pre-push build hook and GitHub Actions workflow added at the start of the build, not at the end.
 
 ### Impact
 
-A Fortune 2000 enterprise client needed a single live moment to land in front of a large conference audience. The team delivered it on a fixed date with no extension possible. Quality of presentation in front of the audience was the bar.
+A Fortune 2000 client needed one live moment to land in front of a large conference audience. Fixed date, no extension possible. Quality in front of the audience was the bar. The system ran live at the event.
+
+<details>
+<summary><strong>Engineering detail: stack</strong></summary>
+
+- **Frontend:** Next.js 16, React 19, TypeScript 5, Three.js with React Three Fiber for ASCII video backgrounds, GSAP for timeline choreography, Base UI React for accessible primitives, Tailwind 4.
+- **Multi-screen sync:** shared in-memory runtime against three browser windows, real-time webhook ingest.
+- **Tests:** draft-card cache, leaderboard data, transition keys, post-clear audio.
+
+</details>
+
+<details>
+<summary><strong>Engineering detail: decisions and tradeoffs</strong></summary>
+
+- **Speed vs UI quality vs scope, all balanced against a hard event date.** No second chance to ship.
+- **In-memory shared runtime over a database-backed model.** Lower complexity for a single-event run.
+- **TypeScript geometry primitives over hand-tuned SVGs.** More code up front; layouts that adapt without manual rework per scene.
+
+</details>
 
 ---
 
