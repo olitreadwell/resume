@@ -60,7 +60,7 @@
 
 #### SUMMARY
 
-Product-minded full-stack engineer with a decade across media, HR tech, healthcare, and compliance platforms; translates ambiguous requirements into measurable outcomes while coaching teams on accessibility, testing rigor, and observability-first delivery.
+Senior software engineer shipping across multiple client products in a forward-deployed style: embedded with clients, owning frontend and full-stack scope, working closely with design, PM, and backend partners. Decade of experience across media, HR tech, healthcare, compliance, and conference platforms. UK and US citizen.
 
 #### Skills
 
@@ -68,12 +68,12 @@ Product-minded full-stack engineer with a decade across media, HR tech, healthca
 - **Back-end & Services:** Node.js/TypeScript, Ruby on Rails, Python/Flask, Prisma & ActiveRecord, PostgreSQL, MySQL, REST/JSON:API, GraphQL, domain-driven microservices.
 - **Quality & Reliability:** Jest, React Testing Library, Cypress, Puppeteer, RSpec, CI pipelines (GitHub Actions, CircleCI, Jenkins), lint/type enforcement, feature flagging.
 - **DevOps & Platforms:** AWS/GCP/Azure basics, Docker, Vagrant, Terraform-adjacent workflows, Netlify/Vercel/Render deployments, asset pipelines (WebP automation, localization tooling).
-- **Product & Collaboration:** Agile/Scrum/Kanban facilitation, RFC-driven decision making, observability-first instrumentation, Linear, Jira, Notion, Confluence, Figma, Loom.
-- **Leadership & Instruction:** Curriculum design, mock-interview tooling, inclusive design guilds, mentorship programs with 90% grad / 75% placement outcomes, community organizing (Refresh Austin, a11ySD, ReactJS meetups).
+- **Product & Collaboration:** Agile/Scrum/Kanban facilitation, RFC-driven decision making, Linear, Jira, Notion, Confluence, Figma, Loom.
+- **Mentoring & Community:** Code-review-driven mentorship, technical training, accessibility advocacy, community organising (meetup organiser and speaker across multiple cities).
 
 #### EXPERIENCE
 
-##### Numeral Studio — Senior Software Engineer 
+##### Senior Software Engineer | Numeral Studio
 Wellington / Remote
 
 2025 – Present
@@ -90,13 +90,12 @@ Wellington / Remote
 
 2016 – Present
 
-- Deployed a mobile-first, low-maintenance website for award-winning author Jon Cohn's book 'Slashtag' using Bootstrap, HTML5, CSS3, and JavaScript, serving as an effective marketing tool and enhancing book sales.
+- Shipped a mobile-first, low-maintenance website for award-winning author Jon Cohn's book 'Slashtag' using Bootstrap, HTML5, CSS3, and JavaScript; the site served as a focused marketing surface and supported book sales.
 - Consulted Mexic-Arte Museum’s volunteer team to create a seamless, volunteer-maintained web presence, prior to the museum and their collection becoming web-only during building renovations.
-- Added newsletter signup, optimized mobile layout and information architecture for non-profit Read the Room Education to promote their expertise and programs that enhance early-childhood educational outcomes.
-- Various projects with General Assembly, Thinkful, Codecademy, and others
-- Technologies: JavaScript, HTML5, CSS3, Bootstrap, GitHub, GitHub Pages, SquareSpace, Mailchimp, Google Drive.
+- Added newsletter signup and reworked mobile layout and information architecture for non-profit Read the Room Education to highlight their early-childhood programs.
+- Technologies: JavaScript, HTML5, CSS3, Bootstrap, GitHub, GitHub Pages, Squarespace, Mailchimp, Google Drive.
 
-##### PartsTrader Markets Ltd — Software Engineer (Contract)
+##### Software Engineer (Contract) | PartsTrader Markets Ltd
 Wellington
 
 2024 – 2025
@@ -105,15 +104,16 @@ Wellington
 - Stabilized BAU releases as measured by dependable automation runs by defining Repository→Domain→Mapper→Service layers plus Cypress smoke tests and GitHub Actions pipelines.
 - Technologies: C#/.NET, React, TypeScript, styled-components, Cypress, GitHub Actions, Azure DevOps, Jira, Confluence.
 
-##### Senior Software Engineer | WorkTango (formerly KazooHR) 
+##### Senior Software Engineer | HR / Rewards SaaS Platform
 Remote
 
 2019 – 2020
 
-- Re-architected the Rewards platform from Rails to ReactJS, resulting in a 15% increase in customer engagement. - Implemented a modular design system to improve UI consistency and boost developer velocity.
-- Integrated features across Performance Management and Rewards platforms to overhaul the product suite.
-- Mentored junior engineers and formalized the technology decision-making process for third-party libraries.
-- Technologies: ReactJS, Storybook, NodeJS, Jest, Chai, TypeScript, Ruby on Rails, ActiveRecord, RSpec, GraphQL, PostgreSQL, Circle CI, SASS/SCSS, GitHub, Design Language Systems, JIRA, Zeplin, Figma.
+- Led a Rails-to-React migration on an HR and employee-rewards SaaS platform, with a 15% lift in customer engagement after launch.
+- Built a modular design system that tightened UI consistency and raised developer velocity for the frontend team of 3.
+- Shipped integrations across the Performance Management and Rewards products as part of a wider suite overhaul.
+- Mentored junior engineers and formalised the technology decision-making process for third-party libraries.
+- Technologies: ReactJS, Storybook, NodeJS, Jest, Chai, TypeScript, Ruby on Rails, ActiveRecord, RSpec, GraphQL, PostgreSQL, CircleCI, SASS/SCSS, GitHub, design systems, JIRA, Zeplin, Figma.
 
 ##### Software Engineer | Condé Nast
 Hybrid - Austin, TX
@@ -143,27 +143,17 @@ Onsite - Austin, TX
 - Liaised between customer and engineering teams to diagnose and resolve customer issues.
 - Technologies: JavaScript, Ruby on Rails, ActiveRecord, RSpec, jQuery, HTML, CSS3, SASS/SCSS, MySQL, Git, GitHub, Vagrant, Jenkins, bash.
 
-#### SOFTWARE ENGINEERING INSTRUCTOR EXPERIENCE
+#### TECHNICAL TRAINING & MENTORING
 
-##### Software Engineer & Lead Instructor | The Flatiron School
-Remote
+##### Technical Training & Mentoring | Junior-to-mid engineers across a variety of orgs
 
-2022 – 2023
+2016 – 2017, 2022 – 2023
 
-- Delivered remote & asynchronous technical training on software engineering to a diverse group of students. - Wrote and presented curriculum covering JavaScript, HTML/CSS, ReactJS, Python, Flask, PostgreSQL, Object-Oriented Programming, CI/CD, Agile, APIs, Web Accessibility, and more.
-- Mentored and coached junior engineers, preparing them for success in their roles and job duties.
-- Lead a working group promoting inclusive web design and web accessibility practices.
-- Technologies: JavaScript, HTML5, CSS3, ReactJS, React Router, Python, Flask, Object-Oriented Programming, CI/CD, Render.com, Agile, APIs, Web Accessibility
-
-##### Software Engineer & Instructor | Hack Reactor (formerly Galvanize)
-Onsite - Austin, TX
-
-Aug. 2016 – Sep. 2017
-
-- Facilitated technical workshops for full-time and part-time programs in an Agile environment.
-- Created & presented effective software curriculum empowering students to succeed in their technology careers, resulting in a 90% graduation rate and 75% job placement rate within 90 days of graduation.
-- Built mock interview app for students, exponentially increasing career services capacity to give feedback.
-- Technologies: ReactJS, JavaScript, jQuery, Mocha, Chai, HTML, CSS3, SASS/SCSS, PostgreSQL, MySQL, Git, GitHub, Heroku, bash, zsh.
+- Designed and delivered curriculum and live workshops covering JavaScript, HTML/CSS, ReactJS, Python, Flask, PostgreSQL, OOP, CI/CD, Agile, APIs, and web accessibility, with structured assessments and PR-level feedback.
+- Mentored junior engineers through their first production-grade work; cohorts I supported achieved a 90% graduation rate and 75% job placement within 90 days of graduation.
+- Built a mock-interview app that lifted career-services feedback capacity well beyond what one-on-one sessions allowed.
+- Co-led an inclusive web design and accessibility working group across the engineering org.
+- Technologies: JavaScript, HTML5, CSS3, ReactJS, React Router, Python, Flask, OOP, CI/CD, Render.com, Agile, APIs, web accessibility.
 
 #### EDUCATION
 - Postgraduate Diploma in Information Technology | WelTec Petone
@@ -175,8 +165,8 @@ Aug. 2016 – Sep. 2017
 - Panel Discussion on Ethics, Austin on Rails Event, Moderator, 2019
 - “A Day in the Life of a Programmer,” General Assembly Congress Austin, Presenter, 2018
 - Refresh Austin, Organizer, Speaker, and MC, 2015 – 2017
-- Learn to Code Austin with Galvanize, Volunteer, 2016 – 2017
 - Silicon Beach Melbourne, Organizer, Speaker, MC, 2012 – 2013
+- TechStars Startup Weekend, Co-organiser across San Diego, Orange County, Melbourne, Sydney, and Wellington, 2012 – 2014
 
 #### PROFESSIONAL DEVELOPMENT
 
@@ -186,7 +176,6 @@ Aug. 2016 – Sep. 2017
 - Member, ReactJS Austin
 - Member, Austin on Rails & AustinRB
 - Member, Austin Bleeding Edge Web
-- Co-organizer, TechStars Startup Weekend, 2012 – 2014
 
 #### CONFERENCE & WORKSHOP ATTENDANCE
 

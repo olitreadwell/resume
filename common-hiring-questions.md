@@ -20,46 +20,44 @@
 Senior software engineering roles where I can deliver product features end to end, own architecture decisions, and stay hands-on with front-end experience while pairing with backend services.
 
 ### Are you seeking a contract, permanent, or either type of position?
- 
-I’m focused on permanent, full-time roles. I’m only open to contract work if it clearly leads to visa sponsorship and longer-term collaboration.
+
+Open to both. Permanent is the preference. Happy to discuss contract work in the UK (inside or outside IR35) and in the US. No sponsorship is needed in either market.
 
 ### What is your minimum salary expectation for both contract and permanent roles?
- 
-I'm looking for an industry-competitive salary in line with the role and responsibilities as well as the unique experience and education I bring to the role.
 
-I use websites specific to the region and country to help me best understand current compensation trends in the industry.
+I'm looking for an industry-competitive salary in line with the role, responsibilities, and the experience and education I bring.
 
-For USA salary information, I refer to [levels.fyi](https://levels.fyi), [glassdoor.com](https://glassdoor.com/), and [PayScale](https://www.payscale.com/).
+For benchmarking I lean on region-specific sources.
 
-For Australia and Aotearoa New Zealand salary information, I refer to [Seek Salary Guide](https://www.seek.co.nz/career-advice/browse/information-communication-technology), [Trade Me Jobs Salary Guide](https://www.trademe.co.nz/a/jobs/salary-guide/it/programming-development), and the latest [Hays Technology Contracter Rates Guide](https://www.hays.com.au/documents/276732/1102429/IT+Contractor+Rates+Guide_FY25-26.pdf?em=NQsUdhU3O4yC0QepbtxhBLZlMaeEY3RJ&jobSource=SFMC).
- 
+- **United Kingdom:** [levels.fyi](https://levels.fyi), [Glassdoor UK](https://www.glassdoor.co.uk/Salaries/index.htm), [Otta](https://app.welcometothejungle.com/), [Hired UK salary report](https://hired.com/state-of-software-engineers/).
+- **United States:** [levels.fyi](https://levels.fyi), [Glassdoor](https://glassdoor.com/), [PayScale](https://www.payscale.com/).
+- **Aotearoa New Zealand & Australia:** [Seek Salary Guide](https://www.seek.co.nz/career-advice/browse/information-communication-technology), [Trade Me Jobs Salary Guide](https://www.trademe.co.nz/a/jobs/salary-guide/it/programming-development), and the latest [Hays Technology Contractor Rates Guide](https://www.hays.com.au/).
+
 ### What is your employment authorization status?
-
-#### Aotearoa New Zealand
-
-I recently completed a Level 8 Postgraduate Diploma in Information Technology at Whitireia in Petone, Lower Hutt, Wellington, New Zealand. I am currently on a post-study work visa, which allows me to work full-time for any employer in New Zealand.
-
-I am looking to build a long-term relationship with an Accredited Employer that will support my pathway to permanent residency in New Zealand. With 10+ years of experience as a Software Engineer—a role listed on New Zealand's Green List of needed employees—I am well-positioned for roles that meet the requirements for skilled migrant residency.
-
-#### Australia
-
-I am looking to build a long-term relationship with an Australian accredited sponsor that can support my pathway to permanent residency. With 10+ years as a software engineer (on Australia’s Priority Migration/Skilled Occupation lists), I am well aligned with skilled-migrant requirements.
-
-#### United States of America
-
-I'm a USA citizen, with passport and social security number. I do not need sponsorship to remain in the country or to work for a USA employer.
 
 #### United Kingdom
 
-I'm a United Kingdom citizen, with current passport. I do not need sponsorship to remain in the United Kingdom or to work for a UK employer.
+UK citizen with a current British passport. No sponsorship needed to work for any UK employer.
+
+#### United States of America
+
+US citizen with a current passport and social security number. No sponsorship needed to work for any US employer.
+
+#### Aotearoa New Zealand
+
+Currently on a post-study work visa after completing a Level 8 Postgraduate Diploma in Information Technology at Whitireia (Wellington). Eligible to work full-time for any NZ employer until the visa expires. Software Engineer is on the Green List, so long-term residency pathways exist for Accredited Employers if helpful.
+
+#### Australia, Canada, EU
+
+Open to discussion. Each would require sponsorship.
 
 ### Where are you located?
 
-Wellington, New Zealand
+Currently Wellington, New Zealand. Relocating to London in early August 2026.
 
 ### Are you interested in relocating?
 
-Depends on the role, city, relocation compensation, and total compensation.
+Already relocating to London in early August 2026. Open to discussing other locations depending on role, city, relocation support, and total compensation.
 
 ### How long have you been working remotely?
 
@@ -77,11 +75,11 @@ I’m available full-time with a four-week notice period from offer acceptance.
 
 ### Do you have experience mentoring or coaching other software engineers? What has been your experience? Why do you like mentoring or coaching other software engineers?
 
-Yes, I have experience mentoring and coaching other software engineers, including time coaching in both formal and informal settings. Coaching is a deeply ingrained facet in my career. It gives me great satisfaction to support the growth of fellow engineers, particularly as it lets me contribute to both an individual's development and broader progress within the industry. My mentoring philosophy combines a unique blend of training technical skills, fostering a socially responsible mindset, and growing an engineer's soft skills like communication, emotional intelligence and teamwork.
+Yes, with experience coaching engineers in both formal and informal settings. Coaching has been part of my career for years. Supporting the growth of fellow engineers matters to me, both for the individual and for what they then contribute to the wider industry. My mentoring approach blends technical skills, a socially responsible outlook, and the soft skills (communication, emotional intelligence, teamwork) that determine whether an engineer's capacity actually translates into team throughput.
 
-When I have worked as a Software Engineer, I know that my role includes a responsibility to mentor junior engineers. While at WorkTango, I was involved in the technology decision-making process and optimized third-party library selections, during which I encouraged guided participation from junior engineers all while supporting their contributions in our tech stack featuring ReactJS, GraphQL, and Ruby on Rails. This experience was deeply enriching as I saw firsthand the growing confidence and throughput of our team's engineers, demonstrating the truth behind my belief that effective mentorship has quantifiable outcomes.
+Mentoring is part of how I work as a senior engineer. At a previous HR/rewards SaaS platform I was involved in technology decisions and library selection, and pulled junior engineers into that process so they could shape parts of our ReactJS, GraphQL, and Rails stack rather than only consume it. Growing the confidence and throughput of the team is what made mentorship feel measurable, not abstract.
 
-At Hack Reactor, my contributions went beyond simply teaching code; I also took pride in the curriculum I helped create. This curriculum, imbued with the development principles of Agile, Mobile-first, and industry best practices, had impressive outcomes—a 90% graduation rate and a 75% job placement rate within three months of graduation. Similar efforts continued when I joined The Flatiron School. Here, I've grown my focus to incorporate web accessibility and inclusive design principles, key aspects I consider vital for any developer's toolbox. Hoping to make a more inclusive web for everyone starting from the ground up.
+Earlier in my career I designed and delivered technical training for junior-to-mid engineers across a variety of orgs, covering JavaScript, React, Python/Flask, Rails, accessibility, CI/CD, and agile delivery. The curriculum I co-authored produced a 90% graduation rate and a 75% job placement rate within three months of graduation. That work also let me embed web accessibility and inclusive design principles into engineers' core toolkit, which I have continued to push in every codebase since.
 
 Outside of my work, I am actively involved as a community organizer and open-source contributor, both of which strengthen my mentorship philosophy. Software Engineers gain so much from participating in the community and I hope to show (not just tell) my mentees the value of being involved. I've been a speaker and organizer at various tech events and coding bootcamps. Whether it’s leading a panel discussion on ethics in tech or contributing to Code for America, these activities allow me to share my knowledge in a more communal, holistic manner, while also staying humble and learning from others.
 
@@ -105,7 +103,7 @@ One of my most impactful projects was at Condé Nast, where I built a reusable p
 
 ### Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.
 
-At Condé Nast, I spearheaded the development of a brand-agnostic paywall architecture along with a suite of components for over 26 media brands. This project was particularly crucial for the company's monetization strategy, aiming to drive a substantial increase in monthly subscriptions.
+At Condé Nast, I led the development of a brand-agnostic paywall architecture along with a suite of components for over 26 media brands. The project was central to the company's monetisation strategy, aimed at driving a substantial increase in monthly subscriptions.
 
 **Challenges**:
 
@@ -121,4 +119,4 @@ At Condé Nast, I spearheaded the development of a brand-agnostic paywall archit
 
 6. **Cross-Platform Compatibility**: Given the variety of devices and platforms on which readers accessed the content, ensuring the paywall worked flawlessly across all of them was a challenge.
 
-The result of our efforts was a significant growth in monetization, achieving a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired. The project underscored the importance of iterative development, user-centric design, and robust testing in creating a successful paywall system.
+The result was significant growth in monetisation, with a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired. The project reinforced the value of iterative development, user-centric design, and robust testing when building a paywall system at media scale.
