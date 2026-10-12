@@ -3,7 +3,8 @@
 ## Table of Contents
 
 
-* <strong>[PDF Resume for Downloading](./Oli%20Treadwell%20-%20Senior%20Software%20Engineer%20Resume%20-%202026-05-25.pdf)</strong>
+* <strong>[PDF Resume for Downloading, NZ (2026-10-07)](./Oli%20Treadwell%20-%20Senior%20Software%20Engineer%20Resume%20-%20NZ%20-%202026-10-07.pdf)</strong>
+* <strong>[PDF Resume for Downloading, Remote (2026-10-01)](./Oli%20Treadwell%20-%20Senior%20Software%20Engineer%20Resume%20-%20Remote%20-%202026-10-01.pdf)</strong>
 * <strong>[Portfolio Projects](./portfolio-projects.md)</strong>
 * <strong>[Open Source Contributions](./open-source-contributions.md)</strong>
 * <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
