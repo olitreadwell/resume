@@ -1,5 +1,17 @@
 ## Software Engineering Skills Inventory
 
+### AI & Automation
+
+- AI-Assisted Engineering Workflows: 2 years
+- Large Language Model (LLM) API Integration: 2 years
+- Agentic & Multi-Agent Pipelines: 2 years
+- ChatGPT & GitHub Copilot Instruction: 2 years
+- AI Coding-Agent Configuration (AGENTS.md, agent skills): 2 years
+- MCP (Model Context Protocol) Tooling: 1 year
+- Local & Hosted Open Models (Ollama, Qwen, DeepSeek): 2 years
+- Agentic IDE & AI Code Review Tooling: 2 years
+- Prompt Engineering & Spec-Driven Workflows: 3 years
+
 ### Software Engineering
 
 - Web Development: 11 years
