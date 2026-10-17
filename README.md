@@ -16,7 +16,7 @@
     * [Summary](#summary)
     * [Skills](#skills)
     * [Experience](#experience)
-    * [Software Engineering Instructor Experience](#software-engineering-instructor-experience)
+    * [Technical Training & Mentoring](#technical-training--mentoring)
     * [Education](#education)
     * [Industry Thought Leadership & Speaking Engagements](#industry-thought-leadership--speaking-engagements)
     * [Professional Development](#professional-development)
@@ -53,7 +53,7 @@
 [Back to Top](#table-of-contents)
 
 ### Oli Treadwell
-#### Senior Software Engineer & Technical Instructor  
+#### Senior Software Engineer & Technical Trainer  
 
 - [oliver.treadwell@gmail.com](mailto:oliver.treadwell@gmail.com)
 - [linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
@@ -61,14 +61,15 @@
 
 #### SUMMARY
 
-Senior software engineer shipping across multiple client products in a forward-deployed style: embedded with clients, owning frontend and full-stack scope, working closely with design, PM, and backend partners. Decade of experience across media, HR tech, healthcare, compliance, and conference platforms. UK and US citizen.
+Senior full-stack engineer shipping across multiple client products in a forward-deployed style: embedded with clients, owning frontend and full-stack scope, working closely with design, PM and backend partners. Decade of experience across media, HR tech, healthcare, compliance and conference platforms. Builds the agentic layer teams need for AI-assisted delivery rather than using the tools by hand: an MCP server that lets a coding agent audit and fix React performance, a GitHub Action that tiers pull request authors, and a code-review agent template a delivery team ran on every change. Taught over 300 engineers to use ChatGPT and GitHub Copilot to the standard that they can explain the work rather than outsource it. UK and US citizen.
 
 #### Skills
 
+- **AI & Automation:** AI-assisted SDLC adoption and team rollout, agentic and multi-agent pipelines, agent-consumable tooling (MCP servers, GitHub Actions for agents), LLM API integration, AI-assisted engineering workflows, ChatGPT and GitHub Copilot instruction, local and hosted open models (Ollama, Qwen, DeepSeek), agentic IDE and AI code review tooling, spec-driven workflows.
 - **Front-end Systems:** React, Next.js, Electron, Tailwind CSS, Sass/SCSS, design tokens, Storybook, accessibility testing (axe, Lighthouse), component governance.
-- **Back-end & Services:** Node.js/TypeScript, Ruby on Rails, Python/Flask, Prisma & ActiveRecord, PostgreSQL, MySQL, REST/JSON:API, GraphQL, domain-driven microservices.
+- **Back-end & Services:** Node.js/TypeScript, Ruby on Rails, Python/Flask, C#/.NET, Prisma & ActiveRecord, PostgreSQL, MySQL, REST/JSON:API, GraphQL, domain-driven microservices.
 - **Quality & Reliability:** Jest, React Testing Library, Cypress, Puppeteer, RSpec, CI pipelines (GitHub Actions, CircleCI, Jenkins), lint/type enforcement, feature flagging.
-- **DevOps & Platforms:** AWS/GCP/Azure basics, Docker, Vagrant, Terraform-adjacent workflows, Netlify/Vercel/Render deployments, asset pipelines (WebP automation, localization tooling).
+- **DevOps & Platforms:** CI/CD pipeline ownership (GitHub Actions, CircleCI, Jenkins), build and test gates, monitoring and error tracking, AWS/GCP/Azure basics, Docker, Vagrant, Terraform-adjacent workflows, Netlify/Vercel/Render deployments.
 - **Product & Collaboration:** Agile/Scrum/Kanban facilitation, RFC-driven decision making, Linear, Jira, Notion, Confluence, Figma, Loom.
 - **Mentoring & Community:** Code-review-driven mentorship, technical training, accessibility advocacy, community organising (meetup organiser and speaker across multiple cities).
 
@@ -77,31 +78,38 @@ Senior software engineer shipping across multiple client products in a forward-d
 ##### Senior Software Engineer | Numeral Studio
 Wellington / Remote
 
-2025 – Present
+Feb 2025 – Jun 2026 (role made redundant)
 
 - Delivered multi-client throughput via **580+ commits** with consistently green lint/type/test gates by pairing tightly with design, PM, and back-end partners across compliance, healthcare, marketing, and conference products.
+- Built the studio's AI-assisted delivery layer: a reusable template that ran AI code review and caught errors before they reached production, with the team contributing rules to it.
+- Used AI-assisted tooling on nearly every pull request shipped, which made room for test-driven development, end-to-end tests, accessibility testing and the documentation a tight schedule would otherwise have skipped.
 
 - **Regulatory compliance desktop app:** Rebuilt shared React TypeScript components, predictable validation flows, and accessibility wrappers inside a React/Electron shell, then backed the refactor with targeted Jest suites so compliance analysts stopped encountering silent audit errors.
 - **HR & case management platform:** Extended staff/case schemas (preferred case owners, privacy filters), shipped numerous components to the design system for improved workflows.
 - **Consumer device multi-market web experience:** Orchestrated a WebP asset pipeline, automated resizing scripts, and EN/KR localisation fixes that removed iOS search glitches and aligned translations across wearables and tutorial flows.
-- **Design conference event site:** Cut duplicate UI by ~70% through component design systems, and maintained Storybook/JSDoc docs so new contributors could ship within a day.
+- **Design conference event site:** Cut code duplication by 40%, and maintained Storybook/JSDoc docs so new contributors could ship within a day.
 - Technologies: React, TypeScript, Electron, Next.js 15, Tailwind CSS, Sass, Sanity v3, Prisma, Cypress, Jest/React Testing Library, Storybook, GitHub Actions, AWS, Figma, Jira.
 
-##### Software Engineer & Founder | Habitual Genesis
+##### Principal Engineer & Technical Consultant | Habitual Genesis
 
 2016 – Present
 
+- Maintains **ai-harness**, a public, versioned home for AI coding-agent configuration: 127 reusable skills validated against the agentskills.io spec, global instructions readable by Claude Code, Codex, Cursor and Gemini CLI, an installer that wires into every installed tool, and subagent role definitions.
+- Wrote the **React Performance Checklist**, public training material on fixing slow React apps: 34 rules held as structured data, a plain-language glossary, worked examples, and an MCP server so an agent can list rules, fetch one, and produce audit or fix plans.
+- Built **PR Vetting**, a dependency-free Python CLI and GitHub Action that tiers pull request authors from public GitHub signals, so unknown or bot accounts cannot merge without a human decision.
+- Contributes to open source projects, with **13 pull requests merged upstream** by outside maintainers (adobe/react-spectrum, freeCodeCamp/devdocs, plausible/analytics, encode/django-rest-framework and others).
+- Maintains a public portfolio of open-data directories and connectors across New Zealand, the UK and the US, produced from one repeatable pipeline, plus a project template carrying quality gates, CI and an interactive scaffolder.
 - Shipped a mobile-first, low-maintenance website for award-winning author Jon Cohn's book 'Slashtag' using Bootstrap, HTML5, CSS3, and JavaScript; the site served as a focused marketing surface and supported book sales.
 - Consulted Mexic-Arte Museum’s volunteer team to create a seamless, volunteer-maintained web presence, prior to the museum and their collection becoming web-only during building renovations.
 - Added newsletter signup and reworked mobile layout and information architecture for non-profit Read the Room Education to highlight their early-childhood programs.
-- Technologies: JavaScript, HTML5, CSS3, Bootstrap, GitHub, GitHub Pages, Squarespace, Mailchimp, Google Drive.
+- Technologies: TypeScript, Node.js, Python, JavaScript, HTML5, CSS3, Bootstrap, GitHub Actions, MCP, GitHub Pages, SquareSpace, Mailchimp, Google Drive.
 
 ##### Software Engineer (Contract) | PartsTrader Markets Ltd
 Wellington
 
 2024 – 2025
 
-- Modernized onboarding as measured by retiring spreadsheet-driven setup steps by implementing a .NET service facade, React/TypeScript console, and Windows-native toolchain aligned to Figma prototypes.
+- Picked up .NET and C# from zero, then retired spreadsheet-driven onboarding steps by shipping a .NET service facade (Repository, Domain Model, Mapper, Application Service layers), a React/TypeScript console, and a Windows-native toolchain aligned to Figma prototypes.
 - Stabilized BAU releases as measured by dependable automation runs by defining Repository→Domain→Mapper→Service layers plus Cypress smoke tests and GitHub Actions pipelines.
 - Technologies: C#/.NET, React, TypeScript, styled-components, Cypress, GitHub Actions, Azure DevOps, Jira, Confluence.
 
@@ -150,6 +158,7 @@ Onsite - Austin, TX
 
 2016 – 2017, 2022 – 2023
 
+- Delivered technical training on ChatGPT and GitHub Copilot to a remote cohort of over 300 students, with the standard that they demonstrate understanding of the work rather than outsource it to the tool.
 - Designed and delivered curriculum and live workshops covering JavaScript, HTML/CSS, ReactJS, Python, Flask, PostgreSQL, OOP, CI/CD, Agile, APIs, and web accessibility, with structured assessments and PR-level feedback.
 - Mentored junior engineers through their first production-grade work; cohorts I supported achieved a 90% graduation rate and 75% job placement within 90 days of graduation.
 - Built a mock-interview app that lifted career-services feedback capacity well beyond what one-on-one sessions allowed.
@@ -157,12 +166,13 @@ Onsite - Austin, TX
 - Technologies: JavaScript, HTML5, CSS3, ReactJS, React Router, Python, Flask, OOP, CI/CD, Render.com, Agile, APIs, web accessibility.
 
 #### EDUCATION
-- Postgraduate Diploma in Information Technology | WelTec Petone
+- Postgraduate Diploma in Information Technology | Whitireia and WelTec
 - Full-Stack Web Development, Ruby on Rails, and JavaScript Certification | Dev Bootcamp
 - BS in Business Administration, Entrepreneurship, & International Business | Chapman University
 
 #### INDUSTRY THOUGHT LEADERSHIP & SPEAKING ENGAGEMENTS
 
+- Selected to speak on cognitive accessibility, NZ Tech Rally, 2026 (withdrew unwell)
 - Panel Discussion on Ethics, Austin on Rails Event, Moderator, 2019
 - “A Day in the Life of a Programmer,” General Assembly Congress Austin, Presenter, 2018
 - Refresh Austin, Organizer, Speaker, and MC, 2015 – 2017
