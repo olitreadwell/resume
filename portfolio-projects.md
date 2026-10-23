@@ -743,11 +743,27 @@ A global mobile experience platform with localized experiences, interactive demo
 
 - ReactJS, Storybook, NodeJS, TypeScript, GraphQL, Ruby on Rails, ActiveRecord, PostgreSQL.
 
+**The seam:**
+
+- Rails kept the domain model and the data. React replaced the server-rendered views one surface at a time. GraphQL was the boundary between the two, which meant the front end could move without a backend rewrite, and either side could be rolled back on its own. That boundary is the decision I would defend hardest, because it let a small team migrate a live product without a big-bang release.
+
 **Key Contributions:**
 
 - Re-architected the Rewards platform from Ruby on Rails to ReactJS by implementing a modular design system, which improved customer engagement by **15%**.
 - Optimised front-end performance, reducing page load times by **20%**, which enhanced user experience across the platform.
 - Collaborated with backend teams to integrate new features for performance tracking and reward redemption, streamlining the product suite.
+
+**What was hard:**
+
+- Choosing the order. Moving the most-used view first would show value fastest and break the most users if it went wrong. Moving the least-used view first was safe and taught us little. We went with a middle-traffic view, shipped it behind a flag, and let the first two weeks decide the pace for everything after.
+- Keeping two rendering paths alive at once. Every shared component had to work in the old shell and the new one during the transition, which is why the design system went into Storybook early rather than at the end.
+- Getting a small front-end team and the backend team to agree on the contract before anyone wrote the query.
+
+**What I would do differently:**
+
+- I would write the shared component contracts down before building them, not after the third team asked for the same prop under a different name.
+- I would put a performance budget in CI on day one. The 20% load improvement was found at the end of the work, not held to during it.
+- I would spend longer on the "which view first" question with the product team, because we argued about it twice.
 
 **Metrics and KPIs:**
 

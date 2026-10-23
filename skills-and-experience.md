@@ -116,6 +116,18 @@
 - Scrum: 4 years
 - Confluence: 5 years
 
+### Delivery & Ways of Working
+
+- Product Ownership (problem to production): 8 years
+- Estimation & Scoping: 8 years
+- Trunk-Based Delivery: 4 years
+- Pull Request Review as a Gate: 10 years
+- Legacy Codebase Modernisation: 6 years
+- Incremental Migration (strangler pattern): 5 years
+- Monolith Work: 5 years
+- Internationalisation (i18n): 2 years
+- Human-in-the-Loop AI Review: 2 years
+
 ### Project Management
 
 - Project Implementation: 6 years

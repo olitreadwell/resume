@@ -10,6 +10,7 @@
 * <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
 * <strong>[Recommendations & References](./linkedin-recommendations.md)</strong>
 * <strong>[Skills & Experience](./skills-and-experience.md)</strong>
+* <strong>[Community & Events](./community-and-events.md)</strong>
 * [Links](#links)
 <!-- * [Resume Images](#resume-images) -->
 * [Markdown Resume](#markdown-resume)
@@ -61,7 +62,13 @@
 
 #### SUMMARY
 
-Senior full-stack engineer shipping across multiple client products in a forward-deployed style: embedded with clients, owning frontend and full-stack scope, working closely with design, PM and backend partners. Decade of experience across media, HR tech, healthcare, compliance and conference platforms. Builds the agentic layer teams need for AI-assisted delivery rather than using the tools by hand: an MCP server that lets a coding agent audit and fix React performance, a GitHub Action that tiers pull request authors, and a code-review agent template a delivery team ran on every change. Taught over 300 engineers to use ChatGPT and GitHub Copilot to the standard that they can explain the work rather than outsource it. UK and US citizen.
+Senior full-stack product engineer with 11 years in the industry, eight of them in React and five in Ruby on Rails. I take work from the problem statement to production: find the edge cases, write down the decisions, build it, ship it, and stay for what happens after launch. Worked across media, HR tech, healthcare, compliance and conference platforms.
+
+I moved an HR and rewards platform's front end from Rails views to React, which lifted customer engagement by 15% after launch, and built the design system the front end ran on. At Condé Nast I shipped one brand-agnostic paywall across 26 media sites, and the rule engine behind it let each brand set its own trigger from user behaviour and content type rather than one rule for all of them.
+
+I ship small pull requests against a trunk that deploys often, keep lint, type and test gates green, and expect a second engineer to read every change. I use AI tools for the first pass on review and scaffolding and keep a person on the decision. Accessibility, internationalisation and screen size are delivery requirements in my work, not a later pass, because the products I have shipped serve users in a lot of markets.
+
+I build the agentic layer teams need for AI-assisted delivery rather than using the tools by hand: an MCP server that lets a coding agent audit and fix React performance, a GitHub Action that tiers pull request authors, and a code-review agent template a delivery team ran on every change. Taught over 300 engineers to use ChatGPT and GitHub Copilot to the standard that they can explain the work rather than outsource it. UK and US citizen.
 
 #### Skills
 
