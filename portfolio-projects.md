@@ -1,5 +1,174 @@
 # Portfolio Projects
 
+## NZ Data Answer: AI answers that show their sources | Habitual Genesis | 2026
+
+**In one sentence:** you ask a question about New Zealand public data, the site finds the matching datasets, the model may only answer from those, and the page names the sources and shows what the call cost.
+
+**Problem Statement / Challenge:**
+
+-   Ask a general chatbot a question about New Zealand public data and it answers with confidence and no source. I wanted the opposite: an answer that has to name the dataset behind it, and a page that shows what that answer cost to produce.
+
+**Scope of Work:**
+
+-   A Next.js app that takes a question, searches two open data sources that need no API key, and passes only the matching datasets to a language model. If nothing matches, the site says so and spends no model call.
+
+**Tools and Environment:**
+
+-   Next.js, TypeScript strict, Vitest, Playwright, GitHub Actions, an OpenAI-compatible model endpoint, the data.govt.nz CKAN catalogue and the Aotearoa Data Explorer search index.
+
+**Key Contributions:**
+
+-   Built the search step. Two connectors run in parallel, return at most eight excerpts, and keep each dataset's title, URL and description. The citations come from those records, not from the model.
+-   Built the AI layer as five small modules: the client call, the config and cost cap, the guard that redacts personal data and wraps source text in an `<untrusted>` fence, the prompt registry, and the usage ledger. Each one has its own tests.
+-   Treated source text as data, not instructions. The model is told that anything inside the fence is evidence. One of the eval cases is a source page that tries to give the model an instruction.
+-   Put the cost on the page. Model name, prompt fingerprint, input and output tokens, estimated cost and latency sit under every answer. A call estimated above the per-request cap is refused before it is sent.
+-   Wrote an eval harness as a normal script next to the test suite. `pnpm run evals` runs the five cases and writes a JSON report. With no API key it prints `evals skipped` and exits clean.
+
+**Metrics and KPIs:**
+
+-   35 test files across the app, including five AI modules each with tests.
+-   Five eval cases: cites a dataset, refuses without evidence, resists an instruction hidden in source text, stays in plain language, and uses a figure it was given.
+-   Works with no API key. The page still returns the datasets it found and says answers are turned off.
+
+**Learning and Development:**
+
+-   The model call is the easy part. The work is the fence around untrusted text, the redaction, the cost cap, and the eval that tells you a prompt change made answers worse.
+-   A feature that costs money per request needs a number it is allowed to spend, written down before the first user arrives.
+
+**Links:**
+
+-   Live: <https://nz-data-answer.vercel.app>
+-   Repository: <https://github.com/olitreadwell/nz-data-answer>
+
+---
+
+## ai-harness: One Config Home for Every Coding Agent | Habitual Genesis | 2025 - Present
+
+**Problem Statement / Challenge:**
+
+-   Every coding agent reads its own configuration file, from its own directory, in its own format. Working across Claude Code, Codex, Cursor and Gemini CLI meant the same conventions lived in four places and drifted apart, and the skills, instructions and subagent definitions that make an agent useful were the least portable part of the setup.
+
+**Scope of Work:**
+
+-   A public, versioned repository holding the whole agent configuration in one place: 127 reusable skills, global instruction files, and subagent role definitions, with an installer that wires the repository into every tool installed on a machine.
+
+**Tools and Environment:**
+
+-   AGENTS.md standard, the agentskills.io skill spec, Python and shell for the installer and the validator, Markdown for the skills themselves.
+
+**Key Contributions:**
+
+-   Wrote and maintains 127 skills covering review, diagnosis, delivery and documentation workflows.
+-   Built `scripts/validate-skills.py`, which checks every skill against the agentskills.io spec, so a malformed skill fails before it reaches an agent.
+-   Built the installer that links the repository into each installed tool, so one edit lands everywhere.
+-   Wrote subagent role definitions for investigation, review and build work, kept next to the skills they support.
+
+**Metrics and KPIs:**
+
+-   127 skills in the public repository, all passing spec validation.
+-   One source, readable by Claude Code, Codex, Cursor and Gemini CLI.
+
+**Learning and Development:**
+
+-   The hard part is not writing a skill. It is deciding what belongs in a global instruction file and what belongs in a skill, because agent context is a budget and everything loaded by default is paid for on every task.
+
+**Repository:**
+
+-   <https://github.com/olitreadwell/ai-harness>
+
+---
+
+## React Performance Checklist | Habitual Genesis | 2026
+
+**Problem Statement / Challenge:**
+
+-   Most React performance advice sits in blog posts and conference talks, and rarely says when a rule does not apply. A new developer learns tactics without a way to decide which one matters for the slow screen in front of them. A coding agent has the opposite problem: it can apply a fix, but it does not hold the measured context that says whether the fix is the right one.
+-   Wanted one source that serves both readers: a person learning to debug a slow render, and an agent asked to audit an app.
+
+**Scope of Work:**
+
+-   34 rules held as structured data, sorted by category and severity, with a plain-language glossary, worked examples, audit and fix prompts, and a report template.
+
+**Tools and Environment:**
+
+-   React, TypeScript, rule data as JSON, Vitest, ESLint, and an MCP server so an agent can list rules, fetch one, and produce an audit or fix plan.
+
+**Key Contributions:**
+
+-   Wrote the 34 rules as data rather than prose, so one set drives the human-readable checklist, the agent tooling and the tests.
+-   Built the MCP server that exposes rule listing and retrieval to an agent.
+-   Wrote the glossary and the worked examples, so a new developer can read a rule and see the measurement that justifies it.
+
+**Metrics and KPIs:**
+
+-   34 rules, each carrying its severity, its category and the measurement that justifies it.
+
+**Learning and Development:**
+
+-   Writing the rules as data forced the ambiguity out. A rule like "memoise this component" only becomes useful once it names the measurement that says whether it applies.
+
+**Repository:**
+
+-   <https://github.com/olitreadwell/react-performance-checklist>
+
+---
+
+## PR Vetting: Trust Tiers for Pull Request Authors | Habitual Genesis | 2026
+
+**Problem Statement / Challenge:**
+
+-   An open repository receives pull requests from accounts with no history, from bots, and from people who are new. Reviewing all of them at the same priority spends maintainer attention badly, and merging an unknown account without a look is worse.
+-   Wanted a small, dependency-free check a maintainer can run in CI that classifies an author from public signals alone.
+
+**Scope of Work:**
+
+-   A GitHub Action and a plain Python CLI that classify a pull request author into a trust tier (maintainer, vetted, established, known, review_required, dormant, blocked) and fail the check when a human decision is needed.
+
+**Tools and Environment:**
+
+-   Python with no runtime dependencies, `action.yml` for the GitHub Action, public GitHub API signals, and a test suite covering the verdict rules.
+
+**Key Contributions:**
+
+-   Defined the verdict tiers and the signals behind each one: maintainer allowlist, a maintainer-applied label, merged-PR history in the repository, account age, activity, and account type.
+-   Kept it dependency-free, so it runs in any pipeline without a lockfile or a database.
+-   Made it fail closed by default, so an API error blocks rather than passes, with an explicit fail-open switch.
+-   Documented each tier in the README with the gate it implies.
+
+**Metrics and KPIs:**
+
+-   Eight verdicts, from maintainer to blocked, with `review_required` as the default for an unknown author.
+
+**Learning and Development:**
+
+-   Beta is the honest label. The signal set is a judgement call, and pretending otherwise would invite maintainers to trust a number that has not been validated.
+
+**Repository:**
+
+-   <https://github.com/olitreadwell/pr-vetting>
+
+---
+
+## Open Source Contributions | 2026
+
+**What landed:**
+
+-   13 pull requests merged upstream by outside maintainers, in projects including adobe/react-spectrum, freeCodeCamp/devdocs, plausible/analytics, encode/django-rest-framework, zellij-org/zellij, GOVTNZ/cwac, mysociety/fixmystreet, cfpb/design-system-react and opendatateam/udata-front-kit.
+
+**How the work was chosen:**
+
+-   Each repository's own contribution rules and review culture were read first, and every change was reviewed by a person before it was opened.
+
+**What the changes were:**
+
+-   Small, maintainer-friendly work: documentation fixes, test coverage and accessibility corrections. That is what these repositories actually accept from an outside contributor.
+
+**What I took from it:**
+
+-   Merged is the only number that matters. Volume is easy to generate and mostly unwelcome; a change a maintainer accepts is the only evidence the judgement behind it was any good.
+
+---
+
 ## Numeral Studio Monorepo Template | Numeral Studio | Mar 2026 - May 2026 (proposal, pending adoption)
 
 > Monorepo starter for new client work. Default stack, opt-in conventions, sensible gates from day one. Build done; team adoption next.
@@ -285,7 +454,7 @@ A Fortune 2000 client needed one live moment to land in front of a large confere
 **Company:** Numeral Studio  
 **Project:** Conference website platform  
 **Role:** Senior Front-end Software Engineer
-**Duration:** March 2025 - Present (Multiple Engagements)
+**Duration:** March 2025 - Jan 2026 (multiple engagements)
 
 ### Project Overview
 
@@ -329,7 +498,7 @@ A comprehensive conference management platform providing speaker profiles, sessi
 
 ### Impact & Results
 
-- **Component Reusability:** 70% reduction in code duplication through unified FilterList system.
+- **Component Reusability:** 40% reduction in code duplication.
 - **Development Velocity:** Faster feature delivery through standardized patterns and documentation.
 - **User Experience:** Consistent interactions, improved mobile performance, and better accessibility.
 - **System Architecture:** Scalable, type-safe components supporting future conference websites.
@@ -564,11 +733,11 @@ A global mobile experience platform with localized experiences, interactive demo
 
 **Scope of Work:**
 
-- Led a team to transition the platform’s front end from Ruby on Rails to ReactJS while implementing a modular design system and collaborating with backend developers and UI/UX designers for integration across the Performance Management and Rewards platforms.
+- Transitioned the platform’s front end from Ruby on Rails to ReactJS while implementing a modular design system and collaborating with backend developers and UI/UX designers for integration across the Performance Management and Rewards platforms.
 
 **Team Size and Collaboration:**
 
-- Led a front-end development team of 3 engineers and worked closely with back-end developers and UI/UX designers to ensure smooth integration.
+- Worked within a small front-end team alongside back-end developers and UI/UX designers to ensure smooth integration. (Oli was not the team lead; corrected 2026-10-01.)
 
 **Tools and Environment:**
 
@@ -577,13 +746,13 @@ A global mobile experience platform with localized experiences, interactive demo
 **Key Contributions:**
 
 - Re-architected the Rewards platform from Ruby on Rails to ReactJS by implementing a modular design system, which improved customer engagement by **15%**.
-- Optimised front-end performance, reducing page load times by **30%**, which lifted user experience across the platform.
+- Optimised front-end performance, reducing page load times by **20%**, which enhanced user experience across the platform.
 - Collaborated with backend teams to integrate new features for performance tracking and reward redemption, streamlining the product suite.
 
 **Metrics and KPIs:**
 
 - Increased customer engagement by **15%**, measured through user interaction metrics.
-- Reduced page load times by **30%**, leading to a more responsive and enjoyable user experience.
+- Reduced page load times by **20%**, leading to a more responsive and enjoyable user experience.
 
 **Learning and Development:**
 
