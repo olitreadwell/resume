@@ -1,47 +1,5 @@
 # Portfolio Projects
 
-## NZ Data Answer: AI answers that show their sources | Habitual Genesis | 2026
-
-**In one sentence:** you ask a question about New Zealand public data, the site finds the matching datasets, the model may only answer from those, and the page names the sources and shows what the call cost.
-
-**Problem Statement / Challenge:**
-
--   Ask a general chatbot a question about New Zealand public data and it answers with confidence and no source. I wanted the opposite: an answer that has to name the dataset behind it, and a page that shows what that answer cost to produce.
-
-**Scope of Work:**
-
--   A Next.js app that takes a question, searches two open data sources that need no API key, and passes only the matching datasets to a language model. If nothing matches, the site says so and spends no model call.
-
-**Tools and Environment:**
-
--   Next.js, TypeScript strict, Vitest, Playwright, GitHub Actions, an OpenAI-compatible model endpoint, the data.govt.nz CKAN catalogue and the Aotearoa Data Explorer search index.
-
-**Key Contributions:**
-
--   Built the search step. Two connectors run in parallel, return at most eight excerpts, and keep each dataset's title, URL and description. The citations come from those records, not from the model.
--   Built the AI layer as five small modules: the client call, the config and cost cap, the guard that redacts personal data and wraps source text in an `<untrusted>` fence, the prompt registry, and the usage ledger. Each one has its own tests.
--   Treated source text as data, not instructions. The model is told that anything inside the fence is evidence. One of the eval cases is a source page that tries to give the model an instruction.
--   Put the cost on the page. Model name, prompt fingerprint, input and output tokens, estimated cost and latency sit under every answer. A call estimated above the per-request cap is refused before it is sent.
--   Wrote an eval harness as a normal script next to the test suite. `pnpm run evals` runs the five cases and writes a JSON report. With no API key it prints `evals skipped` and exits clean.
-
-**Metrics and KPIs:**
-
--   35 test files across the app, including five AI modules each with tests.
--   Five eval cases: cites a dataset, refuses without evidence, resists an instruction hidden in source text, stays in plain language, and uses a figure it was given.
--   Works with no API key. The page still returns the datasets it found and says answers are turned off.
-
-**Learning and Development:**
-
--   The model call is the easy part. The work is the fence around untrusted text, the redaction, the cost cap, and the eval that tells you a prompt change made answers worse.
--   A feature that costs money per request needs a number it is allowed to spend, written down before the first user arrives.
-
-**Links:**
-
--   Live: <https://nz-data-answer.vercel.app>
--   Repository: <https://github.com/olitreadwell/nz-data-answer>
-
----
-
 ## ai-harness: One Config Home for Every Coding Agent | Habitual Genesis | 2025 - Present
 
 **Problem Statement / Challenge:**
