@@ -125,6 +125,7 @@
 - Legacy Codebase Modernisation: 6 years
 - Incremental Migration (strangler pattern): 5 years
 - Monolith Work: 5 years
+- Developer Experience (tooling, tests, CI, docs): 6 years
 - Internationalisation (i18n): 2 years
 - Human-in-the-Loop AI Review: 2 years
 

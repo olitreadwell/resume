@@ -24,8 +24,7 @@
 - [What team size and ways of working suit you best?](#what-team-size-and-ways-of-working-suit-you-best)
 - [What do you do when a piece of work turns out bigger than expected?](#what-do-you-do-when-a-piece-of-work-turns-out-bigger-than-expected)
 - [How current is your Ruby on Rails experience?](#how-current-is-your-ruby-on-rails-experience)
-- [Why a product company after an agency?](#why-a-product-company-after-an-agency)
-- [What questions do you ask the interviewer?](#what-questions-do-you-ask-the-interviewer)
+- [Why product work over agency work?](#why-product-work-over-agency-work)
 
 ### What type of role(s) are you interested in?
  
@@ -205,34 +204,12 @@ Since 2020 my default backend has been Node and TypeScript, so the gap is curren
 
 Can I review a Rails pull request in week one? Yes, and I will be slower at it than someone who writes Rails every day. I will ask more questions about the parts of the codebase I have not touched, and the review will be careful rather than fast. That gap closes over the first month or two, and the front end is where I am deep from day one.
 
-### Why a product company after an agency?
+### Why product work over agency work?
 
-Agency work trained me well and I would take it again. The difference is what counts as done. In an agency, done often means the client accepted it inside the budget. At a product company, done means the people who use it are better off and we can still change it next quarter.
+Five of my six roles have been at product companies: Union Metrics, Bypass Mobile, Condé Nast, an HR and rewards platform, and PartsTrader. Numeral was the agency, and it taught me things the product side did not.
 
-Most of my career has been on product teams: five years across an HR and rewards platform and Condé Nast, plus PartsTrader. The agency year was the exception. I liked being close to the client and I want to keep that, but I want to live with what I ship.
+The agency was varied and fast. A small team, several clients at once, decisions made in a conversation and shipped the same week, and one engineer owning a whole slice of a product. I liked that, and it made me quicker at scoping and at talking to the person who has the problem.
 
-That is the real reason. The best work I have done got better after launch, because I was still there when the first real users hit it.
+Product work is more methodical. What ships and when matters, a change has to fit a roadmap, and the codebase outlives the ticket. That is the part I want more of, because the work I am proudest of is the work that made the next change easier: the shared component layer, the review template a team kept adding to, the test gate that stopped a regression reaching production.
 
-### What questions do you ask the interviewer?
-
-Pick four and ask them even when the interviewer has already covered the ground. A re-ask shows you were listening: "you said the team owns the whole story, what does that look like on a bad week?" is a better question than a fresh one off a list.
-
-First call:
-
-1. What does the team work on today, and what would I own in the first six months?
-2. How does work get from an idea to a shipped change here? Who decides scope?
-3. What is the split between the older parts of the system and the new parts?
-4. What is the next step, and when should I expect to hear?
-
-Technical round:
-
-1. Where does the test suite end and a human reviewer begin?
-2. How often do you deploy, and what happens when a build breaks on a Friday?
-3. Which part of the codebase slows the team down most right now?
-4. What technical decision made in the last year would you make differently?
-
-Late stage:
-
-1. What would success look like at three months and at six months?
-2. What has gone wrong on this team in the last year, and what changed after it?
-3. How do product, design and engineering settle a disagreement about scope?
+I care about the systems around the product as much as the product. Developer experience is part of what I build: a fast test suite, a review that arrives the same day, docs that answer the question without a meeting. My measure of a good change is that the repo is easier to work in afterwards than it was before.
