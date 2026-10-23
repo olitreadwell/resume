@@ -15,6 +15,17 @@
 - [Can you describe the projects you've worked on either in school or on your own? What was your role, and how did you handle challenges?](#can-you-describe-the-projects-youve-worked-on-either-in-school-or-on-your-own-what-was-your-role-and-how-did-you-handle-challenges)
 - [Describe a front end based project that you've worked on in a professional setting, and some of the challenges you experienced working on it.](#describe-a-front-end-based-project-that-youve-worked-on-in-a-professional-setting-and-some-of-the-challenges-you-experienced-working-on-it)
 
+## How I work
+
+- [How do you take a piece of work from idea to production?](#how-do-you-take-a-piece-of-work-from-idea-to-production)
+- [How do you estimate work, and what do you think of story points?](#how-do-you-estimate-work-and-what-do-you-think-of-story-points)
+- [How do you work inside a large, long-lived codebase?](#how-do-you-work-inside-a-large-long-lived-codebase)
+- [How do you use AI in your day-to-day delivery, and where do you draw the line?](#how-do-you-use-ai-in-your-day-to-day-delivery-and-where-do-you-draw-the-line)
+- [What team size and ways of working suit you best?](#what-team-size-and-ways-of-working-suit-you-best)
+- [What do you do when a piece of work turns out bigger than expected?](#what-do-you-do-when-a-piece-of-work-turns-out-bigger-than-expected)
+- [How current is your Ruby on Rails experience?](#how-current-is-your-ruby-on-rails-experience)
+- [Why product work over agency work?](#why-product-work-over-agency-work)
+
 ### What type of role(s) are you interested in?
  
 Senior software engineering roles where I can deliver product features end to end, own architecture decisions, and stay hands-on with front-end experience while pairing with backend services.
@@ -53,11 +64,11 @@ Open to discussion. Each would require sponsorship.
 
 ### Where are you located?
 
-Currently Wellington, New Zealand. Relocating to London in early August 2026.
+Wellington, New Zealand. Working from here now.
 
 ### Are you interested in relocating?
 
-Already relocating to London in early August 2026. Open to discussing other locations depending on role, city, relocation support, and total compensation.
+Open to it. I have been planning a move to London and I am also happy to stay in New Zealand for the right role. For a move I would want relocation support and a clear start date agreed as part of the offer.
 
 ### How long have you been working remotely?
 
@@ -120,3 +131,85 @@ At Condé Nast, I led the development of a brand-agnostic paywall architecture a
 6. **Cross-Platform Compatibility**: Given the variety of devices and platforms on which readers accessed the content, ensuring the paywall worked flawlessly across all of them was a challenge.
 
 The result was significant growth in monetisation, with a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired. The project reinforced the value of iterative development, user-centric design, and robust testing when building a paywall system at media scale.
+
+## How I work
+
+Three shapes, one per job. The words stay mine. The order is what makes the answer land.
+
+**Story answers use STAR.** Situation, Task, Action, Result, then one line on what I do differently now. If someone asks about a hard bug or a project, those four beats are the answer.
+
+**Reflective answers use CARL.** Context, Action, Results, Learning. That covers "how do you estimate", "why a product company", "how current is your Rails", where the point is judgement rather than an event.
+
+**Resume bullets use XYZ.** Accomplished X, as measured by Y, by doing Z. The Experience section in the README is written that way, so a bullet can be read aloud as a claim with its evidence attached.
+
+### How do you take a piece of work from idea to production?
+
+Start with the problem, not the ticket. Before I write code I want to know who hits this, what they do today, and what would make the change worth shipping. That usually means a short conversation with the designer or the person closest to the customer, then writing the edge cases and the decisions into the ticket so the next person can follow the reasoning.
+
+Then I slice it. The smallest slice that proves the idea in a real environment goes first, and I get it in front of someone before the hardening work behind it. At Numeral that often meant a rough version in a review environment within a day, then the tests and cleanup after the feedback.
+
+After launch I stay on it. I read the error tracker, ask the client or the support contact what changed, and fix what the first week exposes. Two examples. On the compliance app I rebuilt the shared validation flows and the Jest coverage in the same change, so analysts stopped hitting silent audit errors. On the Condé Nast paywall the rule engine let each brand set its own trigger from user behaviour and content type, so a change in policy did not mean rewriting the component.
+
+What changed in my practice: I write the edge cases into the ticket before I start, and I read the error tracker in week one rather than waiting for a report.
+
+### How do you estimate work, and what do you think of story points?
+
+Estimates are for sequencing, not for promises. I give sizes in half days and full days, because that is the resolution I can defend, and I say what I am assuming when I give the number. If the assumption turns out wrong I say so the same day, not at the end of the sprint.
+
+I have worked in shops that ran planning poker and shops that did not. Points can help a team decide what fits in a sprint. They also turn into a number somebody quotes back six weeks later, which is where they stop being useful. The valuable part is the argument the team has while it disagrees about a size. The number on its own is weak, and it gets weaker when an AI tool can turn a five day estimate into an hour of work, or the reverse.
+
+At Numeral the team did not run formal pointing. I gave half day or full day sizes and had a pull request up before noon or by end of day, so the estimate was checked against reality within hours rather than at a review meeting.
+
+### How do you work inside a large, long-lived codebase?
+
+I assume the code is there for a reason, and I find out what that reason was before I change it. `git log` and `git blame` first, then the person who wrote it if they are still around. I have found more useful context in a 2019 commit message and an old thread than in any architecture document.
+
+At Condé Nast I worked in a single repo with around 100 engineers in it, each owning a different part of the product. That meant learning where my change sat in the merge queue and whose work it could break, and having those conversations before the pull request rather than after.
+
+In an 18 year old monolith the risk is not the code you write, it is the code you touch by accident. So I look for the seams: what calls this, what does it write, who reads that. I put tests around the behaviour I am about to change before I change it, and I keep commits small so a revert stays cheap. On the Rails codebases that was RSpec around the parts with the most callers.
+
+### How do you use AI in your day-to-day delivery, and where do you draw the line?
+
+I use it for the first pass and keep a person on the decision. In practice that means a review agent flagging problems before a human reads the pull request, scaffolding for a component or a test file, and summarising a large diff I did not write. I have run this inside a delivery team, not only on my own repos.
+
+The line is evidence. A model can suggest a change. It cannot tell me the change works. So the tests, the type check, the lint gate and a second engineer still decide whether something merges. I have watched an agentic pipeline fabricate a result, and the fix was to rebuild it around a verification step that fails when it should.
+
+Two other limits. Anything I put in an agent's context has to survive a privacy question. Anything I run unattended has to have a cost ceiling. The template I built at Numeral ships with an OpenAI-compatible client, a per-request cost cap, redaction, schema-validated output repair, and it stays off until you set a key so CI remains deterministic.
+
+The rule I would give a team: automate the low judgement, high volume work, and never automate the part where someone has to understand why.
+
+### What team size and ways of working suit you best?
+
+I have worked in a team of three engineers, in a studio of four, and in a repo with 100 engineers in it. Size changes the work more than it changes me.
+
+In a small team you own a whole product surface and talk to the client directly, so you learn what matters before you build it. At Numeral there were three or four engineers, each on a separate product, with a daily stand-up, a short grooming pass on the backlog, and pull requests reviewed the same day.
+
+In a large team you own a slice and you earn the right to change anything outside it. At Condé Nast that meant working through my manager into the marketing and product teams to understand merge order and priority. I liked that too, because the constraint is real and the conversation is about the whole system rather than my corner of it.
+
+What I need either way: a board I can see, a review that arrives within a day, and someone who can answer a question about scope. I will review other people's work and pair on whatever is blocking them, because the board moving matters more than my ticket count.
+
+### What do you do when a piece of work turns out bigger than expected?
+
+Say so early, in writing, with a smaller option attached. "This is bigger than the ticket said, here is why, here is what I can ship this week and what waits" is a conversation people can act on. Silence until the deadline is what breaks trust.
+
+Then I look for the slice. Almost every oversized ticket has a version that delivers the useful part, and finding it is as much a product question as a technical one. I would rather ship the smaller version that somebody uses than hold the whole thing for a month.
+
+If it cannot be sliced I put the trade-off in front of whoever owns the scope and let them choose. I will say what I think, but the priority call is not mine alone.
+
+### How current is your Ruby on Rails experience?
+
+Rails is real for me, but it is not recent. I spent about five years on it. I migrated two legacy codebases to Rails 4 at Union Metrics, built a JSON:API licensing service at Bypass Mobile, and moved the front end of an HR and rewards platform from Rails views to React while Rails kept serving the data.
+
+Since 2020 my default backend has been Node and TypeScript, so the gap is currency, not ability. What carries over is the shape of the work: ActiveRecord and Prisma solve the same problems, migrations follow the same rules, and I picked up C# and .NET from zero on a live contract at PartsTrader.
+
+Can I review a Rails pull request in week one? Yes, and I will be slower at it than someone who writes Rails every day. I will ask more questions about the parts of the codebase I have not touched, and the review will be careful rather than fast. That gap closes over the first month or two, and the front end is where I am deep from day one.
+
+### Why product work over agency work?
+
+Five of my six roles have been at product companies: Union Metrics, Bypass Mobile, Condé Nast, an HR and rewards platform, and PartsTrader. Numeral was the agency, and it taught me things the product side did not.
+
+The agency was varied and fast. A small team, several clients at once, decisions made in a conversation and shipped the same week, and one engineer owning a whole slice of a product. I liked that, and it made me quicker at scoping and at talking to the person who has the problem.
+
+Product work is more methodical. What ships and when matters, a change has to fit a roadmap, and the codebase outlives the ticket. That is the part I want more of, because the work I am proudest of is the work that made the next change easier: the shared component layer, the review template a team kept adding to, the test gate that stopped a regression reaching production.
+
+I care about the systems around the product as much as the product. Developer experience is part of what I build: a fast test suite, a review that arrives the same day, docs that answer the question without a meeting. My measure of a good change is that the repo is easier to work in afterwards than it was before.

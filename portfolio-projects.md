@@ -1,47 +1,5 @@
 # Portfolio Projects
 
-## NZ Data Answer: AI answers that show their sources | Habitual Genesis | 2026
-
-**In one sentence:** you ask a question about New Zealand public data, the site finds the matching datasets, the model may only answer from those, and the page names the sources and shows what the call cost.
-
-**Problem Statement / Challenge:**
-
--   Ask a general chatbot a question about New Zealand public data and it answers with confidence and no source. I wanted the opposite: an answer that has to name the dataset behind it, and a page that shows what that answer cost to produce.
-
-**Scope of Work:**
-
--   A Next.js app that takes a question, searches two open data sources that need no API key, and passes only the matching datasets to a language model. If nothing matches, the site says so and spends no model call.
-
-**Tools and Environment:**
-
--   Next.js, TypeScript strict, Vitest, Playwright, GitHub Actions, an OpenAI-compatible model endpoint, the data.govt.nz CKAN catalogue and the Aotearoa Data Explorer search index.
-
-**Key Contributions:**
-
--   Built the search step. Two connectors run in parallel, return at most eight excerpts, and keep each dataset's title, URL and description. The citations come from those records, not from the model.
--   Built the AI layer as five small modules: the client call, the config and cost cap, the guard that redacts personal data and wraps source text in an `<untrusted>` fence, the prompt registry, and the usage ledger. Each one has its own tests.
--   Treated source text as data, not instructions. The model is told that anything inside the fence is evidence. One of the eval cases is a source page that tries to give the model an instruction.
--   Put the cost on the page. Model name, prompt fingerprint, input and output tokens, estimated cost and latency sit under every answer. A call estimated above the per-request cap is refused before it is sent.
--   Wrote an eval harness as a normal script next to the test suite. `pnpm run evals` runs the five cases and writes a JSON report. With no API key it prints `evals skipped` and exits clean.
-
-**Metrics and KPIs:**
-
--   35 test files across the app, including five AI modules each with tests.
--   Five eval cases: cites a dataset, refuses without evidence, resists an instruction hidden in source text, stays in plain language, and uses a figure it was given.
--   Works with no API key. The page still returns the datasets it found and says answers are turned off.
-
-**Learning and Development:**
-
--   The model call is the easy part. The work is the fence around untrusted text, the redaction, the cost cap, and the eval that tells you a prompt change made answers worse.
--   A feature that costs money per request needs a number it is allowed to spend, written down before the first user arrives.
-
-**Links:**
-
--   Live: <https://nz-data-answer.vercel.app>
--   Repository: <https://github.com/olitreadwell/nz-data-answer>
-
----
-
 ## ai-harness: One Config Home for Every Coding Agent | Habitual Genesis | 2025 - Present
 
 **Problem Statement / Challenge:**
@@ -743,11 +701,27 @@ A global mobile experience platform with localized experiences, interactive demo
 
 - ReactJS, Storybook, NodeJS, TypeScript, GraphQL, Ruby on Rails, ActiveRecord, PostgreSQL.
 
+**The seam:**
+
+- Rails kept the domain model and the data. React replaced the server-rendered views one surface at a time. GraphQL was the boundary between the two, which meant the front end could move without a backend rewrite, and either side could be rolled back on its own. That boundary is the decision I would defend hardest, because it let a small team migrate a live product without a big-bang release.
+
 **Key Contributions:**
 
 - Re-architected the Rewards platform from Ruby on Rails to ReactJS by implementing a modular design system, which improved customer engagement by **15%**.
 - Optimised front-end performance, reducing page load times by **20%**, which enhanced user experience across the platform.
 - Collaborated with backend teams to integrate new features for performance tracking and reward redemption, streamlining the product suite.
+
+**What was hard:**
+
+- Choosing the order. Moving the most-used view first would show value fastest and break the most users if it went wrong. Moving the least-used view first was safe and taught us little. We went with a middle-traffic view, shipped it behind a flag, and let the first two weeks decide the pace for everything after.
+- Keeping two rendering paths alive at once. Every shared component had to work in the old shell and the new one during the transition, which is why the design system went into Storybook early rather than at the end.
+- Getting a small front-end team and the backend team to agree on the contract before anyone wrote the query.
+
+**What I would do differently:**
+
+- I would write the shared component contracts down before building them, not after the third team asked for the same prop under a different name.
+- I would put a performance budget in CI on day one. The 20% load improvement was found at the end of the work, not held to during it.
+- I would spend longer on the "which view first" question with the product team, because we argued about it twice.
 
 **Metrics and KPIs:**
 

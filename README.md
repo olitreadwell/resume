@@ -10,6 +10,7 @@
 * <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
 * <strong>[Recommendations & References](./linkedin-recommendations.md)</strong>
 * <strong>[Skills & Experience](./skills-and-experience.md)</strong>
+* <strong>[Community & Events](./community-and-events.md)</strong>
 * [Links](#links)
 <!-- * [Resume Images](#resume-images) -->
 * [Markdown Resume](#markdown-resume)
@@ -61,7 +62,13 @@
 
 #### SUMMARY
 
-Senior full-stack engineer shipping across multiple client products in a forward-deployed style: embedded with clients, owning frontend and full-stack scope, working closely with design, PM and backend partners. Decade of experience across media, HR tech, healthcare, compliance and conference platforms. Builds the agentic layer teams need for AI-assisted delivery rather than using the tools by hand: an MCP server that lets a coding agent audit and fix React performance, a GitHub Action that tiers pull request authors, and a code-review agent template a delivery team ran on every change. Taught over 300 engineers to use ChatGPT and GitHub Copilot to the standard that they can explain the work rather than outsource it. UK and US citizen.
+Senior full-stack product engineer with 11 years in the industry, eight of them in React and five in Ruby on Rails. I take work from the problem statement to production: find the edge cases, write down the decisions, build it, ship it, and stay for what happens after launch. Worked across media, HR tech, healthcare, compliance and conference platforms.
+
+I moved an HR and rewards platform's front end from Rails views to React, which lifted customer engagement by 15% after launch, and built the design system the front end ran on. At Condé Nast I shipped one brand-agnostic paywall across 26 media sites, and the rule engine behind it let each brand set its own trigger from user behaviour and content type rather than one rule for all of them.
+
+I ship small pull requests against a trunk that deploys often, keep lint, type and test gates green, and expect a second engineer to read every change. I care about the systems around the product as much as the product itself, so a change should leave the repo easier to work in than it was before. I use AI tools for the first pass on review and scaffolding and keep a person on the decision. Accessibility, internationalisation and screen size are delivery requirements in my work, not a later pass, because the products I have shipped serve users in a lot of markets.
+
+I build the agentic layer teams need for AI-assisted delivery rather than using the tools by hand: an MCP server that lets a coding agent audit and fix React performance, a GitHub Action that tiers pull request authors, and a code-review agent template a delivery team ran on every change. Taught over 300 engineers to use ChatGPT and GitHub Copilot to the standard that they can explain the work rather than outsource it. UK and US citizen.
 
 #### Skills
 
@@ -80,28 +87,27 @@ Wellington / Remote
 
 Feb 2025 – Jun 2026
 
-- Delivered multi-client throughput via **580+ commits** with consistently green lint/type/test gates by pairing tightly with design, PM, and back-end partners across compliance, healthcare, marketing, and conference products.
-- Built the studio's AI-assisted delivery layer: a reusable template that ran AI code review and caught errors before they reached production, with the team contributing rules to it.
-- Used AI-assisted tooling on nearly every pull request shipped, which made room for test-driven development, end-to-end tests, accessibility testing and the documentation a tight schedule would otherwise have skipped.
-
-- **Regulatory compliance desktop app:** Rebuilt shared React TypeScript components, predictable validation flows, and accessibility wrappers inside a React/Electron shell, then backed the refactor with targeted Jest suites so compliance analysts stopped encountering silent audit errors.
-- **HR & case management platform:** Extended staff/case schemas (preferred case owners, privacy filters), shipped numerous components to the design system for improved workflows.
-- **Consumer device multi-market web experience:** Orchestrated a WebP asset pipeline, automated resizing scripts, and EN/KR localisation fixes that removed iOS search glitches and aligned translations across wearables and tutorial flows.
-- **Design conference event site:** Cut code duplication by 40%, and maintained Storybook/JSDoc docs so new contributors could ship within a day.
+- Delivered 580+ commits across compliance, healthcare, marketing and conference products with every lint, type and test gate green, by pairing with design, PM and back-end partners from the first ticket to release.
+- Built the studio's AI code-review template that caught errors before production, and grew it with team-contributed rules by shipping it as reusable config rather than a one-off script.
+- Shipped with AI-assisted tooling on nearly every pull request, which made room for test-driven development, end-to-end tests, accessibility checks and the docs a tight schedule would have dropped.
+- Rebuilt the compliance app's shared components, validation and accessibility wrappers in Electron, cutting form bug reports about 60% with Jest suites on each refactor. The component layer became the base for the next two client projects.
+- Extended staff and case schemas on the HR case platform (preferred case owners, privacy filters) and shipped the components into the shared design system.
+- Removed iOS search glitches on the multi-market wearables site, across EN and KR, by building a WebP asset pipeline and resizing scripts that kept images and translations aligned.
+- Cut code duplication 40% on the design conference site by consolidating shared sections, and kept Storybook and JSDoc current so a new contributor shipped within a day.
 - Technologies: React, TypeScript, Electron, Next.js 15, Tailwind CSS, Sass, Sanity v3, Prisma, Cypress, Jest/React Testing Library, Storybook, GitHub Actions, AWS, Figma, Jira.
 
 ##### Principal Engineer & Technical Consultant | Habitual Genesis
 
 2016 – Present
 
-- Maintains **ai-harness**, a public, versioned home for AI coding-agent configuration: 127 reusable skills validated against the agentskills.io spec, global instructions readable by Claude Code, Codex, Cursor and Gemini CLI, an installer that wires into every installed tool, and subagent role definitions.
-- Wrote the **React Performance Checklist**, public training material on fixing slow React apps: 34 rules held as structured data, a plain-language glossary, worked examples, and an MCP server so an agent can list rules, fetch one, and produce audit or fix plans.
-- Built **PR Vetting**, a dependency-free Python CLI and GitHub Action that tiers pull request authors from public GitHub signals, so unknown or bot accounts cannot merge without a human decision.
-- Contributes to open source projects, with **13 pull requests merged upstream** by outside maintainers (adobe/react-spectrum, freeCodeCamp/devdocs, plausible/analytics, encode/django-rest-framework and others).
-- Maintains a public portfolio of open-data directories and connectors across New Zealand, the UK and the US, produced from one repeatable pipeline, plus a project template carrying quality gates, CI and an interactive scaffolder.
-- Shipped a mobile-first, low-maintenance website for award-winning author Jon Cohn's book 'Slashtag' using Bootstrap, HTML5, CSS3, and JavaScript; the site served as a focused marketing surface and supported book sales.
-- Consulted Mexic-Arte Museum’s volunteer team to create a seamless, volunteer-maintained web presence, prior to the museum and their collection becoming web-only during building renovations.
-- Added newsletter signup and reworked mobile layout and information architecture for non-profit Read the Room Education to highlight their early-childhood programs.
+- Maintained **ai-harness** to 127 skills validated against the agentskills.io spec, installable into Claude Code, Codex, Cursor and Gemini CLI from one installer, so a team configures every agent from one repo.
+- Wrote the **React Performance Checklist**, 34 rules as structured data with a plain-language glossary, worked examples and an MCP server, so an agent can list a rule, fetch it and return an audit or fix plan.
+- Built **PR Vetting**, a dependency-free Python CLI and GitHub Action that tiers pull request authors from public signals, so an unknown or bot account cannot merge without a human decision.
+- Landed **13 pull requests** with outside maintainers (adobe/react-spectrum, freeCodeCamp/devdocs, plausible/analytics, encode/django-rest-framework) by keeping each fix small enough to review in one sitting.
+- Produced open-data directories and connectors for New Zealand, the UK and the US from one repeatable pipeline, with a project template carrying quality gates, CI and an interactive scaffolder.
+- Shipped a mobile-first site for author Jon Cohn's book 'Slashtag' in Bootstrap, HTML5, CSS3 and JavaScript, built to run without maintenance between book launches.
+- Rebuilt Mexic-Arte Museum's volunteer-maintained web presence before the collection went web-only during building renovations, so a non-technical volunteer team could keep it current.
+- Added newsletter signup and reworked mobile layout and information architecture for Read the Room Education, so their early-childhood programs were findable on a phone.
 - Technologies: TypeScript, Node.js, Python, JavaScript, HTML5, CSS3, Bootstrap, GitHub Actions, MCP, GitHub Pages, SquareSpace, Mailchimp, Google Drive.
 
 ##### Software Engineer (Contract) | PartsTrader Markets Ltd
@@ -109,8 +115,8 @@ Wellington
 
 2024 – 2025
 
-- Picked up .NET and C# from zero, then retired spreadsheet-driven onboarding steps by shipping a .NET service facade (Repository, Domain Model, Mapper, Application Service layers), a React/TypeScript console, and a Windows-native toolchain aligned to Figma prototypes.
-- Stabilized BAU releases as measured by dependable automation runs by defining Repository→Domain→Mapper→Service layers plus Cypress smoke tests and GitHub Actions pipelines.
+- Picked up .NET and C# from zero in one contract and retired spreadsheet-driven onboarding, by shipping a layered service facade, a React console and a Windows toolchain.
+- Stabilised BAU releases so automation runs stopped failing, by defining the Repository, Domain, Mapper and Service layers and adding Cypress smoke tests and GitHub Actions pipelines.
 - Technologies: C#/.NET, React, TypeScript, styled-components, Cypress, GitHub Actions, Azure DevOps, Jira, Confluence.
 
 ##### Senior Software Engineer | HR / Rewards SaaS Platform
@@ -118,10 +124,10 @@ Remote
 
 2019 – 2020
 
-- Led a Rails-to-React migration on an HR and employee-rewards SaaS platform, with a 15% lift in customer engagement after launch.
-- Built a modular design system that tightened UI consistency and raised developer velocity for the frontend team of 3.
-- Shipped integrations across the Performance Management and Rewards products as part of a wider suite overhaul.
-- Mentored junior engineers and formalised the technology decision-making process for third-party libraries.
+- Moved the rewards platform's front end off Rails views and onto React, lifting customer engagement 15% after launch, by rebuilding the module around a shared design system.
+- Built that modular design system, which cut inconsistent UI and raised velocity for a three-engineer front-end team.
+- Shipped Performance Management and Rewards integrations as part of a suite-wide overhaul, so the two products read as one.
+- Mentored junior engineers and formalised the third-party library decision process, so a library choice arrived with its trade-offs written down.
 - Technologies: ReactJS, Storybook, NodeJS, Jest, Chai, TypeScript, Ruby on Rails, ActiveRecord, RSpec, GraphQL, PostgreSQL, CircleCI, SASS/SCSS, GitHub, design systems, JIRA, Zeplin, Figma.
 
 ##### Software Engineer | Condé Nast
@@ -129,9 +135,10 @@ Hybrid - Austin, TX
 
 2017 – 2019
 
-- Delivered new design features & ReactJS components for over 26 media brands, improving readership and SEO.
-- Built and iterated upon a brand-agnostic paywall architecture and suite of components, driving significant growth and achieving a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired.
-- Authored a technology blog post on End-to-End Testing the Condé Nast Paywalls. [https://technology.condenast.com/story/end-to-end-testing-conde-nast-paywalls](https://web.archive.org/web/20211202210445/https://technology.condenast.com/story/end-to-end-testing-conde-nast-paywalls)
+- Delivered React components and design features to 26 media brands, improving readership and search visibility.
+- Built a brand-agnostic paywall and component suite that lifted monthly subscriptions for Vanity Fair and Wired by over 100% year on year, by keeping one core and putting brand rules in configuration.
+- Wrote the engineering post on end-to-end testing the paywalls after building the Puppeteer suite that caught cross-brand regressions before release.
+  <https://web.archive.org/web/20211202210445/https://technology.condenast.com/story/end-to-end-testing-conde-nast-paywalls>
 - Technologies: ReactJS, Storybook, NodeJS, Jest, Puppeteer, TypeScript, SASS, GitHub, Jenkins, CI/CD, Design Language Systems, JIRA.
 
 ##### Software Engineer (Contract) | Bypass Mobile
@@ -139,7 +146,7 @@ Onsite - Austin, TX
 
 2016 – 2016
 
-- Designed and developed a JSON-API spec product licensing platform using Ruby-on-Rails as part of a small team. - Resolved development environment issues and performed code reviews using Github.com.
+- Designed and built a JSON:API product licensing platform in Rails with a small team, then resolved environment issues and reviewed code in GitHub to keep the release moving.
 - Technologies: JSON-API, Ruby on Rails, ActiveRecord, RSpec, MySQL, Git, GitHub, Vagrant, bash, JIRA.
 
 ##### Software Engineer | Union Metrics
@@ -147,9 +154,9 @@ Onsite - Austin, TX
 
 2014 – 2016
 
-- Migrated and refactored two legacy codebases to use Rails 4, improving maintainability, security of core business features, and performance by 20%.
-- Created knowledge base of 100 most common customer technical challenges, reducing resolution time by 50%.
-- Liaised between customer and engineering teams to diagnose and resolve customer issues.
+- Migrated two legacy codebases to Rails 4, improving core feature performance 20% and closing security gaps, by refactoring in place rather than rewriting.
+- Created a knowledge base of the 100 most common customer technical issues, cutting resolution time 50% by giving support a written answer for each.
+- Liaised between customers and engineering to diagnose and resolve issues, so a bug report arrived as a reproducible case rather than a description.
 - Technologies: JavaScript, Ruby on Rails, ActiveRecord, RSpec, jQuery, HTML, CSS3, SASS/SCSS, MySQL, Git, GitHub, Vagrant, Jenkins, bash.
 
 #### TECHNICAL TRAINING & MENTORING
