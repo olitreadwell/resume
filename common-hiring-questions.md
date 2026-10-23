@@ -135,6 +135,14 @@ The result was significant growth in monetisation, with a year-over-year increas
 
 ## How I work
 
+Three shapes, one per job. The words stay mine. The order is what makes the answer land.
+
+**Story answers use STAR.** Situation, Task, Action, Result, then one line on what I do differently now. If someone asks about a hard bug or a project, those four beats are the answer.
+
+**Reflective answers use CARL.** Context, Action, Results, Learning. That covers "how do you estimate", "why a product company", "how current is your Rails", where the point is judgement rather than an event.
+
+**Resume bullets use XYZ.** Accomplished X, as measured by Y, by doing Z. The Experience section in the README is written that way, so a bullet can be read aloud as a claim with its evidence attached.
+
 ### How do you take a piece of work from idea to production?
 
 Start with the problem, not the ticket. Before I write code I want to know who hits this, what they do today, and what would make the change worth shipping. That usually means a short conversation with the designer or the person closest to the customer, then writing the edge cases and the decisions into the ticket so the next person can follow the reasoning.
@@ -142,6 +150,8 @@ Start with the problem, not the ticket. Before I write code I want to know who h
 Then I slice it. The smallest slice that proves the idea in a real environment goes first, and I get it in front of someone before the hardening work behind it. At Numeral that often meant a rough version in a review environment within a day, then the tests and cleanup after the feedback.
 
 After launch I stay on it. I read the error tracker, ask the client or the support contact what changed, and fix what the first week exposes. Two examples. On the compliance app I rebuilt the shared validation flows and the Jest coverage in the same change, so analysts stopped hitting silent audit errors. On the Condé Nast paywall the rule engine let each brand set its own trigger from user behaviour and content type, so a change in policy did not mean rewriting the component.
+
+What changed in my practice: I write the edge cases into the ticket before I start, and I read the error tracker in week one rather than waiting for a report.
 
 ### How do you estimate work, and what do you think of story points?
 
