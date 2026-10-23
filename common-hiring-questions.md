@@ -201,9 +201,9 @@ If it cannot be sliced I put the trade-off in front of whoever owns the scope an
 
 Rails is real for me, but it is not recent. I spent about five years on it. I migrated two legacy codebases to Rails 4 at Union Metrics, built a JSON:API licensing service at Bypass Mobile, and moved the front end of an HR and rewards platform from Rails views to React while Rails kept serving the data.
 
-Since 2020 my default backend has been Node and TypeScript. That is a real gap and I will not pretend otherwise. What transfers is the thinking: ActiveRecord and Prisma have the same shape of problem, the migration path looks the same, and I picked up a stack from zero on a live contract recently, which was C# and .NET at PartsTrader.
+Since 2020 my default backend has been Node and TypeScript, so the gap is currency, not ability. What carries over is the shape of the work: ActiveRecord and Prisma solve the same problems, migrations follow the same rules, and I picked up C# and .NET from zero on a live contract at PartsTrader.
 
-If you want someone who can review a Rails pull request in week one, I am not that person. If you want someone useful in a Rails codebase inside the first month, with the front end as the deep end, that is a fair description.
+Can I review a Rails pull request in week one? Yes, and I will be slower at it than someone who writes Rails every day. I will ask more questions about the parts of the codebase I have not touched, and the review will be careful rather than fast. That gap closes over the first month or two, and the front end is where I am deep from day one.
 
 ### Why a product company after an agency?
 
