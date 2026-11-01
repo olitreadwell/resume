@@ -22,16 +22,23 @@ emails, securing sponsorships, MCing, updating websites, and taking photos.
 
 ## Community and pro bono
 
-- Rebuilt Mexic-Arte Museum's volunteer-maintained web presence before the
-  collection went web-only during building renovations, so a non-technical
-  volunteer team could keep it current.
-- Rebuilt the mobile layout and added a Mailchimp signup for Read the Room
-  Education, growing the mailing list 40% and lifting mobile engagement 25%.
+- Contributor, nz-tech-events, 2026 to present. Eight pull requests merged:
+  CI quality gates, JSON-LD event data, Atom and RSS feeds, a shared region
+  concern, test coverage, CONTRIBUTING and an MIT licence.
+- Led a team of four to evaluate web platforms for Mexic-Arte Museum and
+  presented the recommendation to its board, which selected Squarespace. The
+  museum needed a volunteer-managed site while its collection was online only
+  during building renovations.
+- Read the Room Education, pro bono since 2021. Rebuilt the mobile layout,
+  added a Mailchimp signup, grew the mailing list 40% and lifted mobile
+  engagement 25%.
 - Mentor, Ministry of Awesome.
 - Open San Diego, the Code for America brigade.
 - San Diego Tech 4 Good.
 - a11ySD.
-- Contributor, nz-tech-events.
+
+More detail on the pro bono projects is in
+[Portfolio Projects](./portfolio-projects.md).
 
 ## Earlier events
 
