@@ -18,6 +18,7 @@
     * [Skills](#skills)
     * [Experience](#experience)
     * [Technical Training & Mentoring](#technical-training--mentoring)
+    * [Community & Event Volunteering](#community--event-volunteering)
     * [Education](#education)
     * [Industry Thought Leadership & Speaking Engagements](#industry-thought-leadership--speaking-engagements)
     * [Professional Development](#professional-development)
@@ -161,6 +162,14 @@ Onsite - Austin, TX
 - Liaised between customers and engineering to diagnose and resolve issues, so a bug report arrived as a reproducible case rather than a description.
 - Technologies: JavaScript, Ruby on Rails, ActiveRecord, RSpec, jQuery, HTML, CSS3, SASS/SCSS, MySQL, Git, GitHub, Vagrant, Jenkins, bash.
 
+##### Stage Technician & Stage Manager (Volunteer and Part-Time) | Chapman University
+Orange, CA
+
+2007 – 2011
+
+- Volunteered as a theatre technician and stage manager for three years while completing my degree, supporting large stage productions and the lecture series.
+- Worked paid part-time summer crew for three summers at 20+ hours per week, including set setup and strike.
+
 #### TECHNICAL TRAINING & MENTORING
 
 ##### Technical Training & Mentoring | Junior-to-mid engineers across a variety of orgs
@@ -173,6 +182,17 @@ Onsite - Austin, TX
 - Built a mock-interview app that lifted career-services feedback capacity well beyond what one-on-one sessions allowed.
 - Co-led an inclusive web design and accessibility working group across the engineering org.
 - Technologies: JavaScript, HTML5, CSS3, ReactJS, React Router, Python, Flask, OOP, CI/CD, Render.com, Agile, APIs, web accessibility.
+
+#### COMMUNITY & EVENT VOLUNTEERING
+
+- Event crew, RadioActive.FM Rave 2 The Grave, The Grand, Wellington, 2026.
+  Pack-in and stage setup with the Mayhem Sound and Open Air audio crews.
+- Volunteer crew, Kawaiicon, Michael Fowler Centre, Wellington, 2026. Bag and
+  tag, then convention crew.
+- Volunteer, Wellycon 2025, Kiwicon 2026 and Kaibosh Food Rescue 2025.
+- Stage manager and theatre technician, Memorial Hall, Chapman University,
+  2008 to 2011.
+- Full event history: [Community & Events](./community-and-events.md)
 
 #### EDUCATION
 - Postgraduate Diploma in Information Technology | Whitireia and WelTec

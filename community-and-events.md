@@ -8,28 +8,43 @@ MC. I have worked small community events and multi-city festivals.
 
 ## Volunteered with
 
-- Ansir Innovation Centre, San Diego
-- Startup Weekend, multiple cities
+- Ansir Innovation Center, San Diego
+- Techstars Startup Weekend, multiple cities
 - So Say We All, San Diego
 - Silicon Beach Melbourne
 - York Butter Factory, Melbourne
-- Kawaiicon and Kiwicon, Wellington
+- Kawaiicon, Wellington
+- Kiwicon, Wellington
 - Wellycon, Wellington
+- RadioActive.FM, Wellington
+- Green Party of Aotearoa New Zealand
+- Kaibosh Food Rescue, Wellington
+- KiwiSaaS Wellington
+- Ministry of Awesome
+- Open San Diego, the Code for America brigade
+- San Diego Tech 4 Good
+- a11ySD
+- nz-tech-events
+- Read the Room Education
+- Mexic-Arte Museum
+- Refresh Austin
+- Learn to Code Austin
 
 ## Recent event and volunteer work
 
 - Event staff, Rave 2 The Grave (RadioActive.FM fundraiser), The Grand,
   Wellington, 31 October 2026. Pack-in and stage setup with the Mayhem Sound
   and Open Air audio crews.
-- Volunteer crew, Kawaiicon, 2026.
+- Volunteer crew, Kawaiicon, Michael Fowler Centre, Wellington, 2026. Bag and
+  tag on 28 October, then convention crew on 30 and 31 October.
 - Volunteer, Kiwicon, Wellington, 2026.
-- Volunteer photographer and data entry, Green Party of Aotearoa New Zealand,
-  Wellington, 2026. Photographed a local campaign event and joined the
-  Wellington data entry crew.
-- Volunteer photographer, Wellycon, Wellington, 2025.
+- Volunteer, Wellycon, Wellington, 2025.
 - Volunteer, Kaibosh Food Rescue, Wellington, 2025.
-- Early volunteer member, KiwiSaaS Wellington chapter, 2025 to 2026.
-- Volunteer photographer, Startup Weekend Wellington, 2025.
+- Volunteer, Green Party of Aotearoa New Zealand, 2026. Photographed a local
+  campaign event and joined the Wellington data entry crew.
+- Volunteer, KiwiSaaS Wellington chapter, 2025 to 2026.
+- Volunteer, Read the Room Education, pro bono since 2021.
+- Volunteer, Mexic-Arte Museum, pro bono platform evaluation, 2017.
 
 ## Event production and stage work
 
@@ -47,7 +62,7 @@ MC. I have worked small community events and multi-city festivals.
 
 ## Earlier community organising
 
-- Volunteer, Ansir Innovation Centre, San Diego, 2011 to 2012. Regular
+- Volunteer, Ansir Innovation Center, San Diego, 2011 to 2012. Regular
   volunteer after the Hackathon Fridays meetups.
 - Photographer, So Say We All, San Diego, 2023.
 - Volunteer, York Butter Factory, Melbourne, 2012 to 2013.
@@ -55,8 +70,8 @@ MC. I have worked small community events and multi-city festivals.
 - Organiser, Startup Weekend Australia, 2012 to 2013.
 - Co-organiser, Techstars Startup Weekend, 2012 to 2014 (San Diego, Orange
   County, Melbourne, Sydney, Wellington).
-- Organiser, speaker, and MC, Silicon Beach Melbourne, 2012 to 2013.
-- Organiser, speaker, and MC, Refresh Austin, 2015 to 2017.
+- Organiser, speaker and MC, Silicon Beach Melbourne, 2012 to 2013.
+- Organiser, speaker and MC, Refresh Austin, 2015 to 2017.
 - Volunteer, Learn to Code Austin with Galvanize, 2016 to 2017.
 - Moderator, ethics panel, Austin on Rails, 2019.
 - Presenter, A Day in the Life of a Programmer, General Assembly Congress
