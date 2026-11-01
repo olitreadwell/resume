@@ -6,6 +6,16 @@ Event volunteering and production work since 2005: stage management, pack-in
 and pack-out, registration, crew check-in, bins, photography, marketing and
 MC. I have worked small community events and multi-city festivals.
 
+## Volunteered with
+
+- Ansir Innovation Centre, San Diego
+- Startup Weekend, multiple cities
+- So Say We All, San Diego
+- Silicon Beach Melbourne
+- York Butter Factory, Melbourne
+- Kawaiicon and Kiwicon, Wellington
+- Wellycon, Wellington
+
 ## Recent event and volunteer work
 
 - Event staff, Rave 2 The Grave (RadioActive.FM fundraiser), The Grand,
@@ -39,6 +49,8 @@ MC. I have worked small community events and multi-city festivals.
 
 - Volunteer, Ansir Innovation Centre, San Diego, 2011 to 2012. Regular
   volunteer after the Hackathon Fridays meetups.
+- Photographer, So Say We All, San Diego, 2023.
+- Volunteer, York Butter Factory, Melbourne, 2012 to 2013.
 - MC, Melbourne Silicon Beach Drinks, 2012 to 2013.
 - Organiser, Startup Weekend Australia, 2012 to 2013.
 - Co-organiser, Techstars Startup Weekend, 2012 to 2014 (San Diego, Orange
