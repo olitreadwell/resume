@@ -2,25 +2,55 @@
 
 [Back to Top](#table-of-contents)
 
-Volunteer and community work since 2012, mostly at tech events and community
-festivals. I have done the unglamorous jobs as well as the stage: setting out
-chairs, scanning tickets at registration, emptying bins, writing marketing
-emails, securing sponsorships, MCing, updating websites, and taking photos.
+Event volunteering and production work since 2005: stage management, pack-in
+and pack-out, registration, crew check-in, bins, photography, marketing and
+MC. I have worked small community events and multi-city festivals.
 
-## Recent volunteering
+## Recent event and volunteer work
 
+- Event staff, Rave 2 The Grave (RadioActive.FM fundraiser), The Grand,
+  Wellington, 31 October 2026. Pack-in and stage setup with the Mayhem Sound
+  and Open Air audio crews.
+- Volunteer crew, Kawaiicon, 2026.
+- Volunteer, Kiwicon, Wellington, 2026.
 - Volunteer photographer and data entry, Green Party of Aotearoa New Zealand,
   Wellington, 2026. Photographed a local campaign event and joined the
   Wellington data entry crew.
-- Volunteer, Kiwicon, Wellington, 2026. Conference crew.
-- Volunteer photographer, Wellycon, Wellington, 2025. Covered the board game
-  convention.
+- Volunteer photographer, Wellycon, Wellington, 2025.
 - Volunteer, Kaibosh Food Rescue, Wellington, 2025.
 - Early volunteer member, KiwiSaaS Wellington chapter, 2025 to 2026.
-- Volunteer photographer, Startup Weekend Wellington, 2025. Covered the
-  weekend event.
+- Volunteer photographer, Startup Weekend Wellington, 2025.
 
-## Community and pro bono
+## Event production and stage work
+
+- Stage manager, Memorial Hall, Chapman University, 2008 to 2011. Theatre tech
+  and stage management through university.
+- Event staff at multiple events. Venue setup, pack-in, pack-out and crew
+  support.
+- Usher and concessionist, UltraStar Theatres, Carmel Valley, 2007.
+
+## International and community volunteering
+
+- Volunteered at an orphanage in Tibet, 2007.
+- Salvation Army housing build, Grenada, 2005.
+- Community service through high school, 2002 to 2006.
+
+## Earlier community organising
+
+- Volunteer, Ansir Innovation Centre, San Diego, 2011 to 2012. Regular
+  volunteer after the Hackathon Fridays meetups.
+- MC, Melbourne Silicon Beach Drinks, 2012 to 2013.
+- Organiser, Startup Weekend Australia, 2012 to 2013.
+- Co-organiser, Techstars Startup Weekend, 2012 to 2014 (San Diego, Orange
+  County, Melbourne, Sydney, Wellington).
+- Organiser, speaker, and MC, Silicon Beach Melbourne, 2012 to 2013.
+- Organiser, speaker, and MC, Refresh Austin, 2015 to 2017.
+- Volunteer, Learn to Code Austin with Galvanize, 2016 to 2017.
+- Moderator, ethics panel, Austin on Rails, 2019.
+- Presenter, A Day in the Life of a Programmer, General Assembly Congress
+  Austin, 2018.
+
+## Pro bono and open source
 
 - Contributor, nz-tech-events, 2026 to present. Eight pull requests merged:
   CI quality gates, JSON-LD event data, Atom and RSS feeds, a shared region
@@ -40,20 +70,13 @@ emails, securing sponsorships, MCing, updating websites, and taking photos.
 More detail on the pro bono projects is in
 [Portfolio Projects](./portfolio-projects.md).
 
-## Earlier events
-
-- Co-organiser, Techstars Startup Weekend, 2012 to 2014 (San Diego, Orange
-  County, Melbourne, Sydney, Wellington)
-- Organiser, speaker, and MC, Silicon Beach Melbourne, 2012 to 2013
-- Organiser, speaker, and MC, Refresh Austin, 2015 to 2017
-- Volunteer, Learn to Code Austin with Galvanize, 2016 to 2017
-- Moderator, ethics panel, Austin on Rails, 2019
-
 ## What I do at events
 
+- Stage management and theatre tech
+- Pack-in and pack-out
 - Setup and pack-down
 - Registration and ticket scanning
-- Stall holder and crew check-in
+- Crew and stall holder check-in
 - Bins and cleanup
 - Photography
 - Data entry

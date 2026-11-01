@@ -70,7 +70,7 @@ I ship small pull requests against a trunk that deploys often, keep lint, type a
 
 I build the agentic layer teams need for AI-assisted delivery rather than using the tools by hand: an MCP server that lets a coding agent audit and fix React performance, a GitHub Action that tiers pull request authors, and a code-review agent template a delivery team ran on every change. Taught over 300 engineers to use ChatGPT and GitHub Copilot to the standard that they can explain the work rather than outsource it. UK and US citizen.
 
-Outside work I volunteer as event crew and a photographer for Wellington community events, including Wellycon, Kiwicon, Startup Weekend Wellington, the Green Party and Kaibosh Food Rescue.
+Outside work I work event crew and photograph community events. I stage-managed Memorial Hall through university, worked pack-in for RadioActive.FM's Rave 2 The Grave, and volunteered at Kawaiicon, Kiwicon, Wellycon, the Green Party and Kaibosh Food Rescue. I also co-organised Techstars Startup Weekend across five cities.
 
 #### Skills
 
