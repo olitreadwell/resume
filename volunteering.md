@@ -21,7 +21,7 @@ and pack-in to registration, photography, marketing and MC.
 
 ## Organising and earlier events
 
-- **Co-organiser and photographer, Techstars Startup Weekend.** San Diego, Orange County, Melbourne, Sydney and Wellington. Sponsorship, marketing emails, registration and ticket scanning, room setup, MC.
+- **Co-organiser and photographer, Techstars Startup Weekend.** San Diego, Orange County, Melbourne, Sydney and Wellington. Sponsorship, marketing emails, registration and ticket scanning, room setup.
 - **Organiser, Startup Weekend Australia, 2012 to 2013.**
 - **Organiser, speaker and MC, Silicon Beach Melbourne, 2012 to 2013.** Also MC for Melbourne Silicon Beach Drinks.
 - **Organiser, speaker and MC, Refresh Austin, 2015 to 2017.**
