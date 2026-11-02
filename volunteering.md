@@ -9,9 +9,15 @@ and pack-in to registration, photography, marketing and MC.
 
 - **Event crew, Rave 2 The Grave (RadioActive.FM fundraiser), The Grand, Wellington, 2026.** Pack-in and stage setup with the Mayhem Sound and Open Air audio crews.
 - **Volunteer crew, Kawaiicon, Michael Fowler Centre, Wellington, 2026.** Bag and tag before the event, then convention crew.
-- **Photographer, Wellycon, Wellington, 2025.** Event photography.
 - **Volunteer, Kaibosh Food Rescue, Wellington, 2024.** Sorted rescued food at the depot.
 - **Volunteer, KiwiSaaS Wellington chapter, 2025 to 2026.** Event check-in and registration.
+
+## Photography
+
+- **Green Party of Aotearoa, Wellington, 2026.** Shot two doorknocking events for the local campaign, with more events and election night offered.
+- **Wellycon, Wellington, 2025.** Event photography.
+- **So Say We All, San Diego, 2023.** Event photography.
+- Portfolio: [instagram.com/habitualgenesis](https://instagram.com/habitualgenesis)
 
 ## Organising and earlier events
 
@@ -23,7 +29,6 @@ and pack-in to registration, photography, marketing and MC.
 - **Moderator, ethics panel, Austin on Rails, 2019.**
 - **Volunteer, Ansir Innovation Center, San Diego, 2011 to 2012.** General volunteering at Hackathon Fridays and other events.
 - **Volunteer, York Butter Factory, Melbourne, 2012 to 2013.** General volunteering at coworking events.
-- **Event photographer, So Say We All, San Diego, 2023.**
 - **Stage manager and theatre tech, Memorial Hall, Chapman University, 2008 to 2011.**
 
 ## Pro bono and open source
