@@ -14,7 +14,7 @@ and pack-in to registration, photography, marketing and MC.
 
 ## Photography
 
-- **Green Party of Aotearoa, Wellington, 2026.** Shot two doorknocking events for the local campaign, with more events and election night offered.
+- **Nonprofit events, San Diego.** Event photography for local fundraisers and community events before moving to New Zealand [years to confirm].
 - **Wellycon, Wellington, 2025.** Event photography.
 - **So Say We All, San Diego, 2023.** Event photography.
 - Portfolio: [instagram.com/habitualgenesis](https://instagram.com/habitualgenesis)
