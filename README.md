@@ -10,7 +10,7 @@
 * <strong>[Common Hiring Questions](./common-hiring-questions.md)</strong>
 * <strong>[Recommendations & References](./linkedin-recommendations.md)</strong>
 * <strong>[Skills & Experience](./skills-and-experience.md)</strong>
-* <strong>[Community & Events](./community-and-events.md)</strong>
+* <strong>[Volunteering](./volunteering.md)</strong>
 * [Links](#links)
 <!-- * [Resume Images](#resume-images) -->
 * [Markdown Resume](#markdown-resume)
@@ -18,7 +18,7 @@
     * [Skills](#skills)
     * [Experience](#experience)
     * [Technical Training & Mentoring](#technical-training--mentoring)
-    * [Community & Event Volunteering](#community--event-volunteering)
+    * [Volunteering](#volunteering)
     * [Education](#education)
     * [Industry Thought Leadership & Speaking Engagements](#industry-thought-leadership--speaking-engagements)
     * [Professional Development](#professional-development)
@@ -71,7 +71,7 @@ I ship small pull requests against a trunk that deploys often, keep lint, type a
 
 I build the agentic layer teams need for AI-assisted delivery rather than using the tools by hand: an MCP server that lets a coding agent audit and fix React performance, a GitHub Action that tiers pull request authors, and a code-review agent template a delivery team ran on every change. Taught over 300 engineers to use ChatGPT and GitHub Copilot to the standard that they can explain the work rather than outsource it. UK and US citizen.
 
-Outside work I work event crew and photograph community events. I stage-managed Memorial Hall through university, worked pack-in for RadioActive.FM's Rave 2 The Grave, and volunteered at Kawaiicon, Kiwicon, Wellycon, the Green Party and Kaibosh Food Rescue. I also co-organised Techstars Startup Weekend across five cities.
+Outside work I work event crew and photograph community events. I stage-managed Memorial Hall through university, worked pack-in for RadioActive.FM's Rave 2 The Grave, and volunteered at Kawaiicon, Wellycon and Kaibosh Food Rescue. I also co-organised Techstars Startup Weekend across five cities.
 
 #### Skills
 
@@ -183,16 +183,16 @@ Orange, CA
 - Co-led an inclusive web design and accessibility working group across the engineering org.
 - Technologies: JavaScript, HTML5, CSS3, ReactJS, React Router, Python, Flask, OOP, CI/CD, Render.com, Agile, APIs, web accessibility.
 
-#### COMMUNITY & EVENT VOLUNTEERING
+#### VOLUNTEERING
 
 - Event crew, RadioActive.FM Rave 2 The Grave, The Grand, Wellington, 2026.
   Pack-in and stage setup with the Mayhem Sound and Open Air audio crews.
 - Volunteer crew, Kawaiicon, Michael Fowler Centre, Wellington, 2026. Bag and
   tag, then convention crew.
-- Volunteer, Wellycon 2025, Kiwicon 2026 and Kaibosh Food Rescue 2025.
+- Volunteer, Wellycon 2025 and Kaibosh Food Rescue 2024.
 - Stage manager and theatre technician, Memorial Hall, Chapman University,
   2008 to 2011.
-- Full event history: [Community & Events](./community-and-events.md)
+- Full event history: [Volunteering](./volunteering.md)
 
 #### EDUCATION
 - Postgraduate Diploma in Information Technology | Whitireia and WelTec
