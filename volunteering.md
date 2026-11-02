@@ -28,7 +28,7 @@ and pack-in to registration, photography, marketing and MC.
 - **Volunteer, Learn to Code Austin with Galvanize, 2016 to 2017.** Taught beginners to code.
 - **Moderator, ethics panel, Austin on Rails, 2019.**
 - **Volunteer, Ansir Innovation Center, San Diego, 2011 to 2012.** General volunteering at Hackathon Fridays and other events.
-- **Volunteer, York Butter Factory, Melbourne, 2012 to 2013.** General volunteering at coworking events.
+- **Volunteer and event organiser, York Butter Factory, Melbourne, 2013.** Helped run Silicon Beach Drinks and Aurelius Digital events, wrote the quarterly updates for Adventure Capital, and chipped in on Startup Weekend.
 - **Stage manager and theatre tech, Memorial Hall, Chapman University, 2008 to 2011.**
 
 ## Pro bono and open source
