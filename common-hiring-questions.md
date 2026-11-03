@@ -17,6 +17,8 @@
 
 ## How I work
 
+- [Tell me about a project you are proud of.](#tell-me-about-a-project-you-are-proud-of)
+- [How would you approach a product design problem?](#how-would-you-approach-a-product-design-problem)
 - [How do you take a piece of work from idea to production?](#how-do-you-take-a-piece-of-work-from-idea-to-production)
 - [How do you estimate work, and what do you think of story points?](#how-do-you-estimate-work-and-what-do-you-think-of-story-points)
 - [How do you work inside a large, long-lived codebase?](#how-do-you-work-inside-a-large-long-lived-codebase)
@@ -141,6 +143,40 @@ Three shapes, one per job. The words stay mine. The order is what makes the answ
 **Reflective answers use CARL.** Context, Action, Results, Learning. That covers "how do you estimate", "why a product company", "how current is your Rails", where the point is judgement rather than an event.
 
 **Resume bullets use XYZ.** Accomplished X, as measured by Y, by doing Z. The Experience section in the README is written that way, so a bullet can be read aloud as a claim with its evidence attached.
+
+### Tell me about a project you are proud of.
+
+Octal is a New Zealand hardware and software systems company. I was the senior frontend engineer and end-to-end lead on their marketing and case-study site while I was at Numeral Studio. The build ran for 57 days in 2026. I made 231 of the 624 commits, about 37% of the project, and I owned scoping, client communication, technical direction, delivery and QA after the initial setup was handed over.
+
+Octal needed a site that felt as precise as the work they sell. They build hardware, software and integrated systems. The site is their main pitch surface. The design had rich motion, fluid layouts across a wide range of viewports, and case studies that had to feel distinct without becoming a different template for every client. The launch date was fixed.
+
+The decision I am proudest of is the case-study content system. The first plan was MDX, which would have been quick to start but loose to run. I moved it to typed JSON: one file per case study, a TypeScript schema, one dynamic route, and an image registry that maps a name to a stable asset. Content tests fail the build when a required field is missing or the shape is wrong. Adding a case study became content work rather than a code change. The layout could not drift because there was only one rendering path.
+
+Trade-off: we did not get a CMS. The client was a team of engineers, the timeline was tight, and a CMS would have added a layer nobody had time to maintain. The cost is that editing still means touching a file in the repo. I would make the same call for that client at that moment, but I would write down the handover path more clearly.
+
+Other work I owned: the fluid nav drawer that scales from 820 to 1800 pixels, HeroSlideshowV2 and its time-driven GSAP timeline, the iOS Safari header fix that moved from fixed to sticky inside a tall scroll runway, and the Playwright suite for nav drawer and scroll behaviour. I also wrote pure layout helpers with unit tests so the geometry could be reasoned about without a browser. One boundary: the original hero and the page transition wipe were another engineer's. My hero work was V2, the time-driven rebuild.
+
+Result: delivered for launch. The site holds the visual quality the client wanted, and the content system made the case studies safe to extend. What I would do differently: add analytics earlier, add visual regression at two or three key breakpoints, and confirm the accessibility testing scope in writing before build.
+
+### How would you approach a product design problem?
+
+I would treat the first conversation as a trio, not a spec handoff. Product brings the user evidence and priority. Design brings the flow and the states. I bring the data model, the failure modes and the delivery path. We leave with a one-page brief, a cut list and the risks we are not going to solve in v1.
+
+Take the panel import feature. The user is a research ops person or a researcher who already has a CRM full of participants. The job is to keep a reusable, consent-aware panel inside Optimal instead of a spreadsheet. V1 is create a panel, import a CRM CSV, map known fields, keep unknown columns as panel custom fields, capture consent, preview, then land on a persistent panel page with a participant table and dashboard. I would cut marketplace integration, payments, scheduling, participant accounts and AI matching.
+
+Then I would ask what already exists: is there a CSV upload path, a consent record, a participant model, a GraphQL schema, a Rails job runner? The answer changes the design more than any diagram I draw.
+
+Data model: participants at workspace level, panel_memberships, panel_fields for custom definitions, and participant_field_values keyed by membership. Values hang off the membership because custom fields belong to the panel, not the person. A participant can sit in two panels with different values. I would also have import_batches for status, mapping, counts and errors, consent_attestations for the researcher's instruction, and participant_consents for per-person status.
+
+Import path: the browser asks Rails for an import batch. Rails returns a presigned S3 URL. The browser uploads the file directly. Rails verifies the object and enqueues a job. The job streams the CSV, validates it, normalises email, dedupes, writes in batches of 500 to 1,000, and updates progress. The request never parses the file. 10,000 rows and 20 MB is small enough for one job. I would not build a distributed pipeline for it.
+
+Mapping: known fields are email, first name, last name, phone, company, job title and external ID. Unknown columns become panel fields. AI suggestions are advisory. Send headers and a masked sample, not the whole file. Show confidence, let the user confirm, fall back to alias matching, and never auto-apply. If the AI is wrong, the panel is worse than the spreadsheet.
+
+Consent: if the CSV has a consent column, map it. If not, the researcher attests. Store who attested, when, for which import, under which policy version. Revocation wins at send time. That is a liability record, not a checkbox.
+
+Risks: consent semantics, dedupe by normalised email, tenant isolation, personal data, custom field collisions, idempotent import and invite, and dashboard counts. I would put the dashboard on a separate aggregate query, not count rows in the browser.
+
+Rollout: feature flag, internal workspace, then a handful of design partners. Measure time to first invite, import error rate, mapping correction rate and duplicate invite rate. The first question I would ask the trio is what consent means for a CRM list, because that decision shapes the schema and the UI.
 
 ### How do you take a piece of work from idea to production?
 
