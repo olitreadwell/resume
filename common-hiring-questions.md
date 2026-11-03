@@ -56,7 +56,7 @@ US citizen with a current passport and social security number. No sponsorship ne
 
 #### Aotearoa New Zealand
 
-Currently on a post-study work visa after completing a Level 8 Postgraduate Diploma in Information Technology at Whitireia (Wellington). Eligible to work full-time for any NZ employer until the visa expires. Software Engineer is on the Green List, so long-term residency pathways exist for Accredited Employers if helpful.
+Currently on a visitor visa expiring March 2027, after my previous post-study work visa expired following my completion of a Level 8 Postgraduate Diploma in Information Technology at Whitireia (Wellington). I will need to work for an Accredited Employer on the Accredited Employer Work Visa to begin working for an Aotearoa New Zealand based employer. Software Engineer is on the Green List, which speeds up the process, and I'm pursuing a long-term residency pathways through the Skilled Migrant Category Residency if I can secure a role with an Accredited Employer.
 
 #### Australia, Canada, EU
 
@@ -68,7 +68,7 @@ Wellington, New Zealand. Working from here now.
 
 ### Are you interested in relocating?
 
-Open to it. I have been planning a move to London and I am also happy to stay in New Zealand for the right role. For a move I would want relocation support and a clear start date agreed as part of the offer.
+Open to it. I have been planning a move to London and I am also happy to stay in New Zealand for the right role. For a move I would hope for relocation support and a clear start date agreed as part of the offer.
 
 ### How long have you been working remotely?
 
@@ -133,14 +133,6 @@ At Condé Nast, I led the development of a brand-agnostic paywall architecture a
 The result was significant growth in monetisation, with a year-over-year increase of over 100% in monthly subscriptions for Vanity Fair and Wired. The project reinforced the value of iterative development, user-centric design, and robust testing when building a paywall system at media scale.
 
 ## How I work
-
-Three shapes, one per job. The words stay mine. The order is what makes the answer land.
-
-**Story answers use STAR.** Situation, Task, Action, Result, then one line on what I do differently now. If someone asks about a hard bug or a project, those four beats are the answer.
-
-**Reflective answers use CARL.** Context, Action, Results, Learning. That covers "how do you estimate", "why a product company", "how current is your Rails", where the point is judgement rather than an event.
-
-**Resume bullets use XYZ.** Accomplished X, as measured by Y, by doing Z. The Experience section in the README is written that way, so a bullet can be read aloud as a claim with its evidence attached.
 
 ### How do you take a piece of work from idea to production?
 
