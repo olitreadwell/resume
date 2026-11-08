@@ -2,6 +2,14 @@
 
 You can also find these on my LinkedIn here [https://www.linkedin.com/in/olitreadwell](https://www.linkedin.com/in/olitreadwell)
 
+
+
+
+<img width="792" height="304" alt="Screenshot 2026-11-09 at 10-33-53 Oli Treadwell LinkedIn" src="https://github.com/user-attachments/assets/06c05201-ce39-43c3-879b-2a7e14977e33" />
+<img width="792" height="359" alt="Screenshot 2026-11-09 at 10-34-05 Oli Treadwell LinkedIn" src="https://github.com/user-attachments/assets/feeddf6e-eb76-4776-ba75-4027fbe0d499" />
+<img width="792" height="233" alt="Screenshot 2026-11-09 at 10-34-21 Oli Treadwell LinkedIn" src="https://github.com/user-attachments/assets/95819594-838b-421a-8474-7db60467f163" />
+<img width="792" height="593" alt="Screenshot 2026-11-09 at 10-34-36 Oli Treadwell LinkedIn" src="https://github.com/user-attachments/assets/c71355cd-fd08-43a5-b66f-36c1a7e5cce3" />
+
 ![Screenshot 2023-10-05 at 10 21 59 PM](https://github.com/olitreadwell/resume/assets/3107864/2baaf18f-81d6-4382-92c4-35938a6f3cc9)
 ![Screenshot 2023-10-05 at 10 22 10 PM](https://github.com/olitreadwell/resume/assets/3107864/3595e3f6-19bb-4a60-99ba-e6248a041341)
 ![Screenshot 2023-10-05 at 10 22 25 PM](https://github.com/olitreadwell/resume/assets/3107864/f1551055-124d-4cc8-95b5-fdd126186a3e)
