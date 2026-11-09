@@ -22,6 +22,9 @@
 - [How do you work inside a large, long-lived codebase?](#how-do-you-work-inside-a-large-long-lived-codebase)
 - [How do you use AI in your day-to-day delivery, and where do you draw the line?](#how-do-you-use-ai-in-your-day-to-day-delivery-and-where-do-you-draw-the-line)
 - [What team size and ways of working suit you best?](#what-team-size-and-ways-of-working-suit-you-best)
+- [How do you work with clients and stakeholders?](#how-do-you-work-with-clients-and-stakeholders)
+- [How do you work with designers when a design is hard to build?](#how-do-you-work-with-designers-when-a-design-is-hard-to-build)
+- [What business or startup experience do you bring to engineering?](#what-business-or-startup-experience-do-you-bring-to-engineering)
 - [What do you do when a piece of work turns out bigger than expected?](#what-do-you-do-when-a-piece-of-work-turns-out-bigger-than-expected)
 - [How current is your Ruby on Rails experience?](#how-current-is-your-ruby-on-rails-experience)
 - [Why product work over agency work?](#why-product-work-over-agency-work)
@@ -162,11 +165,15 @@ In an 18 year old monolith the risk is not the code you write, it is the code yo
 
 ### How do you use AI in your day-to-day delivery, and where do you draw the line?
 
-I use it for the first pass and keep a person on the decision. In practice that means a review agent flagging problems before a human reads the pull request, scaffolding for a component or a test file, and summarising a large diff I did not write. I have run this inside a delivery team, not only on my own repos.
+I've used AI in my workflow since 2021. The pattern that stuck is to use it for the first pass and keep a person on the decision. In practice that means a review agent flagging problems before a human reads the pull request. It also means scaffolding a component or a test file, and summarising a large diff I did not write. I use Codex and open-weight models for cost, and I've used Claude in the CLI, Cursor, Windsurf and Devin. I have run this inside a delivery team, not only on my own repos.
+
+On a new project I set the constraints first: coding standards, an `AGENTS.md` file, the commands the agent can run, and the checks it has to pass. It also drafts specs.
 
 The line is evidence. A model can suggest a change. It cannot tell me the change works. So the tests, the type check, the lint gate and a second engineer still decide whether something merges. I have watched an agentic pipeline fabricate a result, and the fix was to rebuild it around a verification step that fails when it should.
 
 Two other limits. Anything I put in an agent's context has to survive a privacy question. Anything I run unattended has to have a cost ceiling. The template I built at Numeral ships with an OpenAI-compatible client, a per-request cost cap, redaction, schema-validated output repair, and it stays off until you set a key so CI remains deterministic.
+
+If we can turn a repeated review comment into a rule the agent follows, everyone gets faster without adding a gate that slows delivery down.
 
 The rule I would give a team: automate the low judgement, high volume work, and never automate the part where someone has to understand why.
 
@@ -179,6 +186,36 @@ In a small team you own a whole product surface and talk to the client directly,
 In a large team you own a slice and you earn the right to change anything outside it. At Condé Nast that meant working through my manager into the marketing and product teams to understand merge order and priority. I liked that too, because the constraint is real and the conversation is about the whole system rather than my corner of it.
 
 What I need either way: a board I can see, a review that arrives within a day, and someone who can answer a question about scope. I will review other people's work and pair on whatever is blocking them, because the board moving matters more than my ticket count.
+
+A mix of existing team members and new hires is better than an all-new team on a greenfield project, because someone has to carry the way the team works.
+
+I value remote-first trust, but I want in-person sync at the start of a greenfield engagement, whether that is a day in the office or a team lunch.
+
+### How do you work with clients and stakeholders?
+
+Most of my career has been at product companies. Numeral was my main agency experience, plus pro bono and freelance work.
+
+With clients, I try to understand the motivation and the subject-matter expertise before I push back. A client often knows something about the market that I do not, and I want to hear it before I tell them the design or the feature won't work.
+
+I adapt to how they take feedback. Some clients want the argument in the room. Some want the evidence first. My job is to find the midpoint without damaging the relationship.
+
+One habit from my startup background: if a client has a long feature list and no revenue path, I raise the revenue question with the designer and the engineering lead first. We build the evidence, then bring a clearer option back to the client. I try not to walk into a client conversation with a blunt "this will not make money" unless I have the alternative ready.
+
+### How do you work with designers when a design is hard to build?
+
+I treat the design as a proposal, not a fixed spec.
+
+On a design conference site, the client arrived with a detailed Figma file, but we still had to talk about how it would work on mobile and how the components would interact. I left comments in Figma, asked what the designer wanted the interaction to feel like, and brought a smaller option when the full version would have blown the timeline.
+
+Some questions I can answer myself. Some I should trust the designer has already thought through. The ones that change the user experience or the delivery date are worth the conversation.
+
+### What business or startup experience do you bring to engineering?
+
+Before I moved into software, I worked in business and operations, as an associate at a venture capital firm, and with an angel investing network in Southern California. I also did marketing operations, some sales and business analysis.
+
+That background is why I ask where the revenue comes from, what the lean experiment is, and whether the feature is the cheapest way to validate the idea.
+
+I don't bring that to the client as a blunt instruction. I bring it to the internal design and engineering conversation first, so we can build an argument and a smaller option before we ask the client to change direction.
 
 ### What do you do when a piece of work turns out bigger than expected?
 
