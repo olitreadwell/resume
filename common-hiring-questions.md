@@ -27,7 +27,8 @@
 - [What business or startup experience do you bring to engineering?](#what-business-or-startup-experience-do-you-bring-to-engineering)
 - [What do you do when a piece of work turns out bigger than expected?](#what-do-you-do-when-a-piece-of-work-turns-out-bigger-than-expected)
 - [How current is your Ruby on Rails experience?](#how-current-is-your-ruby-on-rails-experience)
-- [Why product work over agency work?](#why-product-work-over-agency-work)
+
+<!-- - [Why product work over agency work?](#why-product-work-over-agency-work) -->
 
 ### What type of role(s) are you interested in?
  
@@ -233,6 +234,7 @@ Since 2020 my default backend has been Node and TypeScript, so the gap is curren
 
 Can I review a Rails pull request in week one? Yes, and I will be slower at it than someone who writes Rails every day. I will ask more questions about the parts of the codebase I have not touched, and the review will be careful rather than fast. That gap closes over the first month or two, and the front end is where I am deep from day one.
 
+<!--
 ### Why product work over agency work?
 
 Five of my six roles have been at product companies: Union Metrics, Bypass Mobile, Condé Nast, an HR and rewards platform, and PartsTrader. Numeral was the agency, and it taught me things the product side did not.
@@ -242,3 +244,6 @@ The agency was varied and fast. A small team, several clients at once, decisions
 Product work is more methodical. What ships and when matters, a change has to fit a roadmap, and the codebase outlives the ticket. That is the part I want more of, because the work I am proudest of is the work that made the next change easier: the shared component layer, the review template a team kept adding to, the test gate that stopped a regression reaching production.
 
 I care about the systems around the product as much as the product. Developer experience is part of what I build: a fast test suite, a review that arrives the same day, docs that answer the question without a meeting. My measure of a good change is that the repo is easier to work in afterwards than it was before.
+
+
+-->
